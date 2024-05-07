@@ -24,6 +24,8 @@ function MyNavbar({ activeID }) {
     navigate(`/search/${searchTerm}`);
   }
 
+  
+
   return (
     <header style={{ paddingTop: 125 }}>
       <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
@@ -55,7 +57,7 @@ function MyNavbar({ activeID }) {
                       value={searchTerm}
                       onChange={handleSearchChange}
                       />
-                      <Button variant="outline-success"><FontAwesomeIcon icon={faMagnifyingGlass} onClick={searchProducts} size="xl"/></Button>
+                      <Button variant="outline-success" onClick={searchProducts} disabled={!searchTerm}><FontAwesomeIcon icon={faMagnifyingGlass} size="xl"/></Button>
                   </Form>
               </Nav>  
           </Navbar.Collapse>

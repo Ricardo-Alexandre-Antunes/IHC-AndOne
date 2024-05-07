@@ -53,7 +53,7 @@ function ShoeSearch() {
       
       <div className={`product-list`} style={{padding: '0', margin: '0', boxSizing: 'border-box' }}>
         {filteredProducts.map(product => (
-          <ProductCard category={'sapatilhas'} product={product} favorites={favorites} setFavorites={setFavorites}/>
+          <ProductCard category={'sapatilhas'} key={product.id} product={product} favorites={favorites} setFavorites={setFavorites}/>
         ))}
       </div>
       {/* other routes... */}

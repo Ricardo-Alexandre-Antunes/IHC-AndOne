@@ -11,6 +11,7 @@ function EquipamentosSearch() {
   const [selectedPrices, setSelectedPrices] = useState([0, 1000]);
   const [selectedSizes, setSelectedSizes] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const [selectedBrands, setSelectedBrands] = useState([]);
 
   const [favorites, setFavorites] = useState(
     localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : []
@@ -21,16 +22,22 @@ function EquipamentosSearch() {
       setSearchTerm(urlSearchTerm);
     }
   }, [urlSearchTerm]);
-  
+
   useEffect(() => {
-    const newFilteredProducts = ProductList.equipamentos.filter(product =>
+    console.log('Product sizes:', ProductList.equipamentos.map(product => product.size));
+    console.log('Selected sizes:', selectedSizes);
+    // ...
+}, [selectedTeams, selectedBrands, selectedSizes, selectedPrices]);
+  
+useEffect(() => {
+  const newFilteredProducts = ProductList.equipamentos.filter(product =>
       (selectedTeams.length === 0 || selectedTeams.includes(product.team)) &&
-      product.price >= selectedPrices[0] && product.price <= selectedPrices[1] &&
-      (selectedSizes.length === 0 || selectedSizes.some(size => product.size.includes(size))) &&
-      (!searchTerm || product.name.toLowerCase().includes(searchTerm.toLowerCase()))
-    );
-    setFilteredProducts(newFilteredProducts);
-}, [searchTerm, selectedTeams, selectedPrices, selectedSizes]);
+      (selectedBrands.length === 0 || selectedBrands.includes(product.brand)) &&
+      (selectedSizes.length === 0 || product.size.some(size => selectedSizes.includes(size))) &&
+      product.price >= selectedPrices[0] && product.price <= selectedPrices[1]
+  );
+  setFilteredProducts(newFilteredProducts);
+}, [selectedTeams, selectedBrands, selectedSizes, selectedPrices]);
   console.log(selectedSizes);
   console.log(filteredProducts);
 
@@ -41,6 +48,8 @@ function EquipamentosSearch() {
 
       <EquipamentosFilterBar
         className={`filter`}
+        selectedBrands={selectedBrands}
+        setSelectedBrands={setSelectedBrands}
         selectedTeams={selectedTeams}
         setSelectedTeams={setSelectedTeams}
         selectedPrices={selectedPrices}
@@ -51,7 +60,7 @@ function EquipamentosSearch() {
       
       <div className={`product-list`} style={{padding: '0', margin: '0', boxSizing: 'border-box' }}>
         {filteredProducts.map(product => (
-          <ProductCard category={'equipamentos'} product={product} favorites={favorites} setFavorites={setFavorites}/>
+          <ProductCard key={product.id} category={'equipamentos'} product={product} favorites={favorites} setFavorites={setFavorites}/>
         ))}
       </div>
       {/* other routes... */}

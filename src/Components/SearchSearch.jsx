@@ -26,6 +26,10 @@ function SearchSearch() {
     const [favorites, setFavorites] = useState(
       localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : []
     );
+
+    useEffect(() => {
+      setSearchTerm(urlSearchTerm);
+    }, [urlSearchTerm])
   
     useEffect(() => {
         const newFilteredProducts = allProducts.filter(([category, product]) =>
@@ -59,6 +63,7 @@ function SearchSearch() {
         {filteredProducts.map(([category, product]) => (
             <ProductCard 
                 category={category} 
+                key={`${product.id}${category}`}
                 product={product} 
                 favorites={favorites} 
                 setFavorites={setFavorites}

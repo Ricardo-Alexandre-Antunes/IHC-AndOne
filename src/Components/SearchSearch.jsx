@@ -47,7 +47,7 @@ function SearchSearch() {
   return (
     <>
     {searchTerm && <h2 style={{ fontSize: '2em', textAlign: "center" }}>Searching for: {searchTerm}</h2>}
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 5fr', height: '100%', alignItems: 'start' }}>
+    <div className='p-3' style={{ display: 'grid', gridTemplateColumns: '1fr 5fr', height: '100%', alignItems: 'start' }}>
 
       <SearchFilterBar
         className={`filter`}

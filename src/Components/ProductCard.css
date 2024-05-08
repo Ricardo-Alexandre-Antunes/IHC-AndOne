@@ -1,0 +1,34 @@
+.ProductCard {
+    /* Your existing styles for the card */
+    width: 250px;
+    /* Add a transition for smooth animation */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;;
+}
+
+.ProductCard:hover {
+    /* Add a glowing effect using box-shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.link-no-color {
+    color: inherit;
+    text-decoration: none;
+}
+
+.toast-container {
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+  
+  .toast {
+    pointer-events: auto;
+  }

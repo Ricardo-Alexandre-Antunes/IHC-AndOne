@@ -5,10 +5,16 @@ import { ShoeFilterBar } from './VerticalFilterBar';
 import { useParams } from 'react-router-dom';
 
 function ShoeSearch() {
+  console.log('ShoeSearch');
+  const allProducts = ProductList.sapatilhas.map(product => product);
+  console.log(allProducts);
+
+  // Get all prices
+  const prices = allProducts.map(product => product.price);
   const { searchTerm: urlSearchTerm } = useParams();
   const [searchTerm, setSearchTerm] = useState(urlSearchTerm);
   const [selectedBrands, setSelectedBrands] = useState([]);
-  const [selectedPrices, setSelectedPrices] = useState([0, 1000]);
+  const [selectedPrices, setSelectedPrices] = useState([0, Math.max(...prices)]);
   const [selectedSizes, setSelectedSizes] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 

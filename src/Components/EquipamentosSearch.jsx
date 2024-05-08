@@ -5,10 +5,14 @@ import { EquipamentosFilterBar } from './VerticalFilterBar';
 import { useParams } from 'react-router-dom';
 
 function EquipamentosSearch() {
-  const { searchTerm: urlSearchTerm } = useParams();
-  const [searchTerm, setSearchTerm] = useState(urlSearchTerm);
+  console.log('ShoeSearch');
+  const allProducts = ProductList.equipamentos.map(product => product);
+  console.log(allProducts);
+
+  // Get all prices
+  const prices = allProducts.map(product => product.price);
   const [selectedTeams, setSelectedTeams] = useState([]);
-  const [selectedPrices, setSelectedPrices] = useState([0, 1000]);
+  const [selectedPrices, setSelectedPrices] = useState([0, Math.ceil(Math.max(...prices))]);
   const [selectedSizes, setSelectedSizes] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [selectedBrands, setSelectedBrands] = useState([]);
@@ -17,11 +21,6 @@ function EquipamentosSearch() {
     localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : []
   );
 
-  useEffect(() => {
-    if (urlSearchTerm !== searchTerm) {
-      setSearchTerm(urlSearchTerm);
-    }
-  }, [urlSearchTerm]);
 
   useEffect(() => {
     console.log('Product sizes:', ProductList.equipamentos.map(product => product.size));
@@ -43,9 +42,7 @@ useEffect(() => {
 
   return (
     <>
-    {searchTerm && <h2 style={{ fontSize: '2em', textAlign: "center" }}>Searching for: {searchTerm}</h2>}
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 5fr', height: '100%', alignItems: 'start' }}>
-
       <EquipamentosFilterBar
         className={`filter`}
         selectedBrands={selectedBrands}

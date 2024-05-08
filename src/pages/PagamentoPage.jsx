@@ -23,13 +23,18 @@ function PagamentoPage() {
         console.log(selectedPaying == '');
         console.log((selectedPaying === 'MBWay' || phoneNumber === ''));
         console.log(selectedBilling == '') ;
-        return selectedPaying === undefined || selectedBilling === undefined || (selectedPaying === 'MBWay' && phoneNumber === undefined);
+        return selectedPaying === undefined || selectedBilling === undefined || (selectedPaying === 'MBWay' && !isPhoneNumberValid(phoneNumber));
     }
+
+    const isPhoneNumberValid = (number) => {
+        const regex = /^9\d{8}$/;  
+        return regex.test(number);  
+    };
 
     const handleClick = (event) => {
         if (checkIfError()) {
             event.preventDefault();
-            alert("Por favor, preencha todos os campos.\nCampos que faltam:" + (selectedBilling === undefined ? "\n\t Dados de faturação" : "") + (selectedPaying === undefined ? "\n\t Método de pagamento" : "") + (selectedPaying === 'MBWay' && phoneNumber === undefined ? "\n\t Telefone" : ""));
+            alert("Por favor, preencha todos os campos.\nCampos que faltam:" + (selectedBilling === undefined ? "\n\t Dados de faturação" : "") + (selectedPaying === undefined ? "\n\t Método de pagamento" : "") + (selectedPaying === 'MBWay' && phoneNumber === undefined ? "\n\t Telemóvel" : "") + (selectedPaying === 'MBWay' && !isPhoneNumberValid(phoneNumber) && phoneNumber !== undefined ? "\n\t Telemóvel inválido" : ""));
         } else {
             const temp = (localStorage.getItem('temp') ? JSON.parse(localStorage.getItem('temp')) : {});
             temp['pagamento'] = selectedPaying;

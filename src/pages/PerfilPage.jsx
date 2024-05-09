@@ -12,7 +12,7 @@ function PerfilPage() {
         <>
             <MyNavbar activeID={6} />
             <div style={{ minHeight: '55vh' }}>
-                <Row className="d-flex justify-content-begin">
+                <Row className="d-flex justify-content-begin pt-3">
                     <Col md={3}>
                         <h3 className="p-3 pb-0">Olá Utilizador</h3>
                     </Col>

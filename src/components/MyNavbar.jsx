@@ -27,10 +27,10 @@ function MyNavbar({ activeID }) {
   
 
   return (
-    <header style={{ paddingTop: 125 }}>
+    <header style={{ paddingTop: 105 }}>
       <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
         <Container fluid>
-          <Navbar.Brand as={Link} to="/"><img src="/src/assets/And_ONE.png" style={{ height: 100 }}/></Navbar.Brand>
+          <Navbar.Brand as={Link} to="/"><img src="/src/assets/And_ONE.png" style={{ height: 80, paddingLeft: 10 }}/></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
               <Nav
@@ -44,11 +44,11 @@ function MyNavbar({ activeID }) {
                   <Nav.Link as={ Link } to="/conjuntos" className={activeID === 4? 'active' : ''}><h5>Conjuntos</h5></Nav.Link>
                   <Nav.Link as={ Link } to="/material" className={activeID === 5? 'active' : ''}><h5>Material</h5></Nav.Link>
               </Nav>
-              <Nav className="justify-content-end">
+              <Nav className="justify-content-end" >
                   <Nav.Link as={ Link } to="/perfil" className={activeID === 6? 'active' : ''}><FontAwesomeIcon icon={faUser} size="2xl" /></Nav.Link>
                   <Nav.Link as={ Link } to="/favoritos" className={activeID === 7? 'active' : ''}><FontAwesomeIcon icon={faHeart} size="2xl" /></Nav.Link>
                   <Nav.Link as={ Link } to="/carrinho" className={activeID === 8? 'active' : ''}><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Nav.Link>
-                  <Form className="d-flex" onSubmit={searchProducts}>
+                  <Form className="d-flex" onSubmit={searchProducts} style={{ paddingRight: 10, paddingLeft: 20 }} >
                       <Form.Control
                       type="search"
                       placeholder="Procurar"
@@ -57,7 +57,7 @@ function MyNavbar({ activeID }) {
                       value={searchTerm}
                       onChange={handleSearchChange}
                       />
-                      <Button variant="outline-success" onClick={searchProducts} disabled={!searchTerm}><FontAwesomeIcon icon={faMagnifyingGlass} size="xl"/></Button>
+                      <Button variant="outline-success" onClick={searchProducts} disabled={!searchTerm} ><FontAwesomeIcon icon={faMagnifyingGlass} size="xl"/></Button>
                   </Form>
               </Nav>  
           </Navbar.Collapse>

@@ -31,17 +31,17 @@ const ShoeFilterBar = ({ selectedBrands, setSelectedBrands, selectedPrices, setS
         setSelectedSizes(prevSizes => prevSizes.includes(size) ? prevSizes.filter(s => s !== size) : [...prevSizes, size]);
         };
     return (
-        <div className='container'>
+        <div className='container' style={{ color: 'white' }}>
             <div className={`filter-bar`}>
                 <h2 className='unselectable'>Filtros</h2>
                 <div className="accordion">
-                    <h3 className='unselectable' onClick={(event) => {
+                    <h3 className='unselectable pt-2' onClick={(event) => {
                 if (event.target.type !== 'checkbox') {
                     setBrandOpen(!brandOpen);
                 }
                 }}>Marca <FontAwesomeIcon icon={brandOpen ? faChevronUp : faChevronDown} /></h3>
                     {brandOpen && (brands || []).map(brand => (
-                        <div key={brand}>
+                        <div key={brand} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }}>
                             <input
                                 type="checkbox"
                                 id={brand}
@@ -51,11 +51,11 @@ const ShoeFilterBar = ({ selectedBrands, setSelectedBrands, selectedPrices, setS
                                 onChange={handleBrandChange}
                                 className='unselectable'
                             />
-                            <label htmlFor={brand} className='unselectable'>{brand}</label>
+                            <label htmlFor={brand} className='unselectable' style={{ paddingLeft: 5, fontSize: '18px' }} >{brand}</label>
                         </div>
                     ))}
                 </div>
-                <div className="accordion">
+                <div className="accordion pt-2">
                     <h3 className='unselectable' onClick={(event) => {
                 if (event.target.type !== 'number' && event.target.type !== 'text') {
                     setPriceOpen(!priceOpen);
@@ -73,6 +73,7 @@ const ShoeFilterBar = ({ selectedBrands, setSelectedBrands, selectedPrices, setS
                                 setSelectedPrices([value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value), selectedPrices[1]]);
                             }}
                         />
+                        <div className='pt-2'></div>
                         <input
                             className="small-input"
                             type="number"
@@ -90,13 +91,13 @@ const ShoeFilterBar = ({ selectedBrands, setSelectedBrands, selectedPrices, setS
                     )}
                 </div>
                 <div className="accordion">
-                    <h3 className='unselectable' onClick={(event) => {
+                    <h3 className='unselectable pt-2' onClick={(event) => {
                 if (event.target.type !== 'checkbox') {
                     setSizeOpen(!sizeOpen);
                 }
                 }}>Tamanhos <FontAwesomeIcon icon={sizeOpen ? faChevronUp : faChevronDown} /></h3>
                     {sizeOpen && (sizes || []).map(size => (
-                        <div key={size}>
+                        <div key={size} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }} >
                         <input
                             type="checkbox"
                             id={`size-${size}`}
@@ -106,7 +107,7 @@ const ShoeFilterBar = ({ selectedBrands, setSelectedBrands, selectedPrices, setS
                             onChange={handleSizeChange}
                             className='unselectable'
                         />
-                        <label htmlFor={`size-${size}`} className='unselectable'>{size}</label>
+                        <label htmlFor={`size-${size}`} className='unselectable' style={{ paddingLeft: 5, fontSize: '18px' }} >{size}</label>
                         </div>
                     ))}
                 </div>
@@ -169,13 +170,13 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
     };
 
     return (
-        <div className='container'>
+        <div className='container' style={{ color: 'white' }}>
         <div className={`filter-bar`}>
             <h2 className='unselectable'>Filtros</h2>
             <div className="accordion">
-                <h3 className='unselectable' onClick={brandOpenChange}>Marca <FontAwesomeIcon icon={brandOpen ? faChevronUp : faChevronDown} /></h3>
+                <h3 className='unselectable pt-2' onClick={brandOpenChange}>Marca <FontAwesomeIcon icon={brandOpen ? faChevronUp : faChevronDown} /></h3>
                 {brandOpen && (brands || []).map(brand => (
-                    <div key={brand}>
+                    <div key={brand} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }}>
                         <input
                             type="checkbox"
                             id={brand}
@@ -185,14 +186,14 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
                             onChange={handleBrandChange}
                             className='unselectable'
                         />
-                        <label htmlFor={brand} className='unselectable'>{brand}</label>
+                        <label htmlFor={brand} className='unselectable' style={{ paddingLeft: 5, fontSize: '18px' }}>{brand}</label>
                     </div>
                 ))}
             </div>
             <div className="accordion">
-                <h3 className='unselectable' onClick={teamOpenChange}>Equipas <FontAwesomeIcon icon={teamOpen ? faChevronUp : faChevronDown} /></h3>
+                <h3 className='unselectable pt-2' onClick={teamOpenChange}>Equipas <FontAwesomeIcon icon={teamOpen ? faChevronUp : faChevronDown} /></h3>
                 {teamOpen && (teams || []).map(team => (
-                    <div key={team}>
+                    <div key={team} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }}>
                     <input
                         type="checkbox"
                         id={`team-${team}`}
@@ -202,12 +203,12 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
                         onChange={handleTeamChange}
                         className='unselectable'
                     />
-                    <label htmlFor={`team-${team}`} className='unselectable'>{team}</label>
+                    <label htmlFor={`team-${team}`} className='unselectable' style={{ paddingLeft: 5, fontSize: '18px' }}>{team}</label>
                     </div>
                 ))}
             </div>
             <div className="accordion">
-                <h3 className='unselectable' onClick={priceOpenChange}>Preço <FontAwesomeIcon icon={priceOpen ? faChevronUp : faChevronDown} /></h3>
+                <h3 className='unselectable pt-2' onClick={priceOpenChange}>Preço <FontAwesomeIcon icon={priceOpen ? faChevronUp : faChevronDown} /></h3>
                 {priceOpen && (
                     <div>
                         <input
@@ -220,6 +221,7 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
                                 setSelectedPrices([value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value), selectedPrices[1]]);
                             }}
                         />
+                        <div className='pt-2'></div>
                         <input
                             className="small-input"
                             type="number"
@@ -237,9 +239,9 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
                 )}
             </div>
             <div className="accordion">
-                <h3 className='unselectable' onClick={sizeOpenChange}>Tamanhos <FontAwesomeIcon icon={sizeOpen ? faChevronUp : faChevronDown} /></h3>
+                <h3 className='unselectable pt-2' onClick={sizeOpenChange}>Tamanhos <FontAwesomeIcon icon={sizeOpen ? faChevronUp : faChevronDown} /></h3>
                 {sizeOpen && (sizes || []).map(size => (
-                    <div key={size}>
+                    <div key={size} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }}>
                     <input
                         type="checkbox"
                         id={`size-${size}`}
@@ -249,7 +251,7 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
                         onChange={handleSizeChange}
                         className='unselectable'
                     />
-                    <label htmlFor={`size-${size}`} className='unselectable'>{size}</label>
+                    <label htmlFor={`size-${size}`} className='unselectable' style={{ paddingLeft: 5, fontSize: '18px' }}>{size}</label>
                     </div>
                 ))}
             </div>
@@ -278,13 +280,13 @@ const SearchFilterBar = ({ selectedBrands, setSelectedBrands, selectedCategories
     return (
         <div>
             {/* Render the filter bar */}
-            <div className="filter-bar">
+            <div className="filter-bar" style={{ color: 'white' }}>
                 <div className="filter-section">
                     <h3>Brands</h3>
                     {brands.map(brand => (
-                        <div key={brand}>
-                            <label>
-                                <input 
+                        <div key={brand} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }}>
+                            <label style={{ paddingLeft: 5, fontSize: '18px' }}>
+                                <input style={{ marginRight: 5 }} 
                                     type="checkbox" 
                                     value={brand} 
                                     checked={selectedBrands.includes(brand)} 
@@ -297,11 +299,11 @@ const SearchFilterBar = ({ selectedBrands, setSelectedBrands, selectedCategories
                 </div>
 
                 <div className="filter-section">
-                    <h3>Categories</h3>
+                    <h3 className='pt-2'>Categories</h3>
                     {categories.map(category => (
-                        <div key={category}>
-                            <label style={{ textTransform: 'capitalize' }}>
-                                <input 
+                        <div key={category} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }}>
+                            <label style={{ textTransform: 'capitalize', paddingLeft: 5, fontSize: '18px' }}>
+                                <input style={{ marginRight: 5 }}
                                     type="checkbox" 
                                     value={category} 
                                     checked={selectedCategories.includes(category)} 
@@ -313,7 +315,7 @@ const SearchFilterBar = ({ selectedBrands, setSelectedBrands, selectedCategories
                     ))}
                 </div>
 
-                <div className="filter-section">
+                <div className="filter-section pt-2">
                     <h3>Price</h3>
                     <input
                         className="small-input"
@@ -325,6 +327,7 @@ const SearchFilterBar = ({ selectedBrands, setSelectedBrands, selectedCategories
                             setSelectedPrices([value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value), selectedPrices[1]]);
                         }}
                     />
+                    <div className='pt-2'></div>
                     <input
                         className="small-input"
                         type="number"

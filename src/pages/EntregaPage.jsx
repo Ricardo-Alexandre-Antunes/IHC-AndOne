@@ -39,7 +39,7 @@ function EntregaPage() {
                             </Link>
                         </Col>
                         <Col className="d-flex justify-content-end">
-                                <Button variant="dark" size="lg" block="true" onClick={handleClick}>Seguinte <FontAwesomeIcon icon={faArrowRight} /></Button>
+                                <Button variant="dark" size="lg" block="true" onClick={handleClick}>Próximo passo <FontAwesomeIcon icon={faArrowRight} /></Button>
                         </Col>
                     </Row>
                 </Col>

@@ -17,9 +17,9 @@ function MyFooter() {
           <Col className="text-center" md={4}>
             <h5>Redes Sociais</h5>
             <Nav className="flex-column">
-              <p>rodrigoabreu22</p>
-              <p>Ricardo-Alexandre-Antunes</p>
-              <p>odraude23</p>
+              <Nav.Link href='https://github.com/rodrigoabreu22' target="_blank" style={{ color: 'black' }} >rodrigoabreu22</Nav.Link>
+              <Nav.Link href='https://github.com/Ricardo-Alexandre-Antunes' target="_blank" style={{ color: 'black' }} >Ricardo-Alexandre-Antunes</Nav.Link>
+              <Nav.Link href='https://github.com/odraude23' target="_blank" style={{ color: 'black' }} >odraude23</Nav.Link>
             </Nav>
           </Col>
           <Col className="text-center" md={4}>

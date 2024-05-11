@@ -15,6 +15,7 @@ import PagamentoPage from './pages/PagamentoPage'
 import EntregaPage from './pages/EntregaPage'
 import ConfirmacaoPage from './pages/ConfirmacaoPage'
 import SearchPage from './pages/SearchPage'
+import LoginPage from './pages/LoginPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" Component={HomePage} />
+          <Route path="/login" Component={LoginPage}/>
           <Route path="/help" Component={HelpPage} />
           <Route path="/search/:searchTerm" Component={SearchPage} />
           <Route path="/sapatilhas" Component={SapatilhasPage} />

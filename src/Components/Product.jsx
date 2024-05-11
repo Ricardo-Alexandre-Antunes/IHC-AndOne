@@ -9,6 +9,7 @@ import { useParams } from 'react-router-dom';
 import Toast from 'react-bootstrap/Toast';
 import ToastContainer from 'react-bootstrap/ToastContainer';
 
+
 const Product = () => {
     const [favorites, setFavorites] = useState(
       localStorage.getItem('favorites')

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import EncomendaPerfilCard from './EncomendaPerfilCard'; 
+import EncomendaPerfilCard from './EncomendaPerfilCard';
+import { useNavigate } from 'react-router-dom'
 
 function PainelConta(props) {
-
+    const navigate = useNavigate();
     const [orders, setOrders] = useState(JSON.parse(localStorage.getItem('orders')) || []);
 
     // Function to generate EncomendaPerfilCard for each element in temp array
@@ -23,6 +24,11 @@ function PainelConta(props) {
         props.setEncomendas(true);
     }
 
+    const handleLogout = () => {
+        localStorage.setItem('login', false);
+        navigate('/');
+    }
+
     return (
         <>
             <Row>
@@ -35,6 +41,7 @@ function PainelConta(props) {
                             <Row>
                                 <Button style={{ backgroundColor: '#333', border: 0 }} size="lg" className="d-flex justify-content-begin" onClick={handleDados}>Dados Pessoais</Button>
                                 <Button style={{ backgroundColor: '#333', border: 0 }} size="lg" className="d-flex justify-content-begin" onClick={handleEncomendas}>Minhas encomendas/faturas</Button>
+                                <Button style={{ backgroundColor: '#333', border: 0, color: 'red' }} size="lg" className="d-flex justify-content-begin" onClick={handleLogout}>Terminar sessão</Button>
                             </Row>
                         </div>
                     </Container>

@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
@@ -24,7 +25,7 @@ function MyNavbar({ activeID }) {
     navigate(`/search/${searchTerm}`);
   }
 
-  
+  const login = localStorage.getItem('login');
 
   return (
     <header style={{ paddingTop: 105 }}>
@@ -45,9 +46,21 @@ function MyNavbar({ activeID }) {
                   <Nav.Link as={ Link } to="/material" className={activeID === 5? 'active' : ''}><h5>Material</h5></Nav.Link>
               </Nav>
               <Nav className="justify-content-end" >
-                  <Nav.Link as={ Link } to="/perfil" className={activeID === 6? 'active' : ''}><FontAwesomeIcon icon={faUser} size="2xl" /></Nav.Link>
-                  <Nav.Link as={ Link } to="/favoritos" className={activeID === 7? 'active' : ''}><FontAwesomeIcon icon={faHeart} size="2xl" /></Nav.Link>
-                  <Nav.Link as={ Link } to="/carrinho" className={activeID === 8? 'active' : ''}><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Nav.Link>
+                  {login === 'true' ? (
+                      <Nav.Link as={ Link } to="/perfil" className={activeID === 6? 'active' : ''}><FontAwesomeIcon icon={faUser} size="2xl" /></Nav.Link>
+                  ) : (
+                      <Nav.Link as={ Link } to="/login" className={activeID === 6? 'active' : ''}><FontAwesomeIcon icon={faLock} size="2xl" /></Nav.Link>
+                  )}
+                  {login === 'true' ? (
+                      <Nav.Link as={ Link } to="/favoritos" className={activeID === 7? 'active' : ''}><FontAwesomeIcon icon={faHeart} size="2xl" /></Nav.Link>
+                  ) : (
+                      <Nav.Link as={ Link } to="/login" className={activeID === 7? 'active' : ''}><FontAwesomeIcon icon={faHeart} size="2xl" /></Nav.Link>
+                  )}
+                  {login === 'true' ? (
+                      <Nav.Link as={ Link } to="/carrinho" className={activeID === 8? 'active' : ''}><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Nav.Link>
+                  ) : (
+                      <Nav.Link as={ Link } to="/login" className={activeID === 8? 'active' : ''}><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Nav.Link>
+                  )}
                   <Form className="d-flex" onSubmit={searchProducts} style={{ paddingRight: 10, paddingLeft: 20 }} >
                       <Form.Control
                       type="search"

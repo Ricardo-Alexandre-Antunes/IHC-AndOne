@@ -19,6 +19,8 @@ import LoginPage from './pages/LoginPage'
 
 function App() {
   const [count, setCount] = useState(0)
+  const login = false;
+  localStorage.setItem('login', login);
 
   return (
     <>

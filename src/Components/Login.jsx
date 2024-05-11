@@ -20,7 +20,18 @@ const Login = (props) => {
   const navigate = useNavigate()
 
   const login = () => {
-    
+    if (!email || !email.match(/\S+@\S+\.\S+/)) {
+      setEmailError('Por favor, insira o seu email.')
+      return;
+    }
+    if (!password) {
+      setPasswordError('Por favor, insira a sua senha.')
+      return;
+    }
+    setEmailError('')
+    setPasswordError('')
+    localStorage.setItem('login', true)
+    navigate('/perfil')
   }
 
   const createAccount = () => {

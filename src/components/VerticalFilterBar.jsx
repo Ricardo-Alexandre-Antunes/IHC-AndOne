@@ -34,12 +34,12 @@ const ShoeFilterBar = ({ selectedBrands, setSelectedBrands, selectedPrices, setS
         <div className='container'>
             <div className={`filter-bar`}>
                 <h2 className='unselectable'>Filtros</h2>
-                <div onClick={(event) => {
+                <div className="accordion">
+                    <h3 className='unselectable' onClick={(event) => {
                 if (event.target.type !== 'checkbox') {
                     setBrandOpen(!brandOpen);
                 }
-                }} className="accordion">
-                    <h3 className='unselectable'>Marca <FontAwesomeIcon icon={brandOpen ? faChevronUp : faChevronDown} /></h3>
+                }}>Marca <FontAwesomeIcon icon={brandOpen ? faChevronUp : faChevronDown} /></h3>
                     {brandOpen && (brands || []).map(brand => (
                         <div key={brand}>
                             <input
@@ -51,49 +51,50 @@ const ShoeFilterBar = ({ selectedBrands, setSelectedBrands, selectedPrices, setS
                                 onChange={handleBrandChange}
                                 className='unselectable'
                             />
-                            <label htmlFor={brand}>{brand}</label>
+                            <label htmlFor={brand} className='unselectable'>{brand}</label>
                         </div>
                     ))}
                 </div>
-                <div onClick={(event) => {
+                <div className="accordion">
+                    <h3 className='unselectable' onClick={(event) => {
                 if (event.target.type !== 'number' && event.target.type !== 'text') {
                     setPriceOpen(!priceOpen);
                 }
-                }} className="accordion">
-                    <h3 className='unselectable'>Preço <FontAwesomeIcon icon={priceOpen ? faChevronUp : faChevronDown} /></h3>
+                }}>Preço <FontAwesomeIcon icon={priceOpen ? faChevronUp : faChevronDown} /></h3>
                     {priceOpen && (
                         <div>
-                            <input
-                                className="small-input"
-                                type="number"
-                                min={0}
-                                value={selectedPrices[0]}
-                                onChange={event => {
-                                setSelectedPrices([Number(event.target.value), selectedPrices[1]]);
-                                }}
-                            />
-                            <input
-                                className="small-input"
-                                type="number"
-                                value={selectedPrices[1] === Infinity ? 'Infinity' : selectedPrices[1]}
-                                onChange={event => {
-                                const value = Number(event.target.value);
-                                if (!isNaN(value)) {
-                                    setSelectedPrices([selectedPrices[0], value]);
-                                } else if (event.target.value === 'Infinity' || event.target.value === '') {
+                        <input
+                            className="small-input"
+                            type="number"
+                            min={0}
+                            value={selectedPrices[0] === 0 ? '0' : selectedPrices[0]}
+                            onChange={event => {
+                                const value = event.target.value;
+                                setSelectedPrices([value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value), selectedPrices[1]]);
+                            }}
+                        />
+                        <input
+                            className="small-input"
+                            type="number"
+                            value={selectedPrices[1] === Infinity ? 'Infinity' : selectedPrices[1] === 0 ? '0' : selectedPrices[1]}
+                            onChange={event => {
+                                const value = event.target.value;
+                                if (value === 'Infinity' || value === '') {
                                     setSelectedPrices([selectedPrices[0], Infinity]);
+                                } else {
+                                    setSelectedPrices([selectedPrices[0], value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value)]);
                                 }
-                                }}
-                            />
+                            }}
+                        />
                         </div>
                     )}
                 </div>
-                <div onClick={(event) => {
+                <div className="accordion">
+                    <h3 className='unselectable' onClick={(event) => {
                 if (event.target.type !== 'checkbox') {
                     setSizeOpen(!sizeOpen);
                 }
-                }} className="accordion">
-                    <h3 className='unselectable'>Tamanhos <FontAwesomeIcon icon={sizeOpen ? faChevronUp : faChevronDown} /></h3>
+                }}>Tamanhos <FontAwesomeIcon icon={sizeOpen ? faChevronUp : faChevronDown} /></h3>
                     {sizeOpen && (sizes || []).map(size => (
                         <div key={size}>
                         <input
@@ -105,7 +106,7 @@ const ShoeFilterBar = ({ selectedBrands, setSelectedBrands, selectedPrices, setS
                             onChange={handleSizeChange}
                             className='unselectable'
                         />
-                        <label htmlFor={`size-${size}`}>{size}</label>
+                        <label htmlFor={`size-${size}`} className='unselectable'>{size}</label>
                         </div>
                     ))}
                 </div>
@@ -123,6 +124,22 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
     const [sizeOpen, setSizeOpen] = useState(true); // Set initial state to true
     const [teamOpen, setTeamOpen] = useState(true);
     const [priceOpen, setPriceOpen] = useState(true);
+
+    const sizeOpenChange = () => {
+        setSizeOpen(!sizeOpen);
+    };
+
+    const priceOpenChange = () => {
+        setPriceOpen(!priceOpen);
+    };
+
+    const teamOpenChange = () => {
+        setTeamOpen(!teamOpen);
+    };
+
+    const brandOpenChange = () => {
+        setBrandOpen(!brandOpen);
+    };
 
     const handleBrandChange = (event) => {
         event.stopPropagation();
@@ -155,12 +172,8 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
         <div className='container'>
         <div className={`filter-bar`}>
             <h2 className='unselectable'>Filtros</h2>
-            <div onClick={(event) => {
-            if (event.target.type !== 'checkbox') {
-                setBrandOpen(!brandOpen);
-            }
-            }} className="accordion">
-                <h3 className='unselectable'>Marca <FontAwesomeIcon icon={brandOpen ? faChevronUp : faChevronDown} /></h3>
+            <div className="accordion">
+                <h3 className='unselectable' onClick={brandOpenChange}>Marca <FontAwesomeIcon icon={brandOpen ? faChevronUp : faChevronDown} /></h3>
                 {brandOpen && (brands || []).map(brand => (
                     <div key={brand}>
                         <input
@@ -172,16 +185,12 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
                             onChange={handleBrandChange}
                             className='unselectable'
                         />
-                        <label htmlFor={brand}>{brand}</label>
+                        <label htmlFor={brand} className='unselectable'>{brand}</label>
                     </div>
                 ))}
             </div>
-            <div onClick={(event) => {
-            if (event.target.type !== 'checkbox') {
-                setTeamOpen(!teamOpen);
-            }
-            }} className="accordion">
-                <h3 className='unselectable'>Equipas <FontAwesomeIcon icon={teamOpen ? faChevronUp : faChevronDown} /></h3>
+            <div className="accordion">
+                <h3 className='unselectable' onClick={teamOpenChange}>Equipas <FontAwesomeIcon icon={teamOpen ? faChevronUp : faChevronDown} /></h3>
                 {teamOpen && (teams || []).map(team => (
                     <div key={team}>
                     <input
@@ -193,49 +202,42 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
                         onChange={handleTeamChange}
                         className='unselectable'
                     />
-                    <label htmlFor={`team-${team}`}>{team}</label>
+                    <label htmlFor={`team-${team}`} className='unselectable'>{team}</label>
                     </div>
                 ))}
             </div>
-            <div onClick={(event) => {
-            if (event.target.type !== 'number' && event.target.type !== 'text') {
-                setPriceOpen(!priceOpen);
-            }
-            }} className="accordion">
-                <h3 className='unselectable'>Preço <FontAwesomeIcon icon={priceOpen ? faChevronUp : faChevronDown} /></h3>
+            <div className="accordion">
+                <h3 className='unselectable' onClick={priceOpenChange}>Preço <FontAwesomeIcon icon={priceOpen ? faChevronUp : faChevronDown} /></h3>
                 {priceOpen && (
                     <div>
                         <input
                             className="small-input"
                             type="number"
                             min={0}
-                            value={selectedPrices[0]}
+                            value={selectedPrices[0] === 0 ? '0' : selectedPrices[0]}
                             onChange={event => {
-                            setSelectedPrices([Number(event.target.value), selectedPrices[1]]);
+                                const value = event.target.value;
+                                setSelectedPrices([value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value), selectedPrices[1]]);
                             }}
                         />
                         <input
                             className="small-input"
                             type="number"
-                            value={selectedPrices[1] === Infinity ? 'Infinity' : selectedPrices[1]}
+                            value={selectedPrices[1] === Infinity ? 'Infinity' : selectedPrices[1] === 0 ? '0' : selectedPrices[1]}
                             onChange={event => {
-                            const value = Number(event.target.value);
-                            if (!isNaN(value)) {
-                                setSelectedPrices([selectedPrices[0], value]);
-                            } else if (event.target.value === 'Infinity' || event.target.value === '') {
-                                setSelectedPrices([selectedPrices[0], Infinity]);
-                            }
+                                const value = event.target.value;
+                                if (value === 'Infinity' || value === '') {
+                                    setSelectedPrices([selectedPrices[0], Infinity]);
+                                } else {
+                                    setSelectedPrices([selectedPrices[0], value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value)]);
+                                }
                             }}
                         />
                     </div>
                 )}
             </div>
-            <div onClick={(event) => {
-            if (event.target.type !== 'checkbox') {
-                setSizeOpen(!sizeOpen);
-            }
-            }} className="accordion">
-                <h3 className='unselectable'>Tamanhos <FontAwesomeIcon icon={sizeOpen ? faChevronUp : faChevronDown} /></h3>
+            <div className="accordion">
+                <h3 className='unselectable' onClick={sizeOpenChange}>Tamanhos <FontAwesomeIcon icon={sizeOpen ? faChevronUp : faChevronDown} /></h3>
                 {sizeOpen && (sizes || []).map(size => (
                     <div key={size}>
                     <input
@@ -247,7 +249,7 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
                         onChange={handleSizeChange}
                         className='unselectable'
                     />
-                    <label htmlFor={`size-${size}`}>{size}</label>
+                    <label htmlFor={`size-${size}`} className='unselectable'>{size}</label>
                     </div>
                 ))}
             </div>
@@ -313,22 +315,29 @@ const SearchFilterBar = ({ selectedBrands, setSelectedBrands, selectedCategories
 
                 <div className="filter-section">
                     <h3>Price</h3>
-                    <label>
-                        Min:
-                        <input 
-                            type="number" 
-                            value={selectedPrices[0]} 
-                            onChange={event => setSelectedPrices([event.target.value, selectedPrices[1]])}
-                        />
-                    </label>
-                    <label>
-                        Max:
-                        <input 
-                            type="number" 
-                            value={selectedPrices[1]} 
-                            onChange={event => setSelectedPrices([selectedPrices[0], event.target.value])}
-                        />
-                    </label>
+                    <input
+                        className="small-input"
+                        type="number"
+                        min={0}
+                        value={selectedPrices[0] === 0 ? '0' : selectedPrices[0]}
+                        onChange={event => {
+                            const value = event.target.value;
+                            setSelectedPrices([value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value), selectedPrices[1]]);
+                        }}
+                    />
+                    <input
+                        className="small-input"
+                        type="number"
+                        value={selectedPrices[1] === Infinity ? 'Infinity' : selectedPrices[1] === 0 ? '0' : selectedPrices[1]}
+                        onChange={event => {
+                            const value = event.target.value;
+                            if (value === 'Infinity' || value === '') {
+                                setSelectedPrices([selectedPrices[0], Infinity]);
+                            } else {
+                                setSelectedPrices([selectedPrices[0], value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value)]);
+                            }
+                        }}
+                    />
                 </div>
             </div>
         </div>

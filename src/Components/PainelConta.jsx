@@ -10,13 +10,14 @@ function PainelConta(props) {
     const users = JSON.parse(localStorage.getItem('users'));
     const user = users.find(user => user.email === curUser);
     const [name, setName] = useState(user.firstName + ' ' + user.lastName);
+    const [newName, setNewName] = useState('');
     const [email, setEmail] = useState(user.email);
     const [billingDetails, setBillingDetails] = useState(user.billingData || []);
     const [address, setAddress] = useState('');
     const [postalCode, setPostalCode] = useState('');
     const [nif, setNif] = useState('');
     const [editingIndex, setEditingIndex] = useState(null);
-    const [tempDetail, setTempDetail] = useState({ address: '', postalCode: '', nif: '' });
+    const [tempDetail, setTempDetail] = useState({ name: '', address: '', postalCode: '', nif: '' });
     const [newAddress, setNewAddress] = useState('');
     const [newPostalCode, setNewPostalCode] = useState('');
     const [newNif, setNewNif] = useState('');
@@ -27,6 +28,14 @@ function PainelConta(props) {
                 <EncomendaPerfilCard key={index} item={item} />
             ));
     };
+
+    useEffect(() => {
+        localStorage.setItem('billingData', JSON.stringify(billingDetails));
+        const users = JSON.parse(localStorage.getItem('users'));
+        const user = users.find(user => user.email === curUser);
+        user.billingData = billingDetails;
+        localStorage.setItem('users', JSON.stringify(users));
+      }, [billingDetails]);
 
     const handleDados = () => {
         props.setDados(true);
@@ -47,7 +56,7 @@ function PainelConta(props) {
         const newBillingDetails = [...billingDetails];
         newBillingDetails.splice(index, 1);
         setBillingDetails(newBillingDetails);
-        localStorage.setItem('billingDetails', JSON.stringify(newBillingDetails));
+        localStorage.setItem('billingData', JSON.stringify(newBillingDetails));
       };
       
       const handleEdit = (index) => {
@@ -56,20 +65,54 @@ function PainelConta(props) {
       };
 
       const handleSubmit = (index) => {
-        const newBillingDetails = [...billingDetails];
-        newBillingDetails[index] = tempDetail;
-        setBillingDetails(newBillingDetails);
-        localStorage.setItem('billingDetails', JSON.stringify(newBillingDetails));
-        setEditingIndex(null);
-        setTempDetail({ address: '', postalCode: '', nif: '' });
+        if (validateInput(tempDetail.name, tempDetail.address, tempDetail.postalCode, tempDetail.nif)) {
+          const newBillingDetails = [...billingDetails];
+          newBillingDetails[index] = tempDetail;
+          setBillingDetails(newBillingDetails);
+          localStorage.setItem('billingData', JSON.stringify(newBillingDetails));
+          setEditingIndex(null);
+          setTempDetail({ name: '', address: '', postalCode: '', nif: '' });
+        }
       };
 
       const handleAddBillingDetail = (e) => {
         e.preventDefault();
-        setBillingDetails([...billingDetails, { address: newAddress, postalCode: newPostalCode, nif: newNif }]);
-        setNewAddress('');
-        setNewPostalCode('');
-        setNewNif('');
+        if (validateInput(newName, newAddress, newPostalCode, newNif)) {
+          setBillingDetails([...billingDetails, { name: newName, address: newAddress, postalCode: newPostalCode, nif: newNif }]);
+          setNewName('');
+          setNewAddress('');
+          setNewPostalCode('');
+          setNewNif('');
+        }
+      };
+
+      const validateInput = (name, address, postalCode, nif) => {
+        // Check if name is not empty
+        if (!name.trim()) {
+            alert('Name is required');
+            return false;
+        }
+
+        // Check if address is not empty
+        if (!address.trim()) {
+          alert('Address is required');
+          return false;
+        }
+      
+        // Check if postal code is correctly formatted
+        const postalCodeRegex = /^[0-9]{4}-[0-9]{3}$/;
+        if (!postalCodeRegex.test(postalCode)) {
+          alert('Postal code is not correctly formatted');
+          return false;
+        }
+      
+        // Check if NIF has 9 digits
+        if (nif.length !== 9 || isNaN(nif)) {
+          alert('NIF must have 9 digits');
+          return false;
+        }
+      
+        return true;
       };
 
     
@@ -114,6 +157,14 @@ function PainelConta(props) {
                                               <button onClick={() => handleEdit(index)}>Edit</button>
                                             )}
                                             <div>
+                                              <label>Name: </label>
+                                              {editingIndex === index ? (
+                                                <> <input type="text" value={tempDetail.name} onChange={e => setTempDetail({ ...tempDetail, name: e.target.value })} /></>
+                                              ) : (
+                                                <> {detail.name}</>
+                                              )}
+                                            </div>
+                                            <div>
                                               <label>Address: </label>
                                               {editingIndex === index ? (
                                                 <> <input type="text" value={tempDetail.address} onChange={e => setTempDetail({ ...tempDetail, address: e.target.value })} /></>
@@ -141,6 +192,7 @@ function PainelConta(props) {
                                         ))}
                                         </div>
                                     <form>
+                                    <input type="text" placeholder="Name" value={newName} onChange={e => setNewName(e.target.value)} />
                                     <input type="text" placeholder="Address" value={newAddress} onChange={e => setNewAddress(e.target.value)} />
                                     <input type="text" placeholder="Postal Code" value={newPostalCode} onChange={e => setNewPostalCode(e.target.value)} />
                                     <input type="text" placeholder="NIF" value={newNif} onChange={e => setNewNif(e.target.value)} />

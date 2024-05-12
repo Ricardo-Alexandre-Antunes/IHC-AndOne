@@ -25,31 +25,33 @@ function Pagamentos(props) {
                     </Row>
                 </div>
             </Container>
-            <Container fluid className="d-flex justify-content-begin p-3 pb-5"> 
+            {JSON.parse(localStorage.getItem('billingData')).map((detail, index) => (
+            <Container fluid className="d-flex justify-content-begin p-3 pb-0" key={index}> 
                 <div style={{ width: '100%', backgroundColor: 'white', color: 'black', padding: '1rem', border: '2px solid black'}}>
                 <Row>
-                        <Col className="d-flex justify-content-center align-items-center" md={1}>
-                            <input
-                                type="radio"
-                                name="billing"
-                                id="billing_default"
-                                value="Utilizador, Rua teste n 1, 3830-111, PT, NIF: 123456789"
-                                checked={props.selectedBilling === 'Utilizador, Rua teste n 1, 3830-111, PT, NIF: 123456789'}
-                                onChange={handleBillingChange}
-                                style={{ height: '1.5rem', width: '1.5rem'}}
-                            />
-                        </Col>
-                        <Col>
-                            <h4 style={{ margin: 0, padding: 0 }}>Utilizador</h4>
-                            <p style={{ margin: 0, padding: 0 }}>Rua teste n 1</p>
-                            <p style={{ margin: 0, padding: 0 }}>3830-111</p>
-                            <p style={{ margin: 0, padding: 0 }}>PT</p>
-                            <p style={{ margin: 0, padding: 0 }}>NIF: 123456789</p>
-                        </Col>
-                    </Row>
+                    <Col className="d-flex justify-content-center align-items-center" md={1}>
+                    <input
+                        type="radio"
+                        name="billing"
+                        id={`billing_${index}`}
+                        value={`${detail.address}, ${detail.postalCode}, PT, NIF: ${detail.nif}`}
+                        checked={props.selectedBilling === `${detail.address}, ${detail.postalCode}, PT, NIF: ${detail.nif}`}
+                        onChange={handleBillingChange}
+                        style={{ height: '1.5rem', width: '1.5rem'}}
+                    />
+                    </Col>
+                    <Col>
+                    <h4 style={{ margin: 0, padding: 0 }}>{detail.name}</h4>
+                    <p style={{ margin: 0, padding: 0 }}>{detail.address}</p>
+                    <p style={{ margin: 0, padding: 0 }}>{detail.postalCode}</p>
+                    <p style={{ margin: 0, padding: 0 }}>PT</p>
+                    <p style={{ margin: 0, padding: 0 }}>NIF: {detail.nif}</p>
+                    </Col>
+                </Row>
                 </div>
             </Container>
-            <Container fluid className="d-flex justify-content-begin p-3 pb-1"> 
+            ))}
+            <Container fluid className="d-flex justify-content-begin p-3 pb-1 pt-5"> 
                 <div style={{ width: '100%', backgroundColor: '#333', color: 'white', padding: '1rem' }}>
                     <Row>
                         <h3 className="text-center">Escolha um método de pagamento</h3>

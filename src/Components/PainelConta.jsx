@@ -157,6 +157,7 @@ function PainelConta(props) {
         setPassword('');
         setNewLastName('');
         closeModal();
+        window.dispatchEvent(new Event('storage'));
     };
 
     return (

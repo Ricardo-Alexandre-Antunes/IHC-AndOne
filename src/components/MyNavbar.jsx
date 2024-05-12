@@ -19,13 +19,26 @@ function MyNavbar({ activeID }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const curUser = localStorage.getItem('curUser');
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    let user = users.find(user => user.email === curUser);
-    if (user) {
-      setFirstName(user.firstName);
-    }
-  }, [firstName]);
+    const handleStorageChange = () => {
+      const curUser = localStorage.getItem('curUser');
+      let users = JSON.parse(localStorage.getItem('users')) || [];
+      let user = users.find(user => user.email === curUser);
+      if (user) {
+        setFirstName(user.firstName);
+      }
+    };
+  
+    // Listen for changes to local storage  
+    window.addEventListener('storage', handleStorageChange);
+  
+    // Call the function once to handle the current state of local storage
+    handleStorageChange();
+  
+    // Cleanup: remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);

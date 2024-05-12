@@ -19,6 +19,9 @@ function MyNavbar({ activeID }) {
 
   const curUser =(localStorage.getItem('curUser'));
   let users = JSON.parse(localStorage.getItem('users'));
+  if (!users) {
+    localStorage.setItem('users', JSON.stringify([]));
+  }
   let user = users.find(user => user.email === curUser);
 
   const handleSearchChange = (event) => {

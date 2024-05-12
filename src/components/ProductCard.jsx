@@ -111,7 +111,7 @@ const ProductCard = ({category, product, favorites, setFavorites, toggleModal })
                 </Modal.Footer>
                 </Modal>
             )}
-            <ToastContainer className="toast-container" position="top-center">
+            <ToastContainer className="toast-container" position="top-center" style={{position: 'fixed'}}>
                 <Toast show={showToast} delay={5000} autohide onClose={toggleShowToast}>
                   <Toast.Header>
                     <strong className="me-auto">Produto adicionado aos favoritos </strong>

@@ -84,6 +84,7 @@ function EncomendaPerfilCard({item}) {
                     <p>Data: {curItem["data"]}</p>
                     <p>Total: {curItem["total"]}</p>
                     <p>Levantado em: {curItem["loja"]}</p>
+                    <p>Dados de faturação: {curItem["faturacao"]}</p>
                     <p>Método de pagamento: {curItem["pagamento"]}</p>
                     {curItem["pagamento"] === 'MBWay' && <p>Telemóvel: {curItem["telefone"]}</p>}
                     {/* Add more details as needed */}
@@ -118,7 +119,7 @@ function EncomendaPerfilCard({item}) {
                 </Modal.Footer>
             </Modal>
 
-            <ToastContainer className='carrinho-toast' position='top-center'>
+            <ToastContainer className='carrinho-toast' position='top-center' style={{position: 'fixed'}}>
                 <Toast onClose={() => setShowToast(false)} show={showToast} delay={3000} autohide>
                     <Toast.Header>
                         <strong className="me-auto">Notificação</strong>

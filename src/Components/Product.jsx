@@ -186,7 +186,7 @@ const Product = () => {
             </Tab>
           </Tabs>
         </div>
-        <ToastContainer className="product-toast" position="top-center">
+        <ToastContainer className="product-toast" position="top-center" style={{position: 'fixed'}}>
           <Toast show={showToast} delay={5000} autohide onClose={toggleShowToast}>
             <Toast.Header>
               <strong className="me-auto">Produto adicionado ao carrinho</strong>

@@ -43,14 +43,12 @@ const Product = () => {
     };
 
     useEffect(() => {
+      let users = JSON.parse(localStorage.getItem('users'));
+      const curUser =(localStorage.getItem('curUser'));
+      let user = users.find(user => user.email === curUser);
+      if (user) {
         localStorage.setItem('favorites', JSON.stringify(favorites));
-        const curUser =(localStorage.getItem('curUser'));
-
         console.log('Current User:', curUser);
-        
-        let users = JSON.parse(localStorage.getItem('users'));
-        
-        let user = users.find(user => user.email === curUser);
         
         console.log('User from Users Array:', user);
         
@@ -65,6 +63,7 @@ const Product = () => {
         localStorage.setItem('users', JSON.stringify(users));
         
         localStorage.setItem('favorites', JSON.stringify(favorites));
+      }
     }, [favorites]);
 
     const toggleShowToast = () => setShowToast(!showToast);

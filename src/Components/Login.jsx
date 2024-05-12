@@ -28,6 +28,13 @@ const Login = () => {
       setPasswordError('Por favor, insira a sua senha.')
       return;
     }
+    const users = JSON.parse(localStorage.getItem('users'));
+    const singleuser = users.find(user => user.email === email && user.password === password);
+    console.log(singleuser);
+    if (!singleuser) {
+      alert('Email ou senha incorretos.')
+      return;
+    }
     setEmailError('')
     setPasswordError('')
     localStorage.setItem('login', true)

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import EncomendaPerfilCard from './EncomendaPerfilCard';
 import { useNavigate } from 'react-router-dom'
+import { Modal, Form } from 'react-bootstrap';
 
 function PainelConta(props) {
     const navigate = useNavigate();
@@ -18,6 +19,9 @@ function PainelConta(props) {
     const [newAddress, setNewAddress] = useState('');
     const [newPostalCode, setNewPostalCode] = useState('');
     const [newNif, setNewNif] = useState('');
+    const [showModal, setShowModal] = useState(false);
+    const [password, setPassword] = useState('');
+    const [newEmail, setNewEmail] = useState('');
 
     // Function to generate EncomendaPerfilCard for each element in temp array
     const generateEncomendaCards = () => {
@@ -116,7 +120,37 @@ function PainelConta(props) {
         return true;
       };
 
-    
+      const openModal = () => {
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
+
+    const handleSubmitAccountEdit = (e) => {
+        e.preventDefault();
+        if (newName.trim() === '' && newEmail.trim() === '' && password.trim() === '') {
+          alert('É preciso preencher pelo menos um campo');
+          return;
+        }
+
+        if (!newEmail.match(/\S+@\S+\.\S+/) && newEmail.trim() !== '') {
+          alert('Email inválido');
+          return;
+        }
+
+        const users = JSON.parse(localStorage.getItem('users'));
+        const user = users.find(user => user.email === curUser);
+        user.firstName = newName.trim() !== '' ? newName : user.firstName;
+        user.email = newEmail.trim() !== '' ? newEmail : user.email;
+        user.password = password.trim() !== '' ? password : user.password;
+        localStorage.setItem('users', JSON.stringify(users));
+        setNewName('');
+        setNewEmail('');
+        setPassword('');
+        closeModal();
+    };
 
     return (
         <>
@@ -140,12 +174,15 @@ function PainelConta(props) {
                         <Container fluid className="d-flex justify-content-end p-3"> 
                             <div style={{ width: '100%', backgroundColor: '#333', color: 'white', padding: '1rem' }}>
                                 <Row>
-                                    <Col>
-                                        <p>Nome: {name}</p>
-                                        <p>Email: {email}</p>
+                                    <Col md={4}>
+                                      <p style={{ fontSize: 18 }}>Nome: {name}</p>
+                                      <p style={{ fontSize: 18 }}>Email: {email}</p>
+                                    </Col>
+                                    <Col md={8}>
+                                      <button onClick={openModal}>Editar Perfil</button>
                                     </Col>
                                 </Row>
-                                <Row>
+                                <Row className="pt-2">
                                     <Col>
                                         <h4>Dados de faturação</h4>
                                         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
@@ -202,7 +239,7 @@ function PainelConta(props) {
                                           </div>
                                         ))}
                                         </div>
-                                    <div className="pt-2"><h4>Adicione novos dados de faturação</h4></div>
+                                    <div className="pt-3"><h4>Adicione novos dados de faturação</h4></div>
                                     <div className="pt-1">
                                       <form className="p-2">
                                         <Row>
@@ -238,6 +275,38 @@ function PainelConta(props) {
                     )}
                 </Col>
             </Row>
+
+            <Modal show={showModal} onHide={() => setShowModal(false)} style={{ userSelect: 'none' }}>
+              <Modal.Header closeButton>
+                  <Modal.Title>Editar Conta</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                  <Form onSubmit={handleSubmitAccountEdit}>
+                      <Form.Group controlId="formName">
+                          <Form.Label>Novo Nome</Form.Label>
+                          <Form.Control type="text" placeholder="Novo Nome" value={newName} onChange={(e) => setNewName(e.target.value)} />
+                      </Form.Group>
+                      <Form.Group controlId="formEmail" className="pt-2">
+                          <Form.Label>Novo Email</Form.Label>
+                          <Form.Control type="email" placeholder="Novo Email" value={newEmail} onChange={(e) => setNewEmail(e.target.value)} />
+                      </Form.Group>
+                      <Form.Group controlId="formPassword" className="pt-2">
+                          <Form.Label>Nova Senha</Form.Label>
+                          <Form.Control type="password" placeholder="Nova Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
+                      </Form.Group>
+                      <div className="pt-3">
+                        <Button variant="primary" type="submit" onClick={handleSubmitAccountEdit}>
+                            Salvar Alterações
+                        </Button>
+                      </div>
+                  </Form>
+              </Modal.Body>
+              <Modal.Footer>
+                  <Button variant="secondary" onClick={closeModal}>
+                      Fechar
+                  </Button>
+              </Modal.Footer>
+            </Modal>
         </>
     );
 }

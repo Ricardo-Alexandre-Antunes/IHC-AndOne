@@ -51,6 +51,29 @@ function Pagamentos(props) {
                 </div>
             </Container>
             ))}
+            <Container fluid className="d-flex justify-content-begin p-3 pb-0">
+                <div style={{ width: '100%', backgroundColor: 'white', color: 'black', padding: '1rem', border: '2px solid black'}}>
+                    <Row>
+                    <Col className="d-flex justify-content-center align-items-center" md={1}>
+                        <input
+                        type="radio"
+                        name="billing"
+                        id="billing_custom"
+                        value="custom"
+                        checked={props.selectedBilling === "custom"}
+                        onChange={handleBillingChange}
+                        style={{ height: '1.5rem', width: '1.5rem'}}
+                        />
+                    </Col>
+                    <Col>
+                        <input type="text" name="name" placeholder="Name" onChange={handleCustomBillingChange} />
+                        <input type="text" name="address" placeholder="Address" onChange={handleCustomBillingChange} />
+                        <input type="text" name="postalCode" placeholder="Postal Code" onChange={handleCustomBillingChange} />
+                        <input type="text" name="nif" placeholder="NIF" onChange={handleCustomBillingChange} />
+                    </Col>
+                    </Row>
+                </div>
+            </Container>
             <Container fluid className="d-flex justify-content-begin p-3 pb-1 pt-5"> 
                 <div style={{ width: '100%', backgroundColor: '#333', color: 'white', padding: '1rem' }}>
                     <Row>

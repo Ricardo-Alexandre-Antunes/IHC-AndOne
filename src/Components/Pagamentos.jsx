@@ -100,12 +100,12 @@ function Pagamentos(props) {
                 <Col md={11}>
                     <Row>
                     <Col md={6}>
-                        <input type="text" name="address" placeholder="Address" onChange={handleCustomBillingChange} className="form-control" />
+                        <input type="text" name="address" placeholder="Endereço" onChange={handleCustomBillingChange} className="form-control" />
                     </Col>
                     </Row>
                     <Row>
                     <Col md={6}>
-                        <input type="text" name="postalCode" placeholder="Postal Code" onChange={handleCustomBillingChange} className="form-control" />
+                        <input type="text" name="postalCode" placeholder="Código Postal" onChange={handleCustomBillingChange} className="form-control" />
                     </Col>
                     <Col md={6}>
                         <input type="text" name="nif" placeholder="NIF" onChange={handleCustomBillingChange} className="form-control" />

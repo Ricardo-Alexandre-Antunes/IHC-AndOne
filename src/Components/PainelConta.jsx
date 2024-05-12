@@ -13,9 +13,6 @@ function PainelConta(props) {
     const [newName, setNewName] = useState('');
     const [email, setEmail] = useState(user.email);
     const [billingDetails, setBillingDetails] = useState(user.billingData || []);
-    const [address, setAddress] = useState('');
-    const [postalCode, setPostalCode] = useState('');
-    const [nif, setNif] = useState('');
     const [editingIndex, setEditingIndex] = useState(null);
     const [tempDetail, setTempDetail] = useState({ name: '', address: '', postalCode: '', nif: '' });
     const [newAddress, setNewAddress] = useState('');
@@ -93,26 +90,26 @@ function PainelConta(props) {
       const validateInput = (name, address, postalCode, nif) => {
         // Check if name is not empty
         if (!name.trim()) {
-            alert('Name is required');
+            alert('É preciso inserir nome');
             return false;
         }
 
         // Check if address is not empty
         if (!address.trim()) {
-          alert('Address is required');
+          alert('É preciso adicionar uma morada');
           return false;
         }
       
         // Check if postal code is correctly formatted
         const postalCodeRegex = /^[0-9]{4}-[0-9]{3}$/;
         if (!postalCodeRegex.test(postalCode)) {
-          alert('Postal code is not correctly formatted');
+          alert('O código postal deve ter o formato XXXX-XXX');
           return false;
         }
       
         // Check if NIF has 9 digits
         if (nif.length !== 9 || isNaN(nif)) {
-          alert('NIF must have 9 digits');
+          alert('O NIF deve ter 9 dígitos numéricos');
           return false;
         }
       

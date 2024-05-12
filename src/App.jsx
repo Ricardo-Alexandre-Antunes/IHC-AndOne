@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import HelpPage from './pages/HelpPage'
@@ -18,9 +18,20 @@ import SearchPage from './pages/SearchPage'
 import LoginPage from './pages/LoginPage'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const login = false;
-  localStorage.setItem('login', login);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const storedLogin = localStorage.getItem('login') ;
+    if (storedLogin === null) {
+      localStorage.setItem('login', false);
+    }
+    
+    if (storedLogin === 'true') {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, []);
 
   return (
     <>

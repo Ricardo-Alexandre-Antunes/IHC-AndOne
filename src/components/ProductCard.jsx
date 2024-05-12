@@ -21,6 +21,11 @@ const ProductCard = ({category, product, favorites, setFavorites, toggleModal })
     }, [favorites]);
 
     const toggleFavorite = (event) => {
+      localStorage.setItem('previousPage', `/produtoDetalhado/${category}/${product.id}`);
+      if (localStorage.getItem('login') === 'false') {
+        navigate('/login');
+      }
+
       let newFavorites;
 
       if (isFavorite) {

@@ -49,6 +49,10 @@ function PainelConta(props) {
 
     const handleLogout = () => {
         localStorage.setItem('login', false);
+        localStorage.setItem('curUser', '');
+        localStorage.setItem('orders', '[]');
+        localStorage.setItem('favorites', '[]');
+        localStorage.setItem('billingData', '[]');
         navigate('/');
     }
 

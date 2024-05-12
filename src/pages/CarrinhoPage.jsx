@@ -74,7 +74,7 @@ const CarrinhoPage = () => {
                     <h2>Total: {cartProds.reduce((total, prod) => total + ProductList[prod.category].find(p => p.id === prod.id).price * prod.quantity, 0).toFixed(2)}€</h2>
                 <Link to="/checkout">
                     <div className="checkout">
-                        <button>Finalizar Compra</button>
+                        <button onClick={localStorage.removeItem('temp')}>Finalizar Compra</button>
                     </div>
                 </Link>
             </div>

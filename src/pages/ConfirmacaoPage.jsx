@@ -10,30 +10,9 @@ import ProductList from '../data/Products.json';
 import '../SingleProduct.css';
 
 function ConfirmacaoPage() {
-    const encomenda = JSON.parse(localStorage.getItem('temp'));
-    const [id, setId] = useState(-1);
-    const [cartProds, setCartProducts] = useState(localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : []);
+    const [encomenda, setEncomenda] = useState(JSON.parse(localStorage.getItem('temp')));
+    const [id, setId] = useState(JSON.parse(localStorage.getItem('id')));
     
-    useEffect(() => {
-        let initialId = localStorage.getItem("id");
-        if (!initialId) {
-            const orders = JSON.parse(localStorage.getItem('orders')) || [];
-            const usedIds = orders.map(order => order.id);
-            do {
-                initialId = Math.floor(Math.random() * 10000) + 1;
-            } while (usedIds.includes(initialId));
-            localStorage.setItem("id", initialId);
-        }
-        setId(initialId);
-    }, []);  // This useEffect will run only once when the component mounts
-
-    const leavingPage = () => {
-        const orders = JSON.parse(localStorage.getItem('orders')) || [];
-        localStorage.setItem('orders', JSON.stringify([...orders, { id: id, ...encomenda }]));
-        localStorage.removeItem('cart');
-        localStorage.removeItem('temp');
-        localStorage.removeItem('id');
-    };
 
     const getProductByIdAndCategory = (id, category) => {
         const product = ProductList[category].find(product => product.id === id);
@@ -134,7 +113,7 @@ function ConfirmacaoPage() {
                     <Col md={3}></Col>
                 </Row>
                 <Link to="/">
-                    <Button variant="secondary" size="lg" block="true" onClick={leavingPage} className="button">
+                    <Button variant="secondary" size="lg" block="true" className="button">
                         Voltar à página inicial
                     </Button>
                 </Link>

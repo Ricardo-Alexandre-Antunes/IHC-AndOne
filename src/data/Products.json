@@ -816,7 +816,7 @@
       {
         "id": 1,
         "name": "Elite Tournament" ,
-        "type": "Ball",
+        "type": "Bola",
         "brand" :"Nike",
         "price" :"59.99",
         "size" : [6,7],
@@ -828,7 +828,7 @@
       {
         "id": 2,
         "name": "Everyday Playground 8P" ,
-        "type": "Ball",
+        "type": "Bola",
         "brand" :"Nike",
         "price" :"29.99",
         "size" : [5,6,7],
@@ -840,7 +840,7 @@
       {
         "id": 3,
         "name": "Elite All-Court 8P" ,
-        "type": "Ball",
+        "type": "Bola",
         "brand" :"Nike",
         "price" :"34.99",
         "size" : [5,6],
@@ -852,7 +852,7 @@
       {
         "id": 4,
         "name": "Playground 2.0 8P" ,
-        "type": "Ball",
+        "type": "Bola",
         "brand" :"Jordan",
         "price" :"29.99",
         "size" : [7],
@@ -864,7 +864,7 @@
       {
         "id": 5,
         "name": "Ultimate 2.0 8P" ,
-        "type": "Ball",
+        "type": "Bola",
         "brand" :"Jordan",
         "price" :"59.99",
         "size" : [7],
@@ -876,7 +876,7 @@
       {
         "id": 6,
         "name": "8P" ,
-        "type": "Ball",
+        "type": "Bola",
         "brand" :"Jordan",
         "price" :"59.99",
         "size" : [6,7],
@@ -888,7 +888,7 @@
       {
         "id": 7,
         "name": "Garrafa de Aço — 0,75 L" ,
-        "type": "Bottle",
+        "type": "Garrafa",
         "brand" :"Adidas",
         "price" :"19.99",
         "size" : ["Tamanho unico"],
@@ -900,7 +900,7 @@
       {
         "id": 8,
         "name": "Garrafa Performance – 0,5 L" ,
-        "type": "Bottle",
+        "type": "Garrafa",
         "brand" :"Adidas",
         "price" :"9.99",
         "size" : ["Tamanho unico"],
@@ -973,9 +973,9 @@
       {
         "id": 13,
         "name": "Mochila desportiva de 3 listras" ,
-        "type": "Bag",
+        "type": "Mochila",
         "brand" :"Adidas",
-        "price" :"27,99",
+        "price" :"27.99",
         "size" : ["Tamanho unico"],
         "image_links" : ["https://contents.mediadecathlon.com/m7277398/k$ee3b58237b7f090d332e5d7040a80e7e/sq/mochila-desportiva-de-3-listras-adidas.jpg?format=auto&f=720x720",
                          "https://contents.mediadecathlon.com/m7277406/k$0c1ba5d0602402437bc0fe83573005b8/sq/mochila-desportiva-de-3-listras-adidas.jpg?format=auto&f=720x720",
@@ -987,9 +987,9 @@
       {
         "id": 14,
         "name": "Mochila desportiva unisexo Adidas Power Vii" ,
-        "type": "Bag",
+        "type": "Mochila",
         "brand" :"Adidas",
-        "price" :"34,99",
+        "price" :"34.99",
         "size" : ["Tamanho unico"],
         "image_links" : ["https://contents.mediadecathlon.com/m15610998/k$3101f58c8882eee296b86c559e9ba6d5/sq/mochila-desportiva-unisexo-adidas-power-vii.jpg?format=auto&f=720x720",
                          "https://contents.mediadecathlon.com/m15610999/k$df0d5ce9faf6443614688cea15c7d751/sq/mochila-desportiva-unisexo-adidas-power-vii.jpg?format=auto&f=720x720",

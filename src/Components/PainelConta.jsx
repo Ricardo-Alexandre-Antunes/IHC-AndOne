@@ -130,8 +130,25 @@ function PainelConta(props) {
 
     const handleSubmitAccountEdit = (e) => {
         e.preventDefault();
-        // Aqui você pode adicionar a lógica para atualizar o nome da conta, email e senha
-        // Após a atualização, você pode fechar o modal
+        if (newName.trim() === '' && newEmail.trim() === '' && password.trim() === '') {
+          alert('É preciso preencher pelo menos um campo');
+          return;
+        }
+
+        if (!newEmail.match(/\S+@\S+\.\S+/) && newEmail.trim() !== '') {
+          alert('Email inválido');
+          return;
+        }
+
+        const users = JSON.parse(localStorage.getItem('users'));
+        const user = users.find(user => user.email === curUser);
+        user.firstName = newName.trim() !== '' ? newName : user.firstName;
+        user.email = newEmail.trim() !== '' ? newEmail : user.email;
+        user.password = password.trim() !== '' ? password : user.password;
+        localStorage.setItem('users', JSON.stringify(users));
+        setNewName('');
+        setNewEmail('');
+        setPassword('');
         closeModal();
     };
 

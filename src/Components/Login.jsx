@@ -62,7 +62,12 @@ const Login = () => {
     setEmailError2('')
     setPasswordError2('')
     localStorage.setItem('users', JSON.stringify([...(JSON.parse(localStorage.getItem('users')) || []), { email: email2, password: password2, firstName, lastName, orders: [], favorites: [], billingData: [] }]));
-    localStorage.setItem('login', true)
+    localStorage.setItem('curUser', email2);
+    localStorage.setItem('login', true);
+    const user = JSON.parse(localStorage.getItem('users')).find(user => user.email === email2);
+    localStorage.setItem('orders', user && user.orders ? JSON.stringify(user.orders) : '[]');
+    localStorage.setItem('favorites', user && user.favorites ? JSON.stringify(user.favorites) : '[]');
+    localStorage.setItem('billingData', user && user.billingData ? JSON.stringify(user.billingData) : '[]');
     navigate('/perfil')
   }
 

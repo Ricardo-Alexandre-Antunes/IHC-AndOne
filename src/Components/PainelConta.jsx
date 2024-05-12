@@ -11,6 +11,15 @@ function PainelConta(props) {
     const user = users.find(user => user.email === curUser);
     const [name, setName] = useState(user.firstName + ' ' + user.lastName);
     const [email, setEmail] = useState(user.email);
+    const [billingDetails, setBillingDetails] = useState(user.billingData || []);
+    const [address, setAddress] = useState('');
+    const [postalCode, setPostalCode] = useState('');
+    const [nif, setNif] = useState('');
+    const [editingIndex, setEditingIndex] = useState(null);
+    const [tempDetail, setTempDetail] = useState({ address: '', postalCode: '', nif: '' });
+    const [newAddress, setNewAddress] = useState('');
+    const [newPostalCode, setNewPostalCode] = useState('');
+    const [newNif, setNewNif] = useState('');
 
     // Function to generate EncomendaPerfilCard for each element in temp array
     const generateEncomendaCards = () => {
@@ -33,6 +42,37 @@ function PainelConta(props) {
         localStorage.setItem('login', false);
         navigate('/');
     }
+
+    const handleRemove = (index) => {
+        const newBillingDetails = [...billingDetails];
+        newBillingDetails.splice(index, 1);
+        setBillingDetails(newBillingDetails);
+        localStorage.setItem('billingDetails', JSON.stringify(newBillingDetails));
+      };
+      
+      const handleEdit = (index) => {
+        setEditingIndex(index);
+        setTempDetail(billingDetails[index]);
+      };
+
+      const handleSubmit = (index) => {
+        const newBillingDetails = [...billingDetails];
+        newBillingDetails[index] = tempDetail;
+        setBillingDetails(newBillingDetails);
+        localStorage.setItem('billingDetails', JSON.stringify(newBillingDetails));
+        setEditingIndex(null);
+        setTempDetail({ address: '', postalCode: '', nif: '' });
+      };
+
+      const handleAddBillingDetail = (e) => {
+        e.preventDefault();
+        setBillingDetails([...billingDetails, { address: newAddress, postalCode: newPostalCode, nif: newNif }]);
+        setNewAddress('');
+        setNewPostalCode('');
+        setNewNif('');
+      };
+
+    
 
     return (
         <>
@@ -57,12 +97,55 @@ function PainelConta(props) {
                             <div style={{ width: '100%', backgroundColor: '#333', color: 'white', padding: '1rem' }}>
                                 <Row>
                                     <Col>
-                                        <p>Nome: Utilizador</p>
-                                        <p>Email: utilizador@gmail.com</p>
-                                        <p>Rua: teste n 1</p>
-                                        <p>Código Postal: 3830-111</p>
-                                        <p>País: PT</p>
-                                        <p>NIF: 123456789</p>
+                                        <p>Nome: {name}</p>
+                                        <p>Email: {email}</p>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col>
+                                        <h4>Dados de faturação</h4>
+                                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
+                                        {billingDetails.map((detail, index) => (
+                                            <div key={index} style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', flex: '0 0 calc(50% - 20px)' }}>
+                                            <button onClick={() => handleRemove(index)}>Remove</button>
+                                            {editingIndex === index ? (
+                                              <button onClick={() => handleSubmit(index)}>Submit</button>
+                                            ) : (
+                                              <button onClick={() => handleEdit(index)}>Edit</button>
+                                            )}
+                                            <div>
+                                              <label>Address: </label>
+                                              {editingIndex === index ? (
+                                                <> <input type="text" value={tempDetail.address} onChange={e => setTempDetail({ ...tempDetail, address: e.target.value })} /></>
+                                              ) : (
+                                                <> {detail.address}</>
+                                              )}
+                                            </div>
+                                            <div>
+                                              <label>Postal Code: </label>
+                                              {editingIndex === index ? (
+                                                <> <input type="text" value={tempDetail.postalCode} onChange={e => setTempDetail({ ...tempDetail, postalCode: e.target.value })} /></>
+                                              ) : (
+                                                <> {detail.postalCode}</>
+                                              )}
+                                            </div>
+                                            <div>
+                                              <label>NIF: </label>
+                                              {editingIndex === index ? (
+                                                <> <input type="text" value={tempDetail.nif} onChange={e => setTempDetail({ ...tempDetail, nif: e.target.value })} /></>
+                                              ) : (
+                                                <> {detail.nif}</>
+                                              )}
+                                            </div>
+                                          </div>
+                                        ))}
+                                        </div>
+                                    <form>
+                                    <input type="text" placeholder="Address" value={newAddress} onChange={e => setNewAddress(e.target.value)} />
+                                    <input type="text" placeholder="Postal Code" value={newPostalCode} onChange={e => setNewPostalCode(e.target.value)} />
+                                    <input type="text" placeholder="NIF" value={newNif} onChange={e => setNewNif(e.target.value)} />
+                                        <Button onClick={handleAddBillingDetail}>Add Billing Detail</Button>
+                                    </form>
                                     </Col>
                                 </Row>
                             </div>

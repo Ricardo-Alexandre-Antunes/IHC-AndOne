@@ -61,6 +61,7 @@ const Login = (props) => {
 
         <div className={'inputContainer'}>
           <input
+            type={'password'}
             value={password}
             placeholder="Insira a sua password..."
             onChange={(ev) => setPassword(ev.target.value)}
@@ -138,6 +139,7 @@ const Login = (props) => {
 
         <div className={'inputContainer'}>
           <input
+            type={'password'}
             value={password2}
             placeholder="Insira a sua password..."
             onChange={(ev) => setPassword2(ev.target.value)}

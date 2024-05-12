@@ -49,17 +49,17 @@ function MyNavbar({ activeID }) {
                   {login === 'true' ? (
                       <Nav.Link as={ Link } to="/perfil" className={activeID === 6? 'active' : ''}><FontAwesomeIcon icon={faUser} size="2xl" /></Nav.Link>
                   ) : (
-                      <Nav.Link as={ Link } to="/login" className={activeID === 6? 'active' : ''}><FontAwesomeIcon icon={faLock} size="2xl" /></Nav.Link>
+                      <Nav.Link as={ Link } to="/login" className={activeID === 6? 'active' : ''} onClick={() => {localStorage.setItem("previousPage", "/perfil")}}><FontAwesomeIcon icon={faLock} size="2xl" /></Nav.Link>
                   )}
                   {login === 'true' ? (
                       <Nav.Link as={ Link } to="/favoritos" className={activeID === 7? 'active' : ''}><FontAwesomeIcon icon={faHeart} size="2xl" /></Nav.Link>
                   ) : (
-                      <Nav.Link as={ Link } to="/login" className={activeID === 7? 'active' : ''}><FontAwesomeIcon icon={faHeart} size="2xl" /></Nav.Link>
+                      <Nav.Link as={ Link } to="/login" className={activeID === 7? 'active' : ''} onClick={() => {localStorage.setItem("previousPage", "/favoritos")}}><FontAwesomeIcon icon={faHeart} size="2xl" /></Nav.Link>
                   )}
                   {login === 'true' ? (
                       <Nav.Link as={ Link } to="/carrinho" className={activeID === 8? 'active' : ''}><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Nav.Link>
                   ) : (
-                      <Nav.Link as={ Link } to="/login" className={activeID === 8? 'active' : ''}><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Nav.Link>
+                      <Nav.Link as={ Link } to="/login" className={activeID === 8? 'active' : ''} onClick={() => {localStorage.setItem("previousPage", "/carrinho")}}><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Nav.Link>
                   )}
                   <Form className="d-flex" onSubmit={searchProducts} style={{ paddingRight: 10, paddingLeft: 20 }} >
                       <Form.Control

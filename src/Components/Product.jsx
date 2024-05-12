@@ -5,12 +5,14 @@ import ProductCarousel from '../components/ProductCarousel.jsx';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import ProductList from '../data/Products.json';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Toast from 'react-bootstrap/Toast';
 import ToastContainer from 'react-bootstrap/ToastContainer';
 
 
 const Product = () => {
+    const navigate = useNavigate();
+
     const [favorites, setFavorites] = useState(
       localStorage.getItem('favorites')
         ? JSON.parse(localStorage.getItem('favorites'))
@@ -29,6 +31,16 @@ const Product = () => {
     useEffect(() => {
       localStorage.setItem('cart', JSON.stringify(cart));
     }, [cart]);
+
+    const handleClick = () => {
+      localStorage.setItem('previousPage', `/produtoDetalhado/${category}/${product.id}`);
+      if (localStorage.getItem('login') === 'true') {
+        addToCart(category, product.id, quantity, currentSize);
+      }
+      else {
+        navigate('/login');
+      }
+    };
 
     useEffect(() => {
         localStorage.setItem('favorites', JSON.stringify(favorites));
@@ -87,6 +99,11 @@ const Product = () => {
     }
 
     const handleFavorites = (category, id) => {
+      localStorage.setItem('previousPage', `/produtoDetalhado/${category}/${product.id}`);
+      if (localStorage.getItem('login') === 'false') {
+        navigate('/login');
+      }
+
       const favorite = { category, id };
       const favoriteExists = favorites.some(fav => fav.category === category && fav.id === id);
     
@@ -95,8 +112,6 @@ const Product = () => {
       } else {
         setFavorites([...favorites, favorite]);
       }
-    
-      
     };
 
     if (!product) {
@@ -147,7 +162,7 @@ const Product = () => {
                 </button>
               </div>
               <div className="cart-fav-buttons">
-                <button disabled={sizeSelected()} onClick={() => { addToCart(category, product.id, quantity, currentSize)}}>
+                <button disabled={sizeSelected()} onClick={handleClick}>
                   Adicionar ao carrinho
                 </button>
                 <button onClick={() => handleFavorites(category, product.id)}>{favTest(product.id)}</button>

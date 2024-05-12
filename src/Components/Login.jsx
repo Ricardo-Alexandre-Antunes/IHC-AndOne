@@ -10,14 +10,14 @@ const Login = () => {
   const [passwordError, setPasswordError] = useState('')
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
-  const [address, setAddress] = useState('')
-  const [zip, setZip] = useState('')
   const [email2, setEmail2] = useState('')
   const [password2, setPassword2] = useState('')
   const [emailError2, setEmailError2] = useState('')
   const [passwordError2, setPasswordError2] = useState('')
 
   const navigate = useNavigate()
+
+  const previousPage = localStorage.getItem('previousPage');
 
   const login = () => {
     if (!email || !email.match(/\S+@\S+\.\S+/)) {
@@ -43,7 +43,7 @@ const Login = () => {
     localStorage.setItem('orders', user && user.orders ? JSON.stringify(user.orders) : '[]');
     localStorage.setItem('favorites', user && user.favorites ? JSON.stringify(user.favorites) : '[]');
     localStorage.setItem('billingData', user && user.billingData ? JSON.stringify(user.billingData) : '[]');
-    navigate('/perfil')
+    navigate(previousPage)
   }
 
   const createAccount = () => {
@@ -68,7 +68,7 @@ const Login = () => {
     localStorage.setItem('orders', user && user.orders ? JSON.stringify(user.orders) : '[]');
     localStorage.setItem('favorites', user && user.favorites ? JSON.stringify(user.favorites) : '[]');
     localStorage.setItem('billingData', user && user.billingData ? JSON.stringify(user.billingData) : '[]');
-    navigate('/perfil')
+    navigate(previousPage)
   }
 
   return (
@@ -132,26 +132,6 @@ const Login = () => {
           <input
             placeholder="Insira o último nome..."
             onChange={(ev) => setLastName(ev.target.value)}
-            className={'inputBox'}
-          />
-        </div>
-
-        <br />
-
-        <div className={'inputContainer'}>
-          <input
-            placeholder="Insira a sua morada..."
-            onChange={(ev) => setAddress(ev.target.value)}
-            className={'inputBox'}
-          />
-        </div>
-
-        <br />
-
-        <div className={'inputContainer'}>
-          <input
-            placeholder="Insira o código postal..."
-            onChange={(ev) => setZip(ev.target.value)}
             className={'inputBox'}
           />
         </div>

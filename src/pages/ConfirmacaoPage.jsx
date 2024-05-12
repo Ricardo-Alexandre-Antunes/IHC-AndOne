@@ -12,6 +12,7 @@ import '../SingleProduct.css';
 function ConfirmacaoPage() {
     const [encomenda, setEncomenda] = useState(JSON.parse(localStorage.getItem('temp')));
     const [id, setId] = useState(JSON.parse(localStorage.getItem('id')));
+    const [billingDetails, setBillingDetails] = useState(JSON.parse(localStorage.getItem('temp'))['faturacao']);
     
 
     const getProductByIdAndCategory = (id, category) => {
@@ -37,6 +38,19 @@ function ConfirmacaoPage() {
         // Horizontal bar
         doc.setLineWidth(0.5);
         doc.line(10, 30, 200, 30);
+
+        // Get billing details from local storage
+        const billingDetail = billingDetails.split(',');
+        console.log("billingDetail", billingDetail);
+
+        // Draw a box
+        doc.rect(10, 70, 180, 50);
+
+        // Billing details
+        doc.text(`Name: ${billingDetail[0]}`, 20, 80);
+        doc.text(`Address: ${billingDetail[1]}`, 20, 90);
+        doc.text(`Postal Code: ${billingDetail[2]}`, 20, 100);
+        doc.text(`NIF: ${billingDetail[3]}`, 20, 110);
     
         // Details of the order
         doc.text(`Número da encomenda: ${id}`, 10, 40);
@@ -68,7 +82,8 @@ function ConfirmacaoPage() {
                 ...data.map(item => [item.product, item.size, item.quantity, item.price, item.total]),
                 ['Total', '', '', '', totalPrice]
             ],
-            startY: 70
+            startY: 125,
+            margin: {left: 10}
         });
 
         doc.save('order_&1_' + id + '.pdf');

@@ -12,6 +12,7 @@ function PainelConta(props) {
     const user = users.find(user => user.email === curUser);
     const [name, setName] = useState(user.firstName + ' ' + user.lastName);
     const [newName, setNewName] = useState('');
+    const [newName2, setNewName2] = useState('');
     const [newLastName, setNewLastName] = useState('');
     const [email, setEmail] = useState(user.email);
     const [billingDetails, setBillingDetails] = useState(user.billingData || []);
@@ -131,7 +132,7 @@ function PainelConta(props) {
 
     const handleSubmitAccountEdit = (e) => {
         e.preventDefault();
-        if (newName.trim() === '' && newEmail.trim() === '' && password.trim() === '' && newLastName.trim() === '') {
+        if (newName2.trim() === '' && newEmail.trim() === '' && password.trim() === '' && newLastName.trim() === '') {
           alert('É preciso preencher pelo menos um campo');
           return;
         }
@@ -143,7 +144,7 @@ function PainelConta(props) {
 
         const users = JSON.parse(localStorage.getItem('users'));
         const user = users.find(user => user.email === curUser);
-        user.firstName = newName.trim() !== '' || newName.trim() === undefined ? newName : user.firstName;
+        user.firstName = newName2.trim() !== '' || newName2.trim() === undefined ? newName2 : user.firstName;
         user.lastName = newLastName.trim() !== '' || newLastName.trim() === undefined ? newLastName : user.lastName;
         user.email = newEmail.trim() !== '' ? newEmail : user.email;
         user.password = password.trim() !== '' ? password : user.password;
@@ -151,7 +152,7 @@ function PainelConta(props) {
         localStorage.setItem('users', JSON.stringify(users));
         setName(user.firstName + ' ' + user.lastName);
         setEmail(user.email);
-        setNewName('');
+        setNewName2('');
         setNewEmail('');
         setPassword('');
         setNewLastName('');
@@ -290,7 +291,7 @@ function PainelConta(props) {
                   <Form onSubmit={handleSubmitAccountEdit}>
                       <Form.Group controlId="formName">
                           <Form.Label>Novo Nome</Form.Label>
-                          <Form.Control type="text" placeholder="Novo Nome" value={newName} onChange={(e) => setNewName(e.target.value)} />
+                          <Form.Control type="text" placeholder="Novo Nome" value={newName2} onChange={(e) => setNewName2(e.target.value)} />
                       </Form.Group>
                       <Form.Group controlId="formLastName" className="pt-2">
                           <Form.Label>Novo Apelido</Form.Label>

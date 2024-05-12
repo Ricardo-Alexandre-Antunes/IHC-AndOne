@@ -6,15 +6,20 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function MyNavbar({ activeID }) {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
+
+  const curUser =(localStorage.getItem('curUser'));
+  let users = JSON.parse(localStorage.getItem('users'));
+  let user = users.find(user => user.email === curUser);
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -47,9 +52,9 @@ function MyNavbar({ activeID }) {
               </Nav>
               <Nav className="justify-content-end" >
                   {login === 'true' ? (
-                      <Nav.Link as={ Link } to="/perfil" className={activeID === 6? 'active' : ''}><FontAwesomeIcon icon={faUser} size="2xl" /></Nav.Link>
+                      <Nav.Link as={ Link } to="/perfil" className={activeID === 6? 'active' : ''}><Row><Col style={{ fontSize: 20 }}>{user.firstName}</Col><Col><FontAwesomeIcon icon={faUser} size="2xl" /></Col></Row></Nav.Link>
                   ) : (
-                      <Nav.Link as={ Link } to="/login" className={activeID === 6? 'active' : ''} onClick={() => {localStorage.setItem("previousPage", "/perfil")}}><FontAwesomeIcon icon={faLock} size="2xl" /></Nav.Link>
+                      <Nav.Link as={ Link } to="/login" className={activeID === 6? 'active' : ''} onClick={() => {localStorage.setItem("previousPage", "/perfil")}}><FontAwesomeIcon icon={faUser} size="2xl" /></Nav.Link>
                   )}
                   {login === 'true' ? (
                       <Nav.Link as={ Link } to="/favoritos" className={activeID === 7? 'active' : ''}><FontAwesomeIcon icon={faHeart} size="2xl" /></Nav.Link>

@@ -153,55 +153,80 @@ function PainelConta(props) {
                                         <h4>Dados de faturação</h4>
                                         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
                                         {billingDetails.map((detail, index) => (
-                                            <div key={index} style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', flex: '0 0 calc(50% - 20px)' }}>
-                                            <button onClick={() => handleRemove(index)}>Remove</button>
-                                            {editingIndex === index ? (
-                                              <button onClick={() => handleSubmit(index)}>Submit</button>
-                                            ) : (
-                                              <button onClick={() => handleEdit(index)}>Edit</button>
-                                            )}
-                                            <div>
-                                              <label>Name: </label>
-                                              {editingIndex === index ? (
-                                                <> <input type="text" value={tempDetail.name} onChange={e => setTempDetail({ ...tempDetail, name: e.target.value })} /></>
-                                              ) : (
-                                                <> {detail.name}</>
-                                              )}
-                                            </div>
-                                            <div>
-                                              <label>Address: </label>
-                                              {editingIndex === index ? (
-                                                <> <input type="text" value={tempDetail.address} onChange={e => setTempDetail({ ...tempDetail, address: e.target.value })} /></>
-                                              ) : (
-                                                <> {detail.address}</>
-                                              )}
-                                            </div>
-                                            <div>
-                                              <label>Postal Code: </label>
-                                              {editingIndex === index ? (
-                                                <> <input type="text" value={tempDetail.postalCode} onChange={e => setTempDetail({ ...tempDetail, postalCode: e.target.value })} /></>
-                                              ) : (
-                                                <> {detail.postalCode}</>
-                                              )}
-                                            </div>
-                                            <div>
-                                              <label>NIF: </label>
-                                              {editingIndex === index ? (
-                                                <> <input type="text" value={tempDetail.nif} onChange={e => setTempDetail({ ...tempDetail, nif: e.target.value })} /></>
-                                              ) : (
-                                                <> {detail.nif}</>
-                                              )}
-                                            </div>
+                                          <div key={index} style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', flex: '0 0 calc(50% - 20px)' }}>
+                                            <Row>
+                                              <Col md={8}>
+                                                <div>
+                                                  <label>Nome: </label>
+                                                  {editingIndex === index ? (
+                                                    <> <input type="text" value={tempDetail.name} onChange={e => setTempDetail({ ...tempDetail, name: e.target.value })} /></>
+                                                  ) : (
+                                                    <> {detail.name}</>
+                                                  )}
+                                                </div>
+                                                <div>
+                                                  <label>Endereço: </label>
+                                                  {editingIndex === index ? (
+                                                    <> <input type="text" value={tempDetail.address} onChange={e => setTempDetail({ ...tempDetail, address: e.target.value })} /></>
+                                                  ) : (
+                                                    <> {detail.address}</>
+                                                  )}
+                                                </div>
+                                                <div>
+                                                  <label>Código Postal: </label>
+                                                  {editingIndex === index ? (
+                                                    <> <input type="text" value={tempDetail.postalCode} onChange={e => setTempDetail({ ...tempDetail, postalCode: e.target.value })} /></>
+                                                  ) : (
+                                                    <> {detail.postalCode}</>
+                                                  )}
+                                                </div>
+                                                <div>
+                                                  <label>NIF: </label>
+                                                  {editingIndex === index ? (
+                                                    <> <input type="text" value={tempDetail.nif} onChange={e => setTempDetail({ ...tempDetail, nif: e.target.value })} /></>
+                                                  ) : (
+                                                    <> {detail.nif}</>
+                                                  )}
+                                                </div>
+                                              </Col>
+                                              <Col md={4}>
+                                                <Row className="p-1">
+                                                  <button onClick={() => handleRemove(index)}>Remover</button>
+                                                </Row>
+                                                <Row className="p-1">
+                                                  {editingIndex === index ? (
+                                                    <button onClick={() => handleSubmit(index)}>Submeter</button>
+                                                  ) : (
+                                                    <button onClick={() => handleEdit(index)}>Editar</button>
+                                                  )}
+                                                </Row>
+                                              </Col>
+                                            </Row>
                                           </div>
                                         ))}
                                         </div>
-                                    <form>
-                                    <input type="text" placeholder="Name" value={newName} onChange={e => setNewName(e.target.value)} />
-                                    <input type="text" placeholder="Address" value={newAddress} onChange={e => setNewAddress(e.target.value)} />
-                                    <input type="text" placeholder="Postal Code" value={newPostalCode} onChange={e => setNewPostalCode(e.target.value)} />
-                                    <input type="text" placeholder="NIF" value={newNif} onChange={e => setNewNif(e.target.value)} />
-                                        <Button onClick={handleAddBillingDetail}>Add Billing Detail</Button>
-                                    </form>
+                                    <div className="pt-2"><h4>Adicione novos dados de faturação</h4></div>
+                                    <div className="pt-1">
+                                      <form className="p-2">
+                                        <Row>
+                                          <Col> 
+                                            <input type="text" placeholder="Nome" value={newName} onChange={e => setNewName(e.target.value)} />
+                                          </Col>
+                                          <Col>
+                                            <input type="text" placeholder="Endereço" value={newAddress} onChange={e => setNewAddress(e.target.value)} />
+                                          </Col>
+                                          <Col>
+                                            <input type="text" placeholder="Código Postal" value={newPostalCode} onChange={e => setNewPostalCode(e.target.value)} />
+                                          </Col>
+                                          <Col>
+                                            <input type="text" placeholder="NIF" value={newNif} onChange={e => setNewNif(e.target.value)} />
+                                          </Col>
+                                          <Col>
+                                            <Button onClick={handleAddBillingDetail} style={{ width: 200 }}>Adicionar</Button>  
+                                          </Col>
+                                        </Row>
+                                      </form>
+                                    </div>
                                     </Col>
                                 </Row>
                             </div>

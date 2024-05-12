@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import '../css/login.css'
 import Button from 'react-bootstrap/Button';
 
-const Login = (props) => {
+const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [emailError, setEmailError] = useState('')
@@ -31,11 +31,31 @@ const Login = (props) => {
     setEmailError('')
     setPasswordError('')
     localStorage.setItem('login', true)
+    localStorage.setItem('curUser', email);
+    const user = JSON.parse(localStorage.getItem('users')).find(user => user.email === email);
+    localStorage.setItem('orders', user && user.orders ? JSON.stringify(user.orders) : '[]');
+    localStorage.setItem('favorites', user && user.favorites ? JSON.stringify(user.favorites) : '[]');
     navigate('/perfil')
   }
 
   const createAccount = () => {
-
+    if (!email2 || !email2.match(/\S+@\S+\.\S+/)) {
+      setEmailError2('Por favor, insira o seu email.')
+      return;
+    }
+    if (localStorage.getItem('users') && JSON.parse(localStorage.getItem('users')).find(user => user.email === email2)) {
+      setEmailError2('Este email já está em uso.')
+      return;
+    }
+    if (!password2) {
+      setPasswordError2('Por favor, insira a sua senha.')
+      return;
+    }
+    setEmailError2('')
+    setPasswordError2('')
+    localStorage.setItem('users', JSON.stringify([...(JSON.parse(localStorage.getItem('users')) || []), { email: email2, password: password2, firstName, lastName, orders: [], favorites: [] }]));
+    localStorage.setItem('login', true)
+    navigate('/perfil')
   }
 
   return (

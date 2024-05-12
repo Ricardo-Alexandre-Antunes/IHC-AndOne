@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavbarCompra from "../components/NavbarCompra";
 import MyFooter from "../components/MyFooter";
 import DetalhesPedido from "../components/DetalhesPedido";
@@ -30,7 +30,6 @@ function PagamentoPage() {
 
 
 
-
     const handleClickConfirmar = () => {
         setShowModal(true);
     };
@@ -47,7 +46,13 @@ function PagamentoPage() {
             localStorage.setItem("id", initialId);
         }
         console.log("id", initialId);
+        const newOrders = [...orders, { id: Number(initialId), ...encomenda }];
         localStorage.setItem('orders', JSON.stringify([...orders, { id: Number(initialId), ...encomenda }]));
+        const curUser = localStorage.getItem('curUser');
+        let users = JSON.parse(localStorage.getItem('users'));
+        let user = users.find(user => user.email === curUser);
+        user.orders = newOrders;
+        localStorage.setItem('users', JSON.stringify(users));
         localStorage.removeItem('cart');
         navigate('/confirmacao');
     };

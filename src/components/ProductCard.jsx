@@ -21,20 +21,42 @@ const ProductCard = ({category, product, favorites, setFavorites, toggleModal })
     }, [favorites]);
 
     const toggleFavorite = (event) => {
-        let newFavorites;
-    
-        if (isFavorite) {
-          if (toggleModal) {
-            setShowModal(true);
-          } else {
-            removeFavorite();
-          }
+      let newFavorites;
+
+      if (isFavorite) {
+        if (toggleModal) {
+          setShowModal(true);
         } else {
-          newFavorites = [...favorites, {"category": category, "id": product.id}];
-          setFavorites(newFavorites);
-          toggleShowToast();
+          removeFavorite();
         }
-      };
+      } else {
+        newFavorites = [...favorites, {"category": category, "id": product.id}];
+        setFavorites(newFavorites);
+        toggleShowToast();
+      }
+
+      const curUser =(localStorage.getItem('curUser'));
+
+      console.log('Current User:', curUser);
+      
+      let users = JSON.parse(localStorage.getItem('users'));
+      
+      let user = users.find(user => user.email === curUser);
+      
+      console.log('User from Users Array:', user);
+      
+      user.favorites = newFavorites;
+      
+      console.log('Updated User:', user);
+      
+      users = users.map(u => u.email === user.email ? user : u);
+      
+      console.log('Updated Users Array:', users);
+      
+      localStorage.setItem('users', JSON.stringify(users));
+      
+      localStorage.setItem('favorites', JSON.stringify(favorites));
+    };
     
       const removeFavorite = () => {
         const newFavorites = favorites.filter(fav => fav.category !== category || fav.id !== product.id);

@@ -6,6 +6,11 @@ import { useNavigate } from 'react-router-dom'
 function PainelConta(props) {
     const navigate = useNavigate();
     const [orders, setOrders] = useState(JSON.parse(localStorage.getItem('orders')) || []);
+    const curUser = localStorage.getItem('curUser');
+    const users = JSON.parse(localStorage.getItem('users'));
+    const user = users.find(user => user.email === curUser);
+    const [name, setName] = useState(user.firstName + ' ' + user.lastName);
+    const [email, setEmail] = useState(user.email);
 
     // Function to generate EncomendaPerfilCard for each element in temp array
     const generateEncomendaCards = () => {

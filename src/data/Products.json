@@ -181,7 +181,51 @@
                       "https://cdn-images.farfetch-contents.com/14/47/78/50/14477850_21575967_1000.jpg"],
         "short_description": "The Air Yeezy 2 SP 'Red October' is a highly sought-after sneaker designed by Kanye West for Nike. The shoe features a red colorway with a reptile-textured upper and a glow-in-the-dark outsole. The shoe is finished with a forefoot strap and a cushioned midsole for all-day comfort.",
         "big_description": "The Air Yeezy 2 SP 'Red October' is a highly sought-after sneaker designed by Kanye West for Nike. The shoe features a red colorway with a reptile-textured upper and a glow-in-the-dark outsole. The shoe is finished with a forefoot strap and a cushioned midsole for all-day comfort.\n\nMore benefits\n- Reptile-textured upper for a unique look\n- Glow-in-the-dark outsole for added style\n- Forefoot strap for a secure fit\n- Cushioned midsole for all-day comfort\n- Colour Shown: Red\n- Style: 508214-660"
-      }
+      },
+      {
+      "id": 14,
+      "name": "LeBron Witness 8 - Red",
+      "brand": "Nike",
+      "price": 119.99,
+      "size": [40, 41, 42, 43, 44, 45, 46, 47],
+      "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c49ec1fa-a9af-4375-9d5e-657ed2cc353f/sapatilhas-de-basquetebol-lebron-witness-8-swv6J0.png",
+                      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c49ec1fa-a9af-4375-9d5e-657ed2cc353f/sapatilhas-de-basquetebol-lebron-witness-8-swv6J0.png",
+                      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/672fac6a-d1dc-4ee0-981e-975157ee79cd/sapatilhas-de-basquetebol-lebron-witness-8-swv6J0.png",
+                      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/847acc9a-7c35-4195-bcf9-cb6470aa2fad/sapatilhas-de-basquetebol-lebron-witness-8-swv6J0.png",
+                      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7e7fc4aa-bb67-4472-a296-d4c459493a7f/sapatilhas-de-basquetebol-lebron-witness-8-swv6J0.png"],
+      "short_description": "Estas sapatilhas foram desenhadas para dar o maior suporte durante a temporada ao king Lebron James. O segredo está na sola, o seu conforto e flexibilidade ajuda a tirar o melhor do jogador dentro de campo.",
+      "big_description": "Sempre que entras em campo, que tipo de desempenho queres exibir? Capta todas as atenções com estas LeBron Witness 8 e mostra que não há limites para o teu talento e para as tuas habilidades. Estas sapatilhas elegantes e ousadas proporcionam estabilidade quando precisas de poder de explosão e de aterragens suaves, permitindo que craques como tu e o LeBron possam saltar, travar e correr de uma linha à outra."
+      },
+
+      {
+        "id": 15,
+        "name": "LeBron Witness 8 - Blue Turquoise/Purple",
+        "brand": "Nike",
+        "price": 119.99,
+        "size": [40, 41, 42, 43, 44, 45, 46, 47],
+        "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/be010f95-0bae-4fc5-a048-8b2d2a0944de/sapatilhas-de-basquetebol-lebron-witness-8-qjcntD.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e52a06bb-ad8a-4a35-a04f-ff6c542a46e7/sapatilhas-de-basquetebol-lebron-witness-8-qjcntD.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0e5ed3e2-8260-4a4c-8d17-3a1e41f8b838/sapatilhas-de-basquetebol-lebron-witness-8-qjcntD.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/21fadb74-2cab-4d27-bdec-4975b21aa42b/sapatilhas-de-basquetebol-lebron-witness-8-qjcntD.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f14d86c4-cdf1-4618-bf68-605f04aa53bf/sapatilhas-de-basquetebol-lebron-witness-8-qjcntD.png"],
+        "short_description": "Estas sapatilhas foram desenhadas para dar o maior suporte durante a temporada ao king Lebron James. O segredo está na sola, o seu conforto e flexibilidade ajuda a tirar o melhor do jogador dentro de campo.",
+        "big_description": "Sempre que entras em campo, que tipo de desempenho queres exibir? Capta todas as atenções com estas LeBron Witness 8 e mostra que não há limites para o teu talento e para as tuas habilidades. Estas sapatilhas elegantes e ousadas proporcionam estabilidade quando precisas de poder de explosão e de aterragens suaves, permitindo que craques como tu e o LeBron possam saltar, travar e correr de uma linha à outra."
+        },
+
+        {
+          "id": 16,
+          "name": "Tatum 2 - Sidewalk Chalk",
+          "brand": "Nike",
+          "price": 129.99,
+          "size": [40, 41, 42, 43, 44, 45, 46, 47],
+          "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fde02daf-1be0-48b7-9ae2-1add63ae7fb4/sapatilhas-de-basquetebol-tatum-2-sidewalk-chalk-kxRS0z.png",
+                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4c7032e2-299b-4fb9-be97-0fd28fb75ee1/sapatilhas-de-basquetebol-tatum-2-sidewalk-chalk-kxRS0z.png",
+                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7702917a-b0ae-487f-b5db-1f9b786e9f99/sapatilhas-de-basquetebol-tatum-2-sidewalk-chalk-kxRS0z.png",
+                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fa31677c-8423-4c01-a678-6e8a7d3c1fee/sapatilhas-de-basquetebol-tatum-2-sidewalk-chalk-kxRS0z.png",
+                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/99e7fc06-6eab-4a8b-bddf-b0a5863999c9/sapatilhas-de-basquetebol-tatum-2-sidewalk-chalk-kxRS0z.png"],
+          "short_description": "Estas sapatilhas foram desenhadas para dar o maior suporte durante a temporada ao fenómeno JT. O segredo está na sola, o seu conforto e flexibilidade ajuda a tirar o melhor do jogador dentro de campo.",
+          "big_description": "Só acaba quando ouves o apito final. Enfrenta o teu jogo com a energia para dar e vender das Tatum 2. Ajudam-te a manter a leveza dos pés ao limitar a utilização de borracha pesada. A unidade Nike Air Strobel a todo o comprimento permite mudanças de direção rápidas e a estrutura resistente alia-se a uma espuma sustentada que se adapta aos pés para uma sensação de contenção."
+          }
     ],
     "equipamentos": [
       {"id": 1,
@@ -309,7 +353,7 @@
       "big_description": "The NBA Swingman Jersey 'Los Angeles Lakers' Home 1990-00 Shaquille O'Neal #34 is a classic jersey that pays homage to the legendary Los Angeles Lakers player. The jersey features a yellow and purple colorway with O'Neal's name and number on the back. The jersey is made from high-quality materials and is designed to be comfortable and durable.\n\nMore benefits\n- High-quality materials for comfort and durability\n- Classic design with O'Neal's name and number\n- Colour Shown: Yellow/Purple\n- Style: SMJYGS18179"
       },
       {"id": 8,
-      "name": "Swingman Shorts 'Chicago Bulls' Home 1997-98",
+      "name": "NBA Swingman Shorts 'Chicago Bulls' Home 1997-98",
       "type": "Shorts",
       "team": "Chicago Bulls",
       "brand": "Mitchell & Ness",
@@ -324,7 +368,7 @@
       "big_description": "The Swingman Shorts 'Chicago Bulls' 1997-98 Home are classic basketball shorts that pay homage to the legendary Chicago Bulls team. The shorts feature a black and red colorway with the Bulls logo on the front. The shorts are made from high-quality materials and are designed to be comfortable and durable.\n\nMore benefits\n- High-quality materials for comfort and durability\n- Classic design with Bulls logo\n- Colour Shown: Black/Red\n- Style: SMJYGS18155"
       },
       {"id": 9,
-      "name": "Swingman Shorts 'Toronto Raptors' Home 1998-99",
+      "name": "NBA Swingman Shorts 'Toronto Raptors' Home 1998-99",
       "type": "Shorts",
       "team": "Toronto Raptors",
       "brand": "Mitchell & Ness",
@@ -337,8 +381,742 @@
                       "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-and-ness-nba-swingman-shorts-toronto-raptors-shorts-white-smshcp18154-trawhi98-04.jpg"],
       "short_description": "The Swingman Shorts 'Toronto Raptors' 1998-99 Home are classic basketball shorts that pay homage to the legendary Toronto Raptors team. The shorts feature a white and red colorway with the Raptors logo on the front. The shorts are made from high-quality materials and are designed to be comfortable and durable.",
       "big_description": "The Swingman Shorts 'Toronto Raptors' 1998-99 Home are classic basketball shorts that pay homage to the legendary Toronto Raptors team. The shorts feature a white and red colorway with the Raptors logo on the front. The shorts are made from high-quality materials and are designed to be comfortable and durable.\n\nMore benefits\n- High-quality materials for comfort and durability\n- Classic design with Raptors logo\n- Colour Shown: White/Red\n- Style: SMJYGS18151"
+      },
+      {
+        "id": 10,
+      "name": "NBA Swingman Shorts Chicago Bulls 1997-98",
+      "type": "Shorts",
+      "team": "Chicago Bulls",
+      "brand": "Mitchell & Ness",
+      "price": 84.99,
+      "size": ["M", "L"],
+      "image_links": ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/09/SMSHGS18223_1.jpeg?fit=1500%2C1500&ssl=1",
+                      "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/09/SMSHGS18223_2.jpeg?fit=1500%2C1500&ssl=1",
+                      "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/09/SMSHGS18223_4.jpeg?fit=1500%2C1500&ssl=1",
+                      "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/09/SMSHGS18223_6.jpeg?fit=1500%2C1500&ssl=1",
+                      "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/09/SMSHGS18223_.jpeg?fit=1500%2C1500&ssl=1"],
+      "short_description": "Inspirado pelas lendas da NBA, estes calções Hardwood Classic Swingman foram produzidos para se assemelhar a maneira como a equipa Chicago Bulls se equipavam na época 1997-98.",
+      "big_description": "Inspirado pelas lendas da NBA, estes calções Hardwood Classic Swingman foram produzidos para se assemelhar a maneira como a equipa Chicago Bulls se equipavam na época 1997-98."
+      },
+      
+      {
+      "id": 11,
+      "name": "Los Angeles Lakers Jersey 2022/23 - Home",
+      "type": "Jersey",
+      "team": "Los Angeles Lakers",
+      "brand": "Nike",
+      "price": 104.99,
+      "size": ["S","M","L", "XL"],
+      "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9aa1b6a-4385-4233-96b6-b03f5c83d1a6/camisola-nba-swingman-dri-fit-los-angeles-lakers-icon-edition-2022-23-6dDmWf.png",
+                      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b9927fdc-ed13-4f38-af1e-4cd3f19f5359/camisola-nba-swingman-dri-fit-los-angeles-lakers-icon-edition-2022-23-6dDmWf.png",
+                      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b46db73b-2baf-47af-88e0-ff8fb4efac6e/camisola-nba-swingman-dri-fit-los-angeles-lakers-icon-edition-2022-23-6dDmWf.png"],
+      "short_description": "Camisola NBA Swingman Nike Dri-FIT para homem",
+      "big_description": "Todas as equipas têm as suas verdadeiras cores, uma identidade inconfundível que as distingue do resto da liga. Prestando homenagem a um vasto legado no basquetebol, esta camisola Los Angeles Lakers inspira-se no look que os profissionais usam em campo, desde os detalhes da equipa à malha leve com drenagem de suor. Ajuda a manter a secura e a frescura dentro e fora do campo enquanto apoias o teu jogador favorito e o desporto que tanto adoras."
+      },
+
+      {
+        "id": 12,
+        "name": "Los Angeles Lakers Shorts 2022/23 - Home",
+        "type": "Shorts",
+        "team": "Los Angeles Lakers",
+        "brand": "Nike",
+        "price": 69.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bfe906f3-0ff3-461b-856c-f95536754349/calcoes-nba-swingman-los-angeles-lakers-icon-edition-BxRTsw.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0104d662-b020-4b0a-a287-014460a63ba0/calcoes-nba-swingman-los-angeles-lakers-icon-edition-BxRTsw.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d12d3bb9-c277-45c7-93f6-57463a5ea6c8/calcoes-nba-swingman-los-angeles-lakers-icon-edition-BxRTsw.png"
+                        ],
+        "short_description": "Calções NBA Nike Swingman para homem",
+        "big_description": "Todas as equipas têm as suas verdadeiras cores, uma identidade inconfundível que as distingue do resto da liga. Prestando homenagem a um vasto legado no basquetebol, esta camisola Los Angeles Lakers inspira-se no look que os profissionais usam em campo, desde os detalhes da equipa à malha leve com drenagem de suor. Ajuda a manter a secura e a frescura dentro e fora do campo enquanto apoias o teu jogador favorito e o desporto que tanto adoras."
+      },
+        
+      {
+        "id": 13,
+        "name": "Boston Celtics City Edition Jersey 2023/24",
+        "type": "Jersey",
+        "team": "Boston Celtics",
+        "brand": "Nike",
+        "price": 104.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b9c30fca-be82-459e-8f4d-ae5ca0653190/camisola-nba-swingman-dri-fit-jayson-tatum-boston-celtics-city-edition-2023-24-31jSr9.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/741c2659-a8d1-45fe-ad13-b986f09283ee/camisola-nba-swingman-dri-fit-jayson-tatum-boston-celtics-city-edition-2023-24-31jSr9.png"
+                        ],
+        "short_description": "Camisola NBA Swingman Nike Dri-FIT para homem",
+        "big_description": "Todos os caminhos vão dar a Boston. Desde os jogadores emblemáticos dos primeiros tempos aos mestres modernos do jogo, a evolução dos Celtics abrange eras, campeonatos e gerações de adeptos. A camisola City Edition de 2023/24 celebra a origem do jogo e o seu compromisso contínuo com o ofício."
+      },
+
+      {
+        "id": 14,
+        "name": "Boston Celtics City Edition Jersey 2023/24",
+        "type": "Shorts",
+        "team": "Boston Celtics",
+        "brand": "Nike",
+        "price": 104.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d750f17-5ce4-4eea-99e4-8c7342acf156/calcoes-nba-swingman-dri-fit-boston-celtics-2023-24-city-edition-rZTzcG.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/876fe2ea-58f6-4daa-ae36-adf2e5aff152/calcoes-nba-swingman-dri-fit-boston-celtics-2023-24-city-edition-rZTzcG.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aa5ce444-738d-434c-8e0e-d5d73bc5e47a/calcoes-nba-swingman-dri-fit-boston-celtics-2023-24-city-edition-rZTzcG.png"],
+        "short_description": "Calções NBA Swingman Nike Dri-FIT para homem",
+        "big_description": "Todos os caminhos vão dar a Boston. Desde os jogadores emblemáticos dos primeiros tempos aos mestres modernos do jogo, a evolução dos Celtics abrange eras, campeonatos e gerações de adeptos. A sua coleção City Edition de 2023/24 celebra a origem do jogo e o seu compromisso permanente com a arte."
+      },
+
+      {
+        "id": 15,
+        "name": "Atlanta Hawks Icon Edition Jersey 2022/23",
+        "type": "Jersey",
+        "team": "Atlanta Hawks",
+        "brand": "Nike",
+        "price": 104.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e2144547-d53e-4ed9-9f4a-9e29fd646083/camisola-nba-swingman-dri-fit-atlanta-hawks-icon-edition-2022-23-Gh2NMT.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45595be2-4dea-46dd-a5da-f2890ead1936/camisola-nba-swingman-dri-fit-atlanta-hawks-icon-edition-2022-23-Gh2NMT.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0cf2e02b-3d65-410e-834e-c4f20f710d1b/camisola-nba-swingman-dri-fit-atlanta-hawks-icon-edition-2022-23-Gh2NMT.png"],
+        "short_description": "Camisola NBA Swingman Nike Dri-FIT para homem",
+        "big_description": "Todas as equipas têm as suas verdadeiras cores, uma identidade inconfundível que as distingue do resto da liga. Prestando homenagem a um vasto legado no basquetebol, esta camisola Atlanta Hawks inspira-se no look que os profissionais usam em campo, desde os detalhes da equipa à malha leve com drenagem de suor. Ajuda a manter a secura e a frescura dentro e fora do campo enquanto apoias o teu jogador favorito e o desporto que tanto adoras."
+      },
+
+      {
+        "id": 16,
+        "name": "Atlanta Hawks Icon Edition Shorts 2022/23",
+        "type": "Shorts",
+        "team": "Atlanta Hawks",
+        "brand": "Nike",
+        "price": 104.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/423d39e9-f51a-4df1-a858-0fc62fa38aec/calcoes-nba-swingman-hawks-icon-edition-2020-vRQPzs.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/698b7471-89be-4ddb-8089-abb21fd8dc57/calcoes-nba-swingman-hawks-icon-edition-2020-vRQPzs.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e31dce3f-e7e3-49ec-b464-2300165c9249/calcoes-nba-swingman-hawks-icon-edition-2020-vRQPzs.png"],
+        "short_description": "Calções NBA Nike Swingman para homem",
+        "big_description": "Todas as equipas têm as suas verdadeiras cores, uma identidade inconfundível que as distingue do resto da liga. Prestando homenagem a um vasto legado no basquetebol, esta camisola Atlanta Hawks inspira-se no look que os profissionais usam em campo, desde os detalhes da equipa à malha leve com drenagem de suor. Ajuda a manter a secura e a frescura dentro e fora do campo enquanto apoias o teu jogador favorito e o desporto que tanto adoras."
+      },
+
+      {
+        "id": 17,
+        "name": "Golden State Warriors Icon Edition Jersey 2022/23",
+        "type": "Jersey",
+        "team": "Golden State Warriors",
+        "brand": "Nike",
+        "price": 104.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ac6733f-1dc1-46ce-ae77-fbd4c73099f9/camisola-nba-swingman-dri-fit-golden-state-warriors-icon-edition-2022-23-SW7Nkx.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0e391898-5de8-4a09-b498-78d4d65e7859/camisola-nba-swingman-dri-fit-golden-state-warriors-icon-edition-2022-23-SW7Nkx.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ba82460-57a2-462c-903d-a2e57f33cfe1/camisola-nba-swingman-dri-fit-golden-state-warriors-icon-edition-2022-23-SW7Nkx.png"],
+        "short_description": "Camisola NBA Swingman Nike Dri-FIT para homem",
+        "big_description": "Todas as equipas têm as suas verdadeiras cores, uma identidade inconfundível que as distingue do resto da liga. Prestando homenagem a um vasto legado no basquetebol, esta camisola Golden State Warriors inspira-se no look que os profissionais usam em campo, desde os detalhes da equipa à malha leve com drenagem de suor. Ajuda a manter a secura e a frescura dentro e fora do campo enquanto apoias o teu jogador favorito e o desporto que tanto adoras."
+      },
+
+      {
+        "id": 18,
+        "name": "Golden State Warriors Icon Edition Shorts 2022/23",
+        "type": "Shorts",
+        "team": "Golden State Warriors",
+        "brand": "Nike",
+        "price": 104.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fatno6ey4gkepoaj25qq/calcoes-nba-swingman-golden-state-warriors-icon-edition-8tQrL3.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ncjbhvuxad4wxij8sgwz/calcoes-nba-swingman-golden-state-warriors-icon-edition-8tQrL3.png"],
+        "short_description": "Calções NBA Nike Swingman para homem",
+        "big_description": "Inspirados nos calções NBA autênticos, os calções NBA Nike Swingman Golden State Warriors Icon Edition são fabricados com tecido que drena o suor e incluem detalhes de design que combinam com o look em campo da tua equipa. Os bolsos laterais permitem guardar artigos essenciais para um armazenamento fácil. Este produto é fabricado com 100% de fibras de poliéster reciclado."
+      },
+
+      {
+        "id": 19,
+        "name": "Hoops Essentials Short Sleeve T-Shirt – Black",
+        "type": "T-Shirt",
+        "team": "Nenhuma",
+        "brand": "New Balance",
+        "price": 24.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/new-balance-hoops-essentials-short-sleeve-t-shirt-black-mt33582bk-01.jpg?fit=2000%2C2000&ssl=1",
+                        "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/new-balance-hoops-essentials-short-sleeve-t-shirt-black-mt33582bk-02.jpg?fit=2000%2C2000&ssl=1",
+                        "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/new-balance-hoops-essentials-short-sleeve-t-shirt-black-mt33582bk-06.jpg?fit=2000%2C2000&ssl=1",
+                        "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/new-balance-hoops-essentials-short-sleeve-t-shirt-black-mt33582bk-07.jpg?fit=2000%2C2000&ssl=1"],
+        "short_description": "Arrasa com estilo com a nova t-shirt New Balance Hoops Essentials",
+        "big_description": "Arrasa com estilo com a nova t-shirt New Balance Hoops Essentials.\nNão é preciso seres uma estrela da NBA para marcar pontos em grande estilo. A New Balance traz toda a energia dos campos de basquetebol diretamente para o teu guarda-roupa numa t-shirt clássica cor preta."
+      },
+
+      {
+        "id": 20,
+        "name": "Camisola Icon Squad - Black/White",
+        "type": "Jersey",
+        "team": "Nenhuma",
+        "brand": "Adidas",
+        "price": 29.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/468dd021a0414bb695a7af87012613f9_9366/Camisola_Icon_Squad_Preto_HF6719_21_model.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ae87785bd0b948cbaec9af870126474b_9366/Camisola_Icon_Squad_Preto_HF6719_23_hover_model.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8fd4bc58c34e48279517ae600135d727_9366/Camisola_Icon_Squad_Preto_HF6719_01_laydown.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/eace7332ee6b41afb5bcaf8701274e99_9366/Camisola_Icon_Squad_Preto_HF6719_25_model.jpg"],
+        "short_description": "Uma confortável camisola que mantém o teu corpo seco, feita com materiais reciclados.",
+        "big_description": "Um por todos e todos por um. Esta camisola de basquetebol adidas permite que tu e tua equipa estejam a combinar no dia de jogo. É feita em malha dupla suave para te manter confortável a cada minuto do jogo. O AEROREADY mantém o teu corpo seco até ao apito final. O adidas Badge of Sport na gola deixa espaço para o emblema da equipa na área do peito.\nFeito com 100% materiais reciclados, este produto representa uma das nossas soluções para ajudar a acabar com o desperdício de plástico."
+      },
+
+      {
+        "id": 21,
+        "name": "Camisola Icon Squad - White/Red",
+        "type": "Jersey",
+        "team": "Nenhuma",
+        "brand": "Adidas",
+        "price": 29.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/77f575d5a46a4bb98043af8701260deb_9366/Camisola_Icon_Squad_Branco_HF6713_21_model.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7a2806c3bb0c4bcab4f0af87012647dd_9366/Camisola_Icon_Squad_Branco_HF6713_23_hover_model.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/92811e6303ba4d0eb49dae3e00ceb0d3_9366/Camisola_Icon_Squad_Branco_HF6713_01_laydown.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f2caa40390474bc5b07daf87012744a7_9366/Camisola_Icon_Squad_Branco_HF6713_25_model.jpg"],
+        "short_description": "Uma confortável camisola que mantém o teu corpo seco, feita com materiais reciclados.",
+        "big_description": "Um por todos e todos por um. Esta camisola de basquetebol adidas permite que tu e tua equipa estejam a combinar no dia de jogo. É feita em malha dupla suave para te manter confortável a cada minuto do jogo. O AEROREADY mantém o teu corpo seco até ao apito final. O adidas Badge of Sport na gola deixa espaço para o emblema da equipa na área do peito.\nFeito com 100% materiais reciclados, este produto representa uma das nossas soluções para ajudar a acabar com o desperdício de plástico."
+      },
+
+      {
+        "id": 22,
+        "name": "Camisola Icon Squad - White/Black",
+        "type": "Jersey",
+        "team": "Nenhuma",
+        "brand": "Adidas",
+        "price": 29.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/be88e9b4f80a420faddaaf8f018b52bd_9366/Camisola_Icon_Squad_Branco_HF6714_21_model.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7b241dd8432a43f7a780af900000168b_9366/Camisola_Icon_Squad_Branco_HF6714_23_hover_model.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e7c3cc93611f4ceca55eaf9d013a1a2e_9366/Camisola_Icon_Squad_Branco_HF6714_01_laydown.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fff866fffde546d5a4e6af9000011b8f_9366/Camisola_Icon_Squad_Branco_HF6714_25_model.jpg"],
+        "short_description": "Uma confortável camisola que mantém o teu corpo seco, feita com materiais reciclados.",
+        "big_description": "Um por todos e todos por um. Esta camisola de basquetebol adidas permite que tu e tua equipa estejam a combinar no dia de jogo. É feita em malha dupla suave para te manter confortável a cada minuto do jogo. O AEROREADY mantém o teu corpo seco até ao apito final. O adidas Badge of Sport na gola deixa espaço para o emblema da equipa na área do peito.\nFeito com 100% materiais reciclados, este produto representa uma das nossas soluções para ajudar a acabar com o desperdício de plástico."
+      },
+
+      {
+        "id": 23,
+        "name": "Calções Reversíveis 3G Speed - Navy Blue/White",
+        "type": "Shorts",
+        "team": "Nenhuma",
+        "brand": "Adidas",
+        "price": 29.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9a48abcffb8a4ee9ace8a9ee017f11bc_9366/Calcoes_Reversiveis_3G_Speed_Azul_DY6602_01_laydown.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/aa2a8d8d47124d0097bca9ee017cbb2e_9366/Calcoes_Reversiveis_3G_Speed_Azul_DY6602_02_laydown_hover.jpg"],
+        "short_description": "Calções reversíveis com um design reversível",
+        "big_description": "Por vezes, é preciso mudar qualquer coisa no court. Estes calções de basquetebol têm tecido que elimina a transpiração para afastar a humidade da tua pele. Com um design reversível, um dos lados é feito em rede de poliéster, ao passo que o outro é feito em malha dupla resistente."
+      },
+
+      {
+        "id": 24,
+        "name": "Calções Reversíveis 3G Speed - Red/White",
+        "type": "Shorts",
+        "team": "Nenhuma",
+        "brand": "Adidas",
+        "price": 29.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/79f819faebfc4fe995e0a9f2017ada1d_9366/Calcoes_Reversiveis_3G_Speed_Vermelho_DY6603_01_laydown.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/57dccdeaedd2420d99f8a9f2017d0bec_9366/Calcoes_Reversiveis_3G_Speed_Vermelho_DY6603_08_laydown.jpg"],
+        "short_description": "Calções reversíveis com um design reversível",
+        "big_description": "Por vezes, é preciso mudar qualquer coisa no court. Estes calções de basquetebol têm tecido que elimina a transpiração para afastar a humidade da tua pele. Com um design reversível, um dos lados é feito em rede de poliéster, ao passo que o outro é feito em malha dupla resistente."
+      },
+
+      {
+        "id": 25,
+        "name": "Calções Reversíveis 3G Speed - Black/White",
+        "type": "Shorts",
+        "team": "Nenhuma",
+        "brand": "Adidas",
+        "price": 29.99,
+        "size": ["S","M","L", "XL"],
+        "image_links": ["https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1d547ef8038d4bbcbaa3a9f20176e8b5_9366/Calcoes_Reversiveis_3G_Speed_Preto_DX6386_01_laydown.jpg",
+                        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e469c539efa24b18b7f0a9f201778b8b_9366/Calcoes_Reversiveis_3G_Speed_Preto_DX6386_02_laydown_hover.jpg"],
+        "short_description": "Calções reversíveis com um design reversível",
+        "big_description": "Por vezes, é preciso mudar qualquer coisa no court. Estes calções de basquetebol têm tecido que elimina a transpiração para afastar a humidade da tua pele. Com um design reversível, um dos lados é feito em rede de poliéster, ao passo que o outro é feito em malha dupla resistente."
       }
 
+    ], 
+
+    "acessorios" : [
+      {
+        "id": 1,
+        "name": "PATCH LOGO CREW 3 Pairs – White/Grey/Black" ,
+        "type":"Socks",
+        "brand" :"New Balance",
+        "price" :"14.99",
+        "size" : ["35-38","39-42","43-45","46-48"],
+        "image-links" : ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2024/02/new-balance-patch-logo-crew-3-pairs-white-grey-black-new-balance-patch-logo-crew-3-pairs-white-grey-black-las33763wm-01.jpg?fit=2000%2C2000&ssl=1",
+                        "https://i0.wp.com/xipastore.pt/wp-content/uploads/2024/02/new-balance-patch-logo-crew-3-pairs-white-grey-black-new-balance-patch-logo-crew-3-pairs-white-grey-black-las33763wm-03.jpg?fit=2000%2C2000&ssl=1",
+                        "https://i0.wp.com/xipastore.pt/wp-content/uploads/2024/02/new-balance-patch-logo-crew-3-pairs-white-grey-black-new-balance-patch-logo-crew-3-pairs-white-grey-black-las33763wm-07.jpg?fit=2000%2C2000&ssl=1"],
+        "short_description": "Estas meias New Balance de algodão oferecem conforto diário e estilo, com cano médio, base do pé acolchoada e um bordado chamativo em vermelho.",
+        "big_description": "É de conhecimento geral que as meias são um complemento essencial para qualquer guarda-roupa desportivo ou casual. Fabricadas com materiais de alta qualidade e tecnologia avançada, estas meias New Balance proporcionam conforto, durabilidade e desempenho superiores.Estas meias New Balance de algodão oferecem conforto diário e estilo, com cano médio, base do pé acolchoada e um bordado chamativo em vermelho.\nO design ergonómico e o ajuste anatómico garantem uma sensação de suavidade e apoio durante todo o dia, seja para a prática de desporto ou para o uso diário. Além disso, o tecido respirável ajuda a manter os teus pés frescos e secos, prevenindo o desconforto causado pela transpiração.\nCom detalhes de branding discreto da New Balance, estas meias combinam estilo e funcionalidade de forma harmoniosa. Disponíveis numa variedade de cores e tamanhos, as meias New Balance são a escolha perfeita para quem procura conforto e qualidade em cada passo."
+      },
+      {
+        "id": 2,
+        "name": "PATCH LOGO CREW 3 Pairs - Cream/Autumn Yellow/Navy Blue" ,
+        "type":"Socks",
+        "brand" :"New Balance",
+        "price" :"14.99",
+        "size" : ["35-38","39-42","43-45","46-48"],
+        "image-links" : ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2024/02/new-balance-patch-logo-crew-3-pairs-las33763as2-01.jpg?fit=2000%2C2000&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2024/02/new-balance-patch-logo-crew-3-pairs-las33763as2-02.jpg?fit=2000%2C2000&ssl=1"],
+        "short_description": "Estas meias New Balance de algodão oferecem conforto diário e estilo, com cano médio, base do pé acolchoada e um bordado chamativo em vermelho.",
+        "big_description": "É de conhecimento geral que as meias são um complemento essencial para qualquer guarda-roupa desportivo ou casual. Fabricadas com materiais de alta qualidade e tecnologia avançada, estas meias New Balance proporcionam conforto, durabilidade e desempenho superiores.Estas meias New Balance de algodão oferecem conforto diário e estilo, com cano médio, base do pé acolchoada e um bordado chamativo em vermelho.\nO design ergonómico e o ajuste anatómico garantem uma sensação de suavidade e apoio durante todo o dia, seja para a prática de desporto ou para o uso diário. Além disso, o tecido respirável ajuda a manter os teus pés frescos e secos, prevenindo o desconforto causado pela transpiração.\nCom detalhes de branding discreto da New Balance, estas meias combinam estilo e funcionalidade de forma harmoniosa. Disponíveis numa variedade de cores e tamanhos, as meias New Balance são a escolha perfeita para quem procura conforto e qualidade em cada passo."
+      },
+      {
+        "id": 3,
+        "name": "PATCH LOGO CREW 3 Pairs - White" ,
+        "type":"Socks",
+        "brand" :"New Balance",
+        "price" :"14.99",
+        "size" : ["35-38","39-42","43-45"],
+        "image-links" : ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2024/02/new-balance-patch-logo-crew-3-pairs-white-las33763wt-01.jpg?fit=2000%2C2000&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2024/02/new-balance-patch-logo-crew-3-pairs-white-las33763wt-03.jpg?fit=2000%2C2000&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2024/02/new-balance-patch-logo-crew-3-pairs-white-las33763wt-05.jpg?fit=2000%2C2000&ssl=1"],
+        "short_description": "Estas meias New Balance de algodão oferecem conforto diário e estilo, com cano médio, base do pé acolchoada e um bordado chamativo em vermelho.",
+        "big_description": "É de conhecimento geral que as meias são um complemento essencial para qualquer guarda-roupa desportivo ou casual. Fabricadas com materiais de alta qualidade e tecnologia avançada, estas meias New Balance proporcionam conforto, durabilidade e desempenho superiores.Estas meias New Balance de algodão oferecem conforto diário e estilo, com cano médio, base do pé acolchoada e um bordado chamativo em vermelho.\nO design ergonómico e o ajuste anatómico garantem uma sensação de suavidade e apoio durante todo o dia, seja para a prática de desporto ou para o uso diário. Além disso, o tecido respirável ajuda a manter os teus pés frescos e secos, prevenindo o desconforto causado pela transpiração.\nCom detalhes de branding discreto da New Balance, estas meias combinam estilo e funcionalidade de forma harmoniosa. Disponíveis numa variedade de cores e tamanhos, as meias New Balance são a escolha perfeita para quem procura conforto e qualidade em cada passo."
+      },
+
+      {
+        "id": 4,
+        "name": "Meias 3-Stripes – White (3 Pares)" ,
+        "type": "Socks",
+        "brand" :"Adidas",
+        "price" :"9.99",
+        "size" : ["35-38","39-42","43-45"],
+        "image-links" : ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2022/06/hd2211-2.jpeg?fit=2000%2C2000&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2022/06/hd2211-3.jpeg?fit=2000%2C2000&ssl=1"],
+        "short_description": "3 pares de meias de 3 riscas feitos em parte com conteudo reciclado.",
+        "big_description": "Passamos muito tempo de pé. Fica confortável nos dias mais caóticos e nas tuas aventuras com estas meias adidas. O algodão elástico envolve a pele, ao passo que os punhos canelados asseguram que não saem do lugar. \nFeito parcialmente com conteúdo reciclado a partir de desperdícios, aparas e resíduos domésticos para evitar o maior impacto ambiental da produção de novo material"
+      },
+      {
+        "id": 5,
+        "name": "Meias 3-Stripes – Black (3 Pares)" ,
+        "type": "Socks",
+        "brand" :"Adidas",
+        "price" :"9.99",
+        "size" : ["35-38","43-45"],
+        "image-links" : ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2022/06/hd2212-1.jpeg?fit=2000%2C2000&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2022/06/hd2212-2.jpeg?fit=2000%2C2000&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2022/06/hd2212-3.jpeg?fit=2000%2C2000&ssl=1"],
+        "short_description": "3 pares de meias de 3 riscas feitos em parte com conteudo reciclado.",
+        "big_description": "Passamos muito tempo de pé. Fica confortável nos dias mais caóticos e nas tuas aventuras com estas meias adidas. O algodão elástico envolve a pele, ao passo que os punhos canelados asseguram que não saem do lugar. \nFeito parcialmente com conteúdo reciclado a partir de desperdícios, aparas e resíduos domésticos para evitar o maior impacto ambiental da produção de novo material"
+      },
+      {
+        "id": 5,
+        "name": "Wristband White" ,
+        "type": "Confort",
+        "brand" :"Adidas",
+        "price" :"7.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/05/CF6279_.jpeg?fit=2000%2C2000&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/05/CF6279_2.jpeg?fit=2000%2C2000&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/05/CF6279_3.jpeg?fit=2000%2C2000&ssl=1"],
+        "short_description": "Fitas de pulso absorventes para jogadores que querem o conforto necessário para renderem ao máximo dentro de campo.",
+        "big_description": "Cinco sets? Tie-break? Independentemente do que acontecer no court, não te preocupes. Feitas numa mistura elástica de materiais absorventes, estas fitas de pulso para ténis têm um adidas Badge of Sport bordado na frente."
+      },
+      {
+        "id": 6,
+        "name": "HEX Sleev - Black" ,
+        "type": "Protection",
+        "brand" :"McDavid",
+        "price" :"29.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2020/02/71_svr2cVhL._SL1000_2000x.jpg?fit=1000%2C1000&ssl=1"],
+        "short_description": "Proteção McDavid produzida com tecnologia Hex™ que se move a adapta ao corpo. Extremamente flexível e respirável, esta manga apresenta tecnologia de compressão que estabiliza e aquece os músculos",
+        "big_description": "Proteção McDavid produzida com tecnologia Hex™ que se move a adapta ao corpo. Extremamente flexível e respirável, esta manga apresenta tecnologia de compressão que estabiliza e aquece os músculos."
+      },
+      {
+        "id": 7,
+        "name": "Arm Compression Sleeve - Blue" ,
+        "type": "Protection",
+        "brand" :"McDavid",
+        "price" :"24.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2019/05/10417495_10154034824843814_111077231566501722_n.jpg?fit=960%2C960&ssl=1"],
+        "short_description": "Já conheces as mangas de compressão da McDavid? Seja para basquetebol, Crossfit ou outro desporto estas mangas aceleram a recuperação ao mesmo tempo que te protegem.",
+        "big_description": "Já conheces as mangas de compressão da McDavid? Seja para basquetebol, Crossfit ou outro desporto estas mangas aceleram a recuperação ao mesmo tempo que te protegem."
+      },
+      {
+        "id": 8,
+        "name": "Adhesive Tape - Black" ,
+        "type": "Protection",
+        "brand" :"Mil-Tec",
+        "price" :"4.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2020/10/15933002.1.jpg?fit=850%2C850&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2020/10/15933002.4.jpeg?fit=1280%2C1280&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2020/10/15933002.3.jpeg?fit=1280%2C1280&ssl=1"],
+        "short_description": "Esta tape da MIL-TEC é super flexível e não deixa resíduos (não tem cola – adere nela própria).Para além de inúmeras outras aplicações, é perfeita para proteger os teus dedos da fricção das barras, estrutura de elevações, halteres, kettlebells ou outros instrumentos de tortura…ahhhh, desculpem, do treino!!!",
+        "big_description": "Esta tape da MIL-TEC é super flexível e não deixa resíduos (não tem cola – adere nela própria).Para além de inúmeras outras aplicações, é perfeita para proteger os teus dedos da fricção das barras, estrutura de elevações, halteres, kettlebells ou outros instrumentos de tortura…ahhhh, desculpem, do treino!!!"
+      },
+      {
+        "id": 9,
+        "name": "Fita NBA Dri-FIT White" ,
+        "type": "Confort",
+        "brand" :"Nike",
+        "price" :"14.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cemasyzf3yz95toytaq0/fita-o-cabelo-nba-Xw4W0l.png"],
+        "short_description": "Domina o campo com a fita para cabeça Nike NBA Dri-FIT, desenhada para atletas que exigem desempenho e estilo. Com a avançada tecnologia Dri-FIT da Nike, esta bandolete afasta o suor, assegurando que permaneças seco, confortável e concentrado no teu jogo.",
+        "big_description": "Domina o campo com a fita para cabeça Nike NBA, desenhada para atletas que exigem desempenho e estilo. Com a avançada tecnologia Dri-FIT da Nike, esta bandolete afasta o suor, assegurando que permaneças seco, confortável e concentrado no teu jogo. O seu tecido de malha elástico ajusta-se confortavelmente, mantendo um perfil baixo enquanto oferece o máximo conforto e controlo de humidade. Como produto oficial usado em campo pela NBA, traz equipamento de nível profissional diretamente para o teu treino."
+      },
+      {
+        "id": 10,
+        "name": "Fita NBA Dri-FIT Black" ,
+        "type": "Confort",
+        "brand" :"Nike",
+        "price" :"14.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/rh742k2y4myk2sjwmhml/fita-o-cabelo-nba-Xw4W0l.png  "],
+        "short_description": "Domina o campo com a fita para cabeça Nike NBA Dri-FIT, desenhada para atletas que exigem desempenho e estilo. Com a avançada tecnologia Dri-FIT da Nike, esta bandolete afasta o suor, assegurando que permaneças seco, confortável e concentrado no teu jogo.",
+        "big_description": "Domina o campo com a fita para cabeça Nike NBA, desenhada para atletas que exigem desempenho e estilo. Com a avançada tecnologia Dri-FIT da Nike, esta bandolete afasta o suor, assegurando que permaneças seco, confortável e concentrado no teu jogo. O seu tecido de malha elástico ajusta-se confortavelmente, mantendo um perfil baixo enquanto oferece o máximo conforto e controlo de humidade. Como produto oficial usado em campo pela NBA, traz equipamento de nível profissional diretamente para o teu treino."
+      },
+      {
+        "id": 11,
+        "name": "Conjunto de 3 Fitas para o Cabelo" ,
+        "type": "Confort",
+        "brand" :"Adidas",
+        "price" :"",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d09beeb441e440c5a9c0afc2010fbc26_9366/Conjunto_de_3_Fitas_para_o_Cabelo_Preto_IK0471_01_standard.jpg",
+                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b61e9548a96640a5b38bafc2010fc0f0_9366/Conjunto_de_3_Fitas_para_o_Cabelo_Preto_IK0471_41_detail_hover.jpg"],
+        "short_description": "Eleve seu estilo esportivo com o Conjunto de 3 Fitas para o Cabelo da Adidas. Projetadas para oferecer conforto e praticidade durante suas atividades, essas fitas adicionam um toque de moda esportiva ao seu visual.",
+        "big_description": "Eleve seu estilo esportivo com o Conjunto de 3 Fitas para o Cabelo da Adidas. Projetadas para oferecer conforto e praticidade durante suas atividades, essas fitas adicionam um toque de moda esportiva ao seu visual. Feitas com materiais de alta qualidade, essas fitas proporcionam um ajuste seguro e mantêm seu cabelo no lugar, permitindo que você se concentre totalmente em seu desempenho. Disponíveis em cores vibrantes e com o icônico logo da Adidas, essas fitas são o acessório perfeito para complementar seu visual atlético com estilo e funcionalidade."
+      },
+      {
+        "id": 12,
+        "name": "PRO MEN'S 3/4 Basketball Tights – White" ,
+        "type": "Confort",
+        "brand" :"Nike",
+        "price" :"34.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/10/AT3383-100_1.jpg?fit=1500%2C1500&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/10/AT3383-100_4.jpg?fit=1500%2C1500&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/10/AT3383-100_2.jpg?fit=1500%2C1500&ssl=1"],
+        "short_description": "Excelentes para os treinos e os jogos, as tights Nike Pro são uma primeira camada essencial para os atletas de basquetebol dos dias de hoje.",
+        "big_description": "Fabricadas com tecido elástico cosido de forma a proporcionar durabilidade, são anatómicas e conferem uma sensação sustentada em todos os movimentos. Este produto é fabricado com, pelo menos, 75% de fibras de poliéster reciclado."
+      },
+      {
+        "id": 13,
+        "name": "Pro Elite 2.0 - White" ,
+        "type": "Confort",
+        "brand" :"Nike",
+        "price" :"24.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/762678a4-ef58-43e8-8e95-c8d4b81e6444/manga-pro-elite-2-MN1dJv.png"],
+        "short_description": "A manga Nike Pro Elite 2.0 conta com tecnologia que drena o suor para te ajudar a manter a secura e a concentração e garante uma sensação de compressão para proporcionar suporte durante o jogo.",
+        "big_description": "A manga Nike Pro Elite 2.0 conta com tecnologia que drena o suor para te ajudar a manter a secura e a concentração e garante uma sensação de compressão para proporcionar suporte durante o jogo. O design ergonómico permite que te movas naturalmente para que possas dominar jogo após jogo."
+      },
+
+      {
+        "id": 14,
+        "name": "Pro Elite 2.0 - Black" ,
+        "type": "Confort",
+        "brand" :"Nike",
+        "price" :"24.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d0d07361-7e63-4fb2-b4bc-8a4e91fcbe9d/manga-pro-elite-2-MN1dJv.png"],
+        "short_description": "A manga Nike Pro Elite 2.0 conta com tecnologia que drena o suor para te ajudar a manter a secura e a concentração e garante uma sensação de compressão para proporcionar suporte durante o jogo.",
+        "big_description": "A manga Nike Pro Elite 2.0 conta com tecnologia que drena o suor para te ajudar a manter a secura e a concentração e garante uma sensação de compressão para proporcionar suporte durante o jogo. O design ergonómico permite que te movas naturalmente para que possas dominar jogo após jogo."
+      }
+      ],
+
+    "material" : [
+      {
+        "id": 1,
+        "name": "Elite Tournament" ,
+        "type": "Ball",
+        "brand" :"Nike",
+        "price" :"59.99",
+        "size" : [6,7],
+        "image-links" : ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5961c156-135b-4913-942a-81c861f39c38/bola-de-basquetebol-elite-tournament-8-panel-wg9p2H.png",
+                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f4fac756-75f2-45ec-9814-f8e2ab8b43d4/bola-de-basquetebol-elite-tournament-8-panel-wg9p2H.png"],
+        "short_description": "Bola de basquetebol 8-Panel (vazia)",
+        "big_description": "A coleção Elite é sobre praticar a modalidade que mais gostas da melhor forma possível. O exterior resistente da bola Nike Elite Tournament foi fabricado de modo a manter a consistência durante os jogos e treinos de lançamentos de triplos, enquanto o design em pele composta proporciona um toque excecional."
+      },
+      {
+        "id": 2,
+        "name": "Everyday Playground 8P" ,
+        "type": "Ball",
+        "brand" :"Nike",
+        "price" :"29.99",
+        "size" : [5,6,7],
+        "image-links" : ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e5bd932f-486b-4791-9ae6-6e1fc260960e/bola-de-basquetebol-everyday-playground-8p-8rw5R6.png",
+                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ffa19ddb-277c-45a1-888e-4dc556f9177a/bola-de-basquetebol-everyday-playground-8p-8rw5R6.png"],
+        "short_description": "Bola de basquetebol (vazia)",
+        "big_description": "Poing. Poing. Poing. Cesto sem espinhas. A única fórmula para a grandeza é trabalho árduo, dedicação e disciplina. Começa o teu percurso com a bola de basquetebol Nike Everyday Playground 8P, a bola para o exterior ideal para todos."
+      },
+      {
+        "id": 3,
+        "name": "Elite All-Court 8P" ,
+        "type": "Ball",
+        "brand" :"Nike",
+        "price" :"34.99",
+        "size" : [5,6],
+        "image-links" : ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e5bd932f-486b-4791-9ae6-6e1fc260960e/bola-de-basquetebol-everyday-playground-8p-8rw5R6.png",
+                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8a541213-be0b-4ff6-a2ff-61b9b6c54a1e/bola-de-basquetebol-elite-all-court-8p-LtQLCg.png"],
+        "short_description": "Bola de basquetebol (vazia)",
+        "big_description": "Exibe o teu talento com a bola de basquetebol Nike Elite All-Court 8P, quer estejas no ginásio ou no campo. Os canais profundos oferecem um alinhamento preciso da mão e controlo, enquanto a superfície aderente ajuda a manter a firmeza."
+      },
+      {
+        "id": 4,
+        "name": "Playground 2.0 8P" ,
+        "type": "Ball",
+        "brand" :"Jordan",
+        "price" :"29.99",
+        "size" : [7],
+        "image-links" : ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/796a5ab2-bce4-486d-b9a0-27cd652ee623/bola-de-basquetebol-jordan-playground-2-8p-pD3t2B.png",
+                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3fe1f97e-3c61-4a55-9411-964572143cd0/bola-de-basquetebol-jordan-playground-2-8p-pD3t2B.png"],
+        "short_description": "Bola de basquetebol (vazia)",
+        "big_description": "A parte exterior em borracha resistente significa que estás a postos para enfrentar o exterior, e os canais profundos ajudam a obter um controlo ideal. Entra em campo e joga: nada te irá parar."
+      },
+      {
+        "id": 5,
+        "name": "Ultimate 2.0 8P" ,
+        "type": "Ball",
+        "brand" :"Jordan",
+        "price" :"59.99",
+        "size" : [7],
+        "image-links" : ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/65447acf-0314-4d9c-8c60-4f85ea3a5c8e/bola-de-basquetebol-jordan-ultimate-2-8p-vSmKpF.png",
+                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/69953e06-bca8-4ab0-8a26-fd83b4daba8c/bola-de-basquetebol-jordan-ultimate-2-8p-vSmKpF.png"],
+        "short_description": "Bola de basquetebol (vazia)",
+        "big_description": "Concebida para resistir aos jogos no interior e exterior, esta bola vai acompanhar-te em todas as partidas intensas. Os canais profundos proporcionam o controlo de que precisas."
+      },
+      {
+        "id": 6,
+        "name": "8P" ,
+        "type": "Ball",
+        "brand" :"Jordan",
+        "price" :"59.99",
+        "size" : [6,7],
+        "image-links" : ["https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/10ef31ec-27d5-474d-b477-8e0d2f000acc/bola-de-basquetebol-jordan-8p-BtjV80.png",
+                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/83895548-2917-4e15-aee4-258d28e70bc4/bola-de-basquetebol-jordan-8p-BtjV80.png"],
+        "short_description": "Bola de basquetebol (vazia)",
+        "big_description": "Joga em qualquer altura e em qualquer lugar com a bola de basquetebol Jordan concebida para campos interiores e exteriores."
+      },
+      {
+        "id": 7,
+        "name": "Garrafa de Aço — 0,75 L" ,
+        "type": "Bottle",
+        "brand" :"Adidas",
+        "price" :"19.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fcf81059e1da467f975bac7500d74849_9366/Garrafa_de_Aco_075_l_Preto_GN1877_01_standard.jpg",
+                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ba761f025f4648789feaac7500d7551f_9366/Garrafa_de_Aco_075_l_Preto_GN1877_41_detail_hover.jpg"],
+        "short_description": "Garrafa de água de 0,75L e cor preta.",
+        "big_description": "Esta garrafa de água permite manter a tua água fresca durante os teus treinos e o seu material permite que seja resistente a quedas, permitindo maior durabilidade."
+      },
+      {
+        "id": 8,
+        "name": "Garrafa Performance – 0,5 L" ,
+        "type": "Bottle",
+        "brand" :"Adidas",
+        "price" :"9.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/12426c165d0445bbbff3aa86011a6080_9366/Garrafa_Performance_-_05_l_Preto_FM9935_01_standard.jpg",
+                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0e0c226fefa84548aa24aa86011a7188_9366/Garrafa_Performance_-_05_l_Preto_FM9935_41_detail_hover.jpg",
+                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c693128d64f4c8c955faa86011a9656_9366/Garrafa_Performance_-_05_l_Preto_FM9935_43_detail.jpg"],
+        "short_description": "Garrafa de água de 0,5L e cor preta.",
+        "big_description": "Esta garrafa de água permite manter a tua água fresca durante os teus treinos e o seu material permite que seja resistente a quedas, permitindo maior durabilidade."
+      },
+      {
+        "id": 9,
+        "name": "Tabela de Basquetebol com Altura Ajustável de 2,20 m a 3,05 m B100 Preto" ,
+        "type": "Tabela",
+        "brand" :"Tarmak",
+        "price" :"119.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://contents.mediadecathlon.com/p2579060/k$ea83ded892f0e97bf6f598f615ae5e85/sq/tabela-de-basquetebol-com-altura-ajustavel-de-220-m-a-305-m-b100-preto.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p1528691/k$c88ccd0fb42246cad6a32bff79375a32/sq/tabela-de-basquetebol-com-altura-ajustavel-de-220-m-a-305-m-b100-preto.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p2635437/k$81af77bed122d020124d99db9f82fb13/sq/tabela-de-basquetebol-com-altura-ajustavel-de-220-m-a-305-m-b100-preto.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p2635437/k$81af77bed122d020124d99db9f82fb13/sq/tabela-de-basquetebol-com-altura-ajustavel-de-220-m-a-305-m-b100-preto.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p1417741/k$f46d5df57dd060bfd856e47401cacde0/sq/tabela-de-basquetebol-com-altura-ajustavel-de-220-m-a-305-m-b100-preto.jpg?format=auto&f=720x720"],
+        "short_description": "Tabela de basquetebol ajustável.",
+        "big_description": "Tabela de basquetebol B100 preto, para crianças e adultos, para a prática de basquetebol em exterior. Ajustável de 2,20 m a 3,05 m.\nEsta tabela de basquetebol com base é ideal para iniciação. Disponibiliza 5 alturas de jogo: de 2,20 m a 3,05 m (altura oficial). Uma tabela resistente e estável."
+      },
+      {
+        "id": 10,
+        "name": "Tabela de Basquetebol Fixação em Parede SB100 Criança e Adulto Preto/Vermelho." ,
+        "type": "Tabela",
+        "brand" :"Tarmak",
+        "price" :"69.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://contents.mediadecathlon.com/p2704407/k$83ab027c91ca0eb915883a004bf5bdfb/sq/tabela-de-basquetebol-fixacao-em-parede-sb100-crianca-e-adulto-pretovermelho.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p2704425/k$1fb946004a9b160cce61137f06641f16/sq/tabela-de-basquetebol-fixacao-em-parede-sb100-crianca-e-adulto-pretovermelho.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p2704413/k$f6ea255b876211b4824a9bb47b9a51fb/sq/tabela-de-basquetebol-fixacao-em-parede-sb100-crianca-e-adulto-pretovermelho.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p2704387/k$510ef03aa78ca75e95094b46fb3c2a44/sq/tabela-de-basquetebol-fixacao-em-parede-sb100-crianca-e-adulto-pretovermelho.jpg?format=auto&f=720x720"],
+        "short_description": "Tabela de basquetebol fixa a parede.",
+        "big_description": "Tabela de basquetebol para fixação em parede Set B100, para crianças e adultos, para a prática de basquetebol no exterior.\nEsta tabela de basquetebol para fixação na parede, para crianças e adultos, é composta por uma tabela, um aro e uma rede. É compatível com a fixação de parede 500 (8496982), que permite 3 alturas."
+      },
+      {
+        "id": 11,
+        "name": "Tabela de Basquetebol com Altura Ajustável de 2,40 m a 3,05 m B700 PRO" ,
+        "type": "Tabela",
+        "brand" :"Tarmak",
+        "price" :"299.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://contents.mediadecathlon.com/p2373075/k$8ad1b2421662d626ea0f484e19122e80/sq/tabela-de-basquetebol-com-altura-ajustavel-de-240-m-a-305-m-b700-pro.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p2570668/k$c5a113b24e4712262407b7f0cce360b8/sq/tabela-de-basquetebol-com-altura-ajustavel-de-240-m-a-305-m-b700-pro.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p2635077/k$d186b8c931fff3cafa0a2f0042c93d37/sq/tabela-de-basquetebol-com-altura-ajustavel-de-240-m-a-305-m-b700-pro.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p2635081/k$a41aee1629cf952bb420de72ca76ff9a/sq/tabela-de-basquetebol-com-altura-ajustavel-de-240-m-a-305-m-b700-pro.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/p2635082/k$f2667cab78e0d639f134e4819927755d/sq/tabela-de-basquetebol-com-altura-ajustavel-de-240-m-a-305-m-b700-pro.jpg?format=auto&f=720x720"],
+        "short_description": "Tabela de basquetebol de tamanho ajustável para prática diariamente.",
+        "big_description": "Tabela de basquetebol B700 PRO, para crianças e adultos, para a prática de basquetebol em exterior. Facilmente ajustável sem ferramentas de 2,40 a 3,05 m.\nEsta tabela de basquetebol garante uma excelente qualidade de ressalto graças ao seu painel em policarbonato. Ajusta-se com uma mão, 7 alturas: 2,40 m a 3,05 m. Possui um aro flexível para afundanços."
+      },
+
+      {
+        "id": 12,
+        "name": "Cesto de basquetebol Goaliath GB50" ,
+        "type": "Tabela",
+        "brand" :"Goaliath",
+        "price" :"999.99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://contents.mediadecathlon.com/m4685001/k$3d47e1196fb702f0552c06a71ef94926/sq/cesto-de-basquetebol-goaliath-gb50.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/m4685007/k$605cfb6c3f494b4ee4b1ed8620dee99c/sq/cesto-de-basquetebol-goaliath-gb50.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/m4685006/k$2778e7e1b3fcb2da77f24a9ceadf77f0/sq/cesto-de-basquetebol-goaliath-gb50.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/m4685011/k$354023669c1248a49145d2db0cc38762/sq/cesto-de-basquetebol-goaliath-gb50.jpg?format=auto&f=720x720"],
+        "short_description": "Tabela de basquetebol de tamanho ajustável para prática diariamente.",
+        "big_description": "Cesto de basquetebol fixo Goaliath GB50 com regulação em altura e tampo de vidro temperado"
+      },
+
+      {
+        "id": 13,
+        "name": "Mochila desportiva de 3 listras" ,
+        "type": "Bag",
+        "brand" :"Adidas",
+        "price" :"27,99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://contents.mediadecathlon.com/m7277398/k$ee3b58237b7f090d332e5d7040a80e7e/sq/mochila-desportiva-de-3-listras-adidas.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/m7277406/k$0c1ba5d0602402437bc0fe83573005b8/sq/mochila-desportiva-de-3-listras-adidas.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/m7277392/k$4825a2f34f0a4e1efc15813d348622cb/sq/mochila-desportiva-de-3-listras-adidas.jpg?format=auto&f=720x720"],
+        "short_description": "Mochila desportiva de 3 listras adidas",
+        "big_description": "Mochila ideal para levares o teu equipamento para os treinos. Material resistente, à prova de água e respirável para eliminar os maus odores depois de um grande dia de treino."
+      },
+
+      {
+        "id": 14,
+        "name": "Mochila desportiva unisexo Adidas Power Vii" ,
+        "type": "Bag",
+        "brand" :"Adidas",
+        "price" :"34,99",
+        "size" : ["Tamanho unico"],
+        "image-links" : ["https://contents.mediadecathlon.com/m15610998/k$3101f58c8882eee296b86c559e9ba6d5/sq/mochila-desportiva-unisexo-adidas-power-vii.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/m15610999/k$df0d5ce9faf6443614688cea15c7d751/sq/mochila-desportiva-unisexo-adidas-power-vii.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/m15610996/k$fe06edfa6912ee5a9aa589732918c571/sq/mochila-desportiva-unisexo-adidas-power-vii.jpg?format=auto&f=720x720",
+                         "https://contents.mediadecathlon.com/m15611000/k$0ff1f4c64c6aeb1b80618a1a078c2fb8/sq/mochila-desportiva-unisexo-adidas-power-vii.jpg?format=auto&f=720x720"],
+        "short_description": "Mochila desportiva de 3 listras adidas",
+        "big_description": "Mochila ideal para levares o teu equipamento para os treinos. Material resistente, à prova de água e respirável para eliminar os maus odores depois de um grande dia de treino."
+      }
+    ],
+
+    "conjuntos" : [ 
+      {
+        "id": 1,
+        "name": "Vince Carter #15 - Toronto Raptors 1998-99 - Home" ,
+        "brand" :"Conjunto",
+        "price" :"129.99",
+        "size" : ["M","L"],
+        "sapatilhas" : "undefined",
+        "jersey": 5,
+        "calcoes": 9,
+        "image-links" : ["https://pbs.twimg.com/media/FTOnIEDWUAoqKd4.jpg",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-ness-nba-swingman-jersey-toronto-raptors-home-1998-99-vince-carter-15-smjygs18213-trawhit98vca-01.jpg",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-ness-nba-swingman-jersey-toronto-raptors-home-1998-99-vince-carter-15-smjygs18213-trawhit98vca-02.jpg",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-and-ness-nba-swingman-shorts-toronto-raptors-shorts-white-smshcp18154-trawhi98-05.jpg",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-and-ness-nba-swingman-shorts-toronto-raptors-shorts-white-smshcp18154-trawhi98-02.jpg"],
+        "short_description": "Equipamento completo Vince Carter #15 - Toronto Raptors 1998-99 - Home.",
+        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
+      },
+      {
+        "id": 2,
+        "name": "Dennis Rodman #91 - Chicago Bulls 1997-98 - Away" ,
+        "brand" :"Conjunto",
+        "price" :"129.99",
+        "size" : ["M","L"],
+        "sapatilhas" : "indefinido",
+        "jersey": 1,
+        "calcoes": 10,
+        "image-links" : ["https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MTI4MDAwMTg5NjA1MjQ4/1996-0223-dennis-rodman-scottie-pippen-michael-jordan-079087508jpg.jpg",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-and-ness-nba-swingman-jersey-chicago-bulls-away-1997-98-dennis-rodman-91-smjygs18154-cbuscar97drd-01.jpg",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-and-ness-nba-swingman-jersey-chicago-bulls-away-1997-98-dennis-rodman-91-smjygs18154-cbuscar97drd-02.jpg",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/09/SMSHGS18223_1.jpeg?resize=768%2C768&ssl=1",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/09/SMSHGS18223_4.jpeg?resize=768%2C768&ssl=1"],
+        "short_description": "Equipamento completo Dennis Rodman #91 - Chicago Bulls 1997-98 - Away",
+        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
+      },
+
+      {
+        "id": 3,
+        "name": "Lebron James #23 - LA Lakers 2022-23 - Home" ,
+        "brand" :"Conjunto",
+        "price" :"199.99",
+        "size" : ["S","M","L","XL"],
+        "sapatilhas" : 15,
+        "jersey": 11,
+        "calcoes": 12,
+        "image-links" : ["https://ca-times.brightspotcdn.com/dims4/default/7be9a77/2147483647/strip/true/crop/3548x2516+0+0/resize/1200x851!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fcf%2F67%2F74ef656743528f2f9f7ce02d8dc1%2Fla-photos-1staff-477386-sp-0107-lakers-knicks4-wjs.jpg",
+                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9aa1b6a-4385-4233-96b6-b03f5c83d1a6/camisola-nba-swingman-dri-fit-los-angeles-lakers-icon-edition-2022-23-6dDmWf.png",
+                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b9927fdc-ed13-4f38-af1e-4cd3f19f5359/camisola-nba-swingman-dri-fit-los-angeles-lakers-icon-edition-2022-23-6dDmWf.png",
+                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bfe906f3-0ff3-461b-856c-f95536754349/calcoes-nba-swingman-los-angeles-lakers-icon-edition-BxRTsw.png",
+                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0104d662-b020-4b0a-a287-014460a63ba0/calcoes-nba-swingman-los-angeles-lakers-icon-edition-BxRTsw.png",
+                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/be010f95-0bae-4fc5-a048-8b2d2a0944de/sapatilhas-de-basquetebol-lebron-witness-8-qjcntD.png",
+                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e52a06bb-ad8a-4a35-a04f-ff6c542a46e7/sapatilhas-de-basquetebol-lebron-witness-8-qjcntD.png"],
+        "short_description": "Equipamento completo Lebron James #23 - LA Lakers 2022-23 - Home",
+        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
+      },
+
+      {
+        "id": 4,
+        "name": "Stephen Curry #30 - GS Warriors 2022-23 - Home" ,
+        "brand" :"Conjunto",
+        "price" :"199.99",
+        "size" : ["S","M","L","XL"],
+        "sapatilhas" : 11,
+        "jersey": 17,
+        "calcoes": 18,
+        "image-links" : ["https://wesportfr.com/wp-content/uploads/2022/12/Icon_sipausa_39947060-1200x800.jpg",
+                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ac6733f-1dc1-46ce-ae77-fbd4c73099f9/camisola-nba-swingman-dri-fit-golden-state-warriors-icon-edition-2022-23-SW7Nkx.png",
+                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0e391898-5de8-4a09-b498-78d4d65e7859/camisola-nba-swingman-dri-fit-golden-state-warriors-icon-edition-2022-23-SW7Nkx.png",
+                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fatno6ey4gkepoaj25qq/calcoes-nba-swingman-golden-state-warriors-icon-edition-8tQrL3.png",
+                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ncjbhvuxad4wxij8sgwz/calcoes-nba-swingman-golden-state-warriors-icon-edition-8tQrL3.png",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/12/under-armour-curry-11-champion-mindset-3026617-300-01.jpg",
+                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/12/under-armour-curry-11-champion-mindset-3026617-300-02.jpg"
+                         ],
+        "short_description": "Equipamento completo Stephen Curry #30 - GS Warriors 2022-23 - Home",
+        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
+      },
+
+      {
+        "id": 5,
+        "name": "Jayson Tatum #0 - Boston Celtics 2023/24 - City Version",
+        "brand": "Conjunto",
+        "price" :"199.99",
+        "size" : ["S","M","L","XL"],
+        "sapatilhas" : 16,
+        "jersey": 13,
+        "calcoes": 14,
+        "image-links" : ["https://bostonglobe-prod.cdn.arcpublishing.com/resizer/zm_J4GvcEwpAJ6xXK9WJTNBnrfI=/960x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/CLSBRPRLMY2I64N6MEN6DIYOD4.JPG",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b9c30fca-be82-459e-8f4d-ae5ca0653190/camisola-nba-swingman-dri-fit-jayson-tatum-boston-celtics-city-edition-2023-24-31jSr9.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/741c2659-a8d1-45fe-ad13-b986f09283ee/camisola-nba-swingman-dri-fit-jayson-tatum-boston-celtics-city-edition-2023-24-31jSr9.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d750f17-5ce4-4eea-99e4-8c7342acf156/calcoes-nba-swingman-dri-fit-boston-celtics-2023-24-city-edition-rZTzcG.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/876fe2ea-58f6-4daa-ae36-adf2e5aff152/calcoes-nba-swingman-dri-fit-boston-celtics-2023-24-city-edition-rZTzcG.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aa5ce444-738d-434c-8e0e-d5d73bc5e47a/calcoes-nba-swingman-dri-fit-boston-celtics-2023-24-city-edition-rZTzcG.png"
+                         ],
+        "short_description": "Equipamento completo Jayson Tatum #0 - Boston Celtics 2023/24 - City Version",
+        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
+      },
+
+      {
+        "id": 6,
+        "name": "Trae Young #11 - Atlanta Hawks 2022-23 - Home",
+        "brand": "Conjunto",
+        "price" :"199.99",
+        "size" : ["S","M","L","XL"],
+        "sapatilhas" : 3,
+        "jersey": 15,
+        "calcoes": 16,
+        "image-links" : ["https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_1200%2Cx_1674%2Cy_519/MTg4NTQ2MjcyNTY1NjY3Nzg3/usatsi_17950909.jpg",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e2144547-d53e-4ed9-9f4a-9e29fd646083/camisola-nba-swingman-dri-fit-atlanta-hawks-icon-edition-2022-23-Gh2NMT.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45595be2-4dea-46dd-a5da-f2890ead1936/camisola-nba-swingman-dri-fit-atlanta-hawks-icon-edition-2022-23-Gh2NMT.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/423d39e9-f51a-4df1-a858-0fc62fa38aec/calcoes-nba-swingman-hawks-icon-edition-2020-vRQPzs.png",
+                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/698b7471-89be-4ddb-8089-abb21fd8dc57/calcoes-nba-swingman-hawks-icon-edition-2020-vRQPzs.png",
+                        "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/10/adidas-trae-young-3-arctic-night-acid-orange-ie9303-01.jpg?fit=2000%2C2000&ssl=1",
+                        "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/10/adidas-trae-young-3-arctic-night-acid-orange-ie9303-02.jpg?fit=2000%2C2000&ssl=1"                
+                      ],
+        "short_description": "Equipamento completo Trae Young #11 - Atlanta Hawks 2022-23 - Home",
+        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
+      }
 
     ]
-  }
+}

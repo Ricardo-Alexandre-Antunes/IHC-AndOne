@@ -252,18 +252,22 @@ function PainelConta(props) {
                                       <form className="p-2">
                                         <Row>
                                           <Col> 
+                                            <p>Nome</p>
                                             <input type="text" placeholder="Nome" value={newName} onChange={e => setNewName(e.target.value)} />
                                           </Col>
                                           <Col>
+                                            <p>Endereço</p>
                                             <input type="text" placeholder="Endereço" value={newAddress} onChange={e => setNewAddress(e.target.value)} />
                                           </Col>
                                           <Col>
+                                            <p>Código Postal</p>
                                             <input type="text" placeholder="Código Postal" value={newPostalCode} onChange={e => setNewPostalCode(e.target.value)} />
                                           </Col>
                                           <Col>
+                                            <p>NIF</p>
                                             <input type="text" placeholder="NIF" value={newNif} onChange={e => setNewNif(e.target.value)} />
                                           </Col>
-                                          <Col>
+                                          <Col className="d-flex">
                                             <Button onClick={handleAddBillingDetail} style={{ width: 200 }}>Adicionar</Button>  
                                           </Col>
                                         </Row>

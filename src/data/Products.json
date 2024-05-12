@@ -693,7 +693,7 @@
         "big_description": "Passamos muito tempo de pé. Fica confortável nos dias mais caóticos e nas tuas aventuras com estas meias adidas. O algodão elástico envolve a pele, ao passo que os punhos canelados asseguram que não saem do lugar. \nFeito parcialmente com conteúdo reciclado a partir de desperdícios, aparas e resíduos domésticos para evitar o maior impacto ambiental da produção de novo material"
       },
       {
-        "id": 5,
+        "id": 6,
         "name": "Wristband White" ,
         "type": "Confort",
         "brand" :"Adidas",
@@ -706,7 +706,7 @@
         "big_description": "Cinco sets? Tie-break? Independentemente do que acontecer no court, não te preocupes. Feitas numa mistura elástica de materiais absorventes, estas fitas de pulso para ténis têm um adidas Badge of Sport bordado na frente."
       },
       {
-        "id": 6,
+        "id": 7,
         "name": "HEX Sleev - Black" ,
         "type": "Protection",
         "brand" :"McDavid",
@@ -717,7 +717,7 @@
         "big_description": "Proteção McDavid produzida com tecnologia Hex™ que se move a adapta ao corpo. Extremamente flexível e respirável, esta manga apresenta tecnologia de compressão que estabiliza e aquece os músculos."
       },
       {
-        "id": 7,
+        "id": 8,
         "name": "Arm Compression Sleeve - Blue" ,
         "type": "Protection",
         "brand" :"McDavid",
@@ -728,7 +728,7 @@
         "big_description": "Já conheces as mangas de compressão da McDavid? Seja para basquetebol, Crossfit ou outro desporto estas mangas aceleram a recuperação ao mesmo tempo que te protegem."
       },
       {
-        "id": 8,
+        "id": 9,
         "name": "Adhesive Tape - Black" ,
         "type": "Protection",
         "brand" :"Mil-Tec",
@@ -741,7 +741,7 @@
         "big_description": "Esta tape da MIL-TEC é super flexível e não deixa resíduos (não tem cola – adere nela própria).Para além de inúmeras outras aplicações, é perfeita para proteger os teus dedos da fricção das barras, estrutura de elevações, halteres, kettlebells ou outros instrumentos de tortura…ahhhh, desculpem, do treino!!!"
       },
       {
-        "id": 9,
+        "id": 10,
         "name": "Fita NBA Dri-FIT White" ,
         "type": "Confort",
         "brand" :"Nike",
@@ -752,7 +752,7 @@
         "big_description": "Domina o campo com a fita para cabeça Nike NBA, desenhada para atletas que exigem desempenho e estilo. Com a avançada tecnologia Dri-FIT da Nike, esta bandolete afasta o suor, assegurando que permaneças seco, confortável e concentrado no teu jogo. O seu tecido de malha elástico ajusta-se confortavelmente, mantendo um perfil baixo enquanto oferece o máximo conforto e controlo de humidade. Como produto oficial usado em campo pela NBA, traz equipamento de nível profissional diretamente para o teu treino."
       },
       {
-        "id": 10,
+        "id": 11,
         "name": "Fita NBA Dri-FIT Black" ,
         "type": "Confort",
         "brand" :"Nike",
@@ -763,7 +763,7 @@
         "big_description": "Domina o campo com a fita para cabeça Nike NBA, desenhada para atletas que exigem desempenho e estilo. Com a avançada tecnologia Dri-FIT da Nike, esta bandolete afasta o suor, assegurando que permaneças seco, confortável e concentrado no teu jogo. O seu tecido de malha elástico ajusta-se confortavelmente, mantendo um perfil baixo enquanto oferece o máximo conforto e controlo de humidade. Como produto oficial usado em campo pela NBA, traz equipamento de nível profissional diretamente para o teu treino."
       },
       {
-        "id": 11,
+        "id": 12,
         "name": "Conjunto de 3 Fitas para o Cabelo" ,
         "type": "Confort",
         "brand" :"Adidas",
@@ -775,7 +775,7 @@
         "big_description": "Eleve seu estilo esportivo com o Conjunto de 3 Fitas para o Cabelo da Adidas. Projetadas para oferecer conforto e praticidade durante suas atividades, essas fitas adicionam um toque de moda esportiva ao seu visual. Feitas com materiais de alta qualidade, essas fitas proporcionam um ajuste seguro e mantêm seu cabelo no lugar, permitindo que você se concentre totalmente em seu desempenho. Disponíveis em cores vibrantes e com o icônico logo da Adidas, essas fitas são o acessório perfeito para complementar seu visual atlético com estilo e funcionalidade."
       },
       {
-        "id": 12,
+        "id": 13,
         "name": "PRO MEN'S 3/4 Basketball Tights – White" ,
         "type": "Confort",
         "brand" :"Nike",
@@ -788,7 +788,7 @@
         "big_description": "Fabricadas com tecido elástico cosido de forma a proporcionar durabilidade, são anatómicas e conferem uma sensação sustentada em todos os movimentos. Este produto é fabricado com, pelo menos, 75% de fibras de poliéster reciclado."
       },
       {
-        "id": 13,
+        "id": 14,
         "name": "Pro Elite 2.0 - White" ,
         "type": "Confort",
         "brand" :"Nike",
@@ -800,7 +800,7 @@
       },
 
       {
-        "id": 14,
+        "id": 15,
         "name": "Pro Elite 2.0 - Black" ,
         "type": "Confort",
         "brand" :"Nike",

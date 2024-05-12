@@ -1,7 +1,13 @@
 import React from "react";
+import { useState, useEffect } from 'react'
+import ProductCard from './ProductCard';
+import ProductList from '../data/Products.json'
+import { ShoeFilterBar } from './VerticalFilterBar';
+import { useParams } from 'react-router-dom';
 
 function AcessoriosSearch() {
-    const allProducts = ProductList.sapatilhas.map(product => product);
+    const allProducts = ProductList.acessorios.map(product => product);
+    console.log(allProducts);
 
     // Get all prices
     const prices = allProducts.map(product => product.price);
@@ -23,7 +29,7 @@ function AcessoriosSearch() {
       }, [urlSearchTerm]);
       
       useEffect(() => {
-        const newFilteredProducts = ProductList.sapatilhas.filter(product =>
+        const newFilteredProducts = ProductList.acessorios.filter(product =>
           (selectedBrands.length === 0 || selectedBrands.includes(product.brand)) &&
           product.price >= selectedPrices[0] && product.price <= selectedPrices[1] &&
           (selectedSizes.length === 0 || (product.size && selectedSizes.some(selectedSize => 

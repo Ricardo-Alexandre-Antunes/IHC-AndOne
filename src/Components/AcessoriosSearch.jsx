@@ -31,15 +31,15 @@ function AcessoriosSearch() {
       
       useEffect(() => {
         const newFilteredProducts = ProductList.acessorios.filter(product =>
+          (selectedType.length === 0 || selectedType.includes(product.type)) &&
           (selectedBrands.length === 0 || selectedBrands.includes(product.brand)) &&
           product.price >= selectedPrices[0] && product.price <= selectedPrices[1] &&
           (selectedSizes.length === 0 || (product.size && selectedSizes.some(selectedSize => 
             product.size.includes(selectedSize)))) &&
-          (selectedType.length === 0 || selectedType.includes(product.type)) &&
           (!searchTerm || product.name.toLowerCase().includes(searchTerm.toLowerCase()))
         );
         setFilteredProducts(newFilteredProducts);
-    }, [searchTerm, selectedBrands, selectedPrices, selectedSizes]);
+    }, [searchTerm, selectedBrands, selectedPrices, selectedSizes, selectedType]);
       console.log(selectedSizes);
     
     return (

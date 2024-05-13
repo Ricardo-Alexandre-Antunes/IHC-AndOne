@@ -22,6 +22,7 @@ function PainelConta(props) {
     const [newPostalCode, setNewPostalCode] = useState('');
     const [newNif, setNewNif] = useState('');
     const [showModal, setShowModal] = useState(false);
+    const [showModal2, setShowModal2] = useState(false);
     const [password, setPassword] = useState('');
     const [newEmail, setNewEmail] = useState('');
 
@@ -122,8 +123,12 @@ function PainelConta(props) {
         return true;
       };
 
-      const openModal = () => {
-        setShowModal(true);
+    const openModal = () => {
+      setShowModal(true);
+    };
+
+    const openModal2 = () => {
+      setShowModal2(true);
     };
 
     const closeModal = () => {
@@ -172,7 +177,7 @@ function PainelConta(props) {
                             <Row>
                                 <Button style={{ backgroundColor: '#333', border: 0 }} size="lg" className="d-flex justify-content-begin" onClick={handleDados}>Dados Pessoais</Button>
                                 <Button style={{ backgroundColor: '#333', border: 0 }} size="lg" className="d-flex justify-content-begin" onClick={handleEncomendas}>Minhas encomendas/faturas</Button>
-                                <Button style={{ backgroundColor: '#333', border: 0, color: 'red' }} size="lg" className="d-flex justify-content-begin" onClick={handleLogout}>Terminar sessão</Button>
+                                <Button style={{ backgroundColor: '#333', border: 0, color: 'red' }} size="lg" className="d-flex justify-content-begin" onClick={openModal2}>Terminar sessão</Button>
                             </Row>
                         </div>
                     </Container>
@@ -320,6 +325,21 @@ function PainelConta(props) {
               <Modal.Footer>
                   <Button variant="secondary" onClick={closeModal}>
                       Fechar
+                  </Button>
+              </Modal.Footer>
+            </Modal>
+
+            <Modal show={showModal2} onHide={() => setShowModal2(false)}>
+              <Modal.Header closeButton>
+                <Modal.Title>Terminar Sessão</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>Tem a certeza que pretende terminar a sessão?</Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={() => setShowModal2(false)}>
+                    Cancelar
+                  </Button>
+                  <Button variant="danger" onClick={handleLogout} >
+                    Terminar sessão
                   </Button>
               </Modal.Footer>
             </Modal>

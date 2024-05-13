@@ -9,20 +9,36 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function MyNavbar({ activeID }) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [firstName, setFirstName] = useState('');
   const navigate = useNavigate();
 
-  const curUser =(localStorage.getItem('curUser'));
-  let users = JSON.parse(localStorage.getItem('users'));
-  if (!users) {
-    localStorage.setItem('users', JSON.stringify([]));
-  }
-  let user = users.find(user => user.email === curUser);
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const curUser = localStorage.getItem('curUser');
+      let users = JSON.parse(localStorage.getItem('users')) || [];
+      let user = users.find(user => user.email === curUser);
+      if (user) {
+        setFirstName(user.firstName);
+      }
+    };
+  
+    // Listen for changes to local storage  
+    window.addEventListener('storage', handleStorageChange);
+  
+    // Call the function once to handle the current state of local storage
+    handleStorageChange();
+  
+    // Cleanup: remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -55,7 +71,7 @@ function MyNavbar({ activeID }) {
               </Nav>
               <Nav className="justify-content-end" >
                   {login === 'true' ? (
-                      <Nav.Link as={ Link } to="/perfil" className={activeID === 6? 'active' : ''}><Row><Col style={{ fontSize: 20 }}>{user.firstName}</Col><Col><FontAwesomeIcon icon={faUser} size="2xl" /></Col></Row></Nav.Link>
+                      <Nav.Link as={ Link } to="/perfil" className={activeID === 6? 'active' : ''}><Row><Col style={{ fontSize: 20 }}>{firstName}</Col><Col><FontAwesomeIcon icon={faUser} size="2xl" /></Col></Row></Nav.Link>
                   ) : (
                       <Nav.Link as={ Link } to="/login" className={activeID === 6? 'active' : ''} onClick={() => {localStorage.setItem("previousPage", "/perfil")}}><FontAwesomeIcon icon={faUser} size="2xl" /></Nav.Link>
                   )}

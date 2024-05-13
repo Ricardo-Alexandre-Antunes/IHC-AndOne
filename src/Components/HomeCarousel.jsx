@@ -9,7 +9,7 @@ function HomeCarousel() {
   return (
     <Carousel>
       <Carousel.Item as={ Link } to="/sapatilhas">
-        <img src="https://d3pnpe87i1fkwu.cloudfront.net/wp-content/uploads/2017/10/Wide-Basketball-Shoes.jpg" 
+        <img src="https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_1200%2Cx_1994%2Cy_1934/MTk4MTQ4NTkzMjI2MzU5OTk4/nike-lebron.jpg" 
         className="d-block w-100 carousel-image"
         alt="Sapatilhas"
         />
@@ -39,7 +39,7 @@ function HomeCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item as={ Link } to="/conjuntos">
-        <img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/c2d814a366ae15d7f134a4b9dda33fc67c199f128d9d47fc86dfcd46220415f9.jpg" 
+        <img src="https://static01.nyt.com/images/2023/05/14/multimedia/14nba-playoffs-celtics-sixers-tatum-zlcm/14nba-playoffs-celtics-sixers-tatum-zlcm-videoSixteenByNine3000.jpg" 
         className="d-block w-100 carousel-image"
         alt="Sapatilhas"
         />
@@ -49,7 +49,7 @@ function HomeCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item as={ Link } to="/material">
-        <img src="https://i2.pickpik.com/photos/684/300/60/basketball-rim-hoop-net-a0b55ecdd3892f46d6ac8cbeabdf555e.jpg" 
+        <img src="https://frasertheagency.com/wp-content/uploads/2023/02/Header_Sports-1-1.jpg" 
         className="d-block w-100 carousel-image"
         alt="Sapatilhas"
         />

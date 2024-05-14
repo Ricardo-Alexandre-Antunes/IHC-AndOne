@@ -31,7 +31,7 @@ const ShoeFilterBar = ({ selectedBrands, setSelectedBrands, selectedPrices, setS
         setSelectedSizes(prevSizes => prevSizes.includes(size) ? prevSizes.filter(s => s !== size) : [...prevSizes, size]);
         };
     return (
-        <div className='container' style={{ color: 'white' }}>
+        <div className='container'>
             <div className={`filter-bar`}>
                 <h2 className='unselectable'>Filtros</h2>
                 <div className="accordion">
@@ -170,7 +170,7 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
     };
 
     return (
-        <div className='container' style={{ color: 'white' }}>
+        <div className='container' >
         <div className={`filter-bar`}>
             <h2 className='unselectable'>Filtros</h2>
             <div className="accordion">
@@ -280,7 +280,7 @@ const SearchFilterBar = ({ selectedBrands, setSelectedBrands, selectedCategories
     return (
         <div>
             {/* Render the filter bar */}
-            <div className="filter-bar" style={{ color: 'white' }}>
+            <div className="filter-bar">
                 <div className="filter-section">
                     <h3>Brands</h3>
                     {brands.map(brand => (
@@ -355,8 +355,8 @@ const MaterialFilterBar = ({selectedBrands, setSelectedBrands, selectedPrices, s
         const [priceOpen, setPriceOpen] = useState(true);
         const [typeOpen, setTypeOpen] = useState(true);
 
-        const brands = ['Nike', 'Adidas','Goaliath','Tarmak','Jordan']; // Define your brands here
-        const type = ['Bola', 'Garrafa', 'Tabela', 'Mochila']
+        const brands = [...new Set(Object.values(ProductList.material).flat().map(product => product.brand))];
+        const type = [...new Set(Object.values(ProductList.material).flat().map(product => product.type))];
 
         const handleBrandChange = (event) => {
             event.stopPropagation();
@@ -381,7 +381,7 @@ const MaterialFilterBar = ({selectedBrands, setSelectedBrands, selectedPrices, s
         };
 
         return (
-            <div className='container' style={{ color: 'white' }}>
+            <div className='container' >
                 <div className={`filter-bar`}>
                     <h2 className='unselectable'>Filtros</h2>
                     <div className="accordion">
@@ -466,4 +466,152 @@ const MaterialFilterBar = ({selectedBrands, setSelectedBrands, selectedPrices, s
         );
     };
 
-export {ShoeFilterBar, EquipamentosFilterBar, SearchFilterBar, MaterialFilterBar};
+    const AcessoriosFilterBar = ({selectedBrands, setSelectedBrands, selectedPrices, setSelectedPrices, selectedType, setSelectedType, selectedSizes, setSelectedSizes}) => {
+        const [brandOpen, setBrandOpen] = useState(true); // Set initial state to true
+        const [priceOpen, setPriceOpen] = useState(true);
+        const [typeOpen, setTypeOpen] = useState(true);
+        const [sizeOpen, setSizeOpen] = useState(true); // Set initial state to true
+
+        const brands = [...new Set(Object.values(ProductList.acessorios).flat().map(product => product.brand))];
+        const type = [...new Set(Object.values(ProductList.acessorios).flat().map(product => product.type))];
+        const sizes = ["35-38","39-42","43-45","46-48", "Tamanho unico"]
+
+        const handleBrandChange = (event) => {
+            event.stopPropagation();
+          
+            const brand = event.target.value;
+            if (selectedBrands.includes(brand)) {
+              setSelectedBrands(selectedBrands.filter(b => b !== brand));
+            } else {
+              setSelectedBrands([...selectedBrands, brand]);
+            }
+        };
+
+        const handleTypeChange = (event) => {
+            event.stopPropagation();
+          
+            const type = event.target.value;
+            if (selectedType.includes(type)) {
+              setSelectedType(selectedType.filter(b => b !== type));
+            } else {
+              setSelectedType([...selectedType, type]);
+            }
+        };
+
+        const handleSizeChange = (event) => {
+            event.stopPropagation();
+          
+            const size = String(event.target.value);
+            setSelectedSizes(prevSizes => prevSizes.includes(size) ? prevSizes.filter(s => s !== size) : [...prevSizes, size]);
+            };
+
+        return (
+            <div className='container' >
+                <div className={`filter-bar`}>
+                    <h2 className='unselectable'>Filtros</h2>
+                    <div className="accordion">
+                        <h3 className='unselectable pt-2' onClick={(event) => {
+                    if (event.target.type !== 'checkbox') {
+                        setBrandOpen(!brandOpen);
+                    }
+                    }}>Marca <FontAwesomeIcon icon={brandOpen ? faChevronUp : faChevronDown} /></h3>
+                        {brandOpen && (brands || []).map(brand => (
+                            <div key={brand} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }}>
+                                <input
+                                    type="checkbox"
+                                    id={brand}
+                                    name="brand"
+                                    value={brand}
+                                    checked={selectedBrands.includes(brand)}
+                                    onChange={handleBrandChange}
+                                    className='unselectable'
+                                />
+                                <label htmlFor={brand} className='unselectable' style={{ paddingLeft: 5, fontSize: '18px' }} >{brand}</label>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="accordion">
+                    <h3 className='unselectable pt-2' onClick={(event) => {
+                if (event.target.type !== 'checkbox') {
+                    setSizeOpen(!sizeOpen);
+                }
+                }}>Tamanhos <FontAwesomeIcon icon={sizeOpen ? faChevronUp : faChevronDown} /></h3>
+                    {sizeOpen && (sizes || []).map(size => (
+                        <div key={size} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }} >
+                        <input
+                            type="checkbox"
+                            id={`size-${size}`}
+                            name="size"
+                            value={size}
+                            checked={selectedSizes.includes(size)}
+                            onChange={handleSizeChange}
+                            className='unselectable'
+                        />
+                        <label htmlFor={`size-${size}`} className='unselectable' style={{ paddingLeft: 5, fontSize: '18px' }} >{size}</label>
+                        </div>
+                    ))}
+                </div>
+
+                    <div className="accordion">
+                        <h3 className='unselectable pt-2' onClick={(event) => {
+                    if (event.target.type !== 'checkbox') {
+                        setTypeOpen(!typeOpen);
+                    }
+                    }}>Tipo <FontAwesomeIcon icon={typeOpen ? faChevronUp : faChevronDown} /></h3>
+                        {typeOpen && (type || []).map(type => (
+                            <div key={type} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }}>
+                                <input
+                                    type="checkbox"
+                                    id={type}
+                                    name="brand"
+                                    value={type}
+                                    checked={selectedType.includes(type)}
+                                    onChange={handleTypeChange}
+                                    className='unselectable'
+                                />
+                                <label htmlFor={type} className='unselectable' style={{ paddingLeft: 5, fontSize: '18px' }} >{type}</label>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="accordion pt-2">
+                        <h3 className='unselectable' onClick={(event) => {
+                    if (event.target.type !== 'number' && event.target.type !== 'text') {
+                        setPriceOpen(!priceOpen);
+                    }
+                    }}>Preço <FontAwesomeIcon icon={priceOpen ? faChevronUp : faChevronDown} /></h3>
+                        {priceOpen && (
+                            <div>
+                            <input
+                                className="small-input"
+                                type="number"
+                                min={0}
+                                value={selectedPrices[0] === 0 ? '0' : selectedPrices[0]}
+                                onChange={event => {
+                                    const value = event.target.value;
+                                    setSelectedPrices([value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value), selectedPrices[1]]);
+                                }}
+                            />
+                            <div className='pt-2'></div>
+                            <input
+                                className="small-input"
+                                type="number"
+                                value={selectedPrices[1] === Infinity ? 'Infinity' : selectedPrices[1] === 0 ? '0' : selectedPrices[1]}
+                                onChange={event => {
+                                    const value = event.target.value;
+                                    if (value === 'Infinity' || value === '') {
+                                        setSelectedPrices([selectedPrices[0], Infinity]);
+                                    } else {
+                                        setSelectedPrices([selectedPrices[0], value === '' ? '0' : (value.startsWith('0') && value.length > 1 ? value.slice(1) : value)]);
+                                    }
+                                }}
+                            />
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
+export {ShoeFilterBar, EquipamentosFilterBar, SearchFilterBar, MaterialFilterBar, AcessoriosFilterBar};

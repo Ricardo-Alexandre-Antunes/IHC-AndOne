@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from 'react'
 import ProductCard from './ProductCard';
 import ProductList from '../data/Products.json'
-import { ShoeFilterBar } from './VerticalFilterBar';
+import { AcessoriosFilterBar } from './VerticalFilterBar';
 import { useParams } from 'react-router-dom';
 
 function AcessoriosSearch() {
@@ -16,6 +16,7 @@ function AcessoriosSearch() {
     const [selectedBrands, setSelectedBrands] = useState([]);
     const [selectedPrices, setSelectedPrices] = useState([0, Math.max(...prices)]);
     const [selectedSizes, setSelectedSizes] = useState([]);
+    const [selectedType, setSelectedType] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
 
     const [favorites, setFavorites] = useState(
@@ -30,6 +31,7 @@ function AcessoriosSearch() {
       
       useEffect(() => {
         const newFilteredProducts = ProductList.acessorios.filter(product =>
+          (selectedType.length === 0 || selectedType.includes(product.type)) &&
           (selectedBrands.length === 0 || selectedBrands.includes(product.brand)) &&
           product.price >= selectedPrices[0] && product.price <= selectedPrices[1] &&
           (selectedSizes.length === 0 || (product.size && selectedSizes.some(selectedSize => 
@@ -37,14 +39,14 @@ function AcessoriosSearch() {
           (!searchTerm || product.name.toLowerCase().includes(searchTerm.toLowerCase()))
         );
         setFilteredProducts(newFilteredProducts);
-    }, [searchTerm, selectedBrands, selectedPrices, selectedSizes]);
+    }, [searchTerm, selectedBrands, selectedPrices, selectedSizes, selectedType]);
       console.log(selectedSizes);
     
     return (
         <>
             {searchTerm && <h2 style={{ fontSize: '2em', textAlign: "center" }}>Searching for: {searchTerm}</h2>}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 5fr', height: '100%', alignItems: 'start' }}>
-                <ShoeFilterBar
+                <AcessoriosFilterBar
                     className={`filter`}
                     selectedBrands={selectedBrands}
                     setSelectedBrands={setSelectedBrands}
@@ -52,6 +54,8 @@ function AcessoriosSearch() {
                     setSelectedPrices={setSelectedPrices}
                     selectedSizes={selectedSizes}
                     setSelectedSizes={setSelectedSizes}
+                    selectedType={selectedType}
+                    setSelectedType={setSelectedType}
                 />
                 
                 <div className={`product-list`} style={{padding: '0', margin: '0', boxSizing: 'border-box' }}>

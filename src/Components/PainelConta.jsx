@@ -143,8 +143,8 @@ function PainelConta(props) {
           return;
         }
 
-        const users = JSON.parse(localStorage.getItem('users'));
         const allEmails = users.map(user => user.email);
+        console.log(user)
 
         if (allEmails.includes(newEmail) && newEmail !== user.email) {
           alert('Email já em uso. Se tem a certeza que não tem conta, contacte-nos.');
@@ -159,6 +159,7 @@ function PainelConta(props) {
         user.lastName = newLastName.trim() !== '' || newLastName.trim() === undefined ? newLastName : user.lastName;
         user.email = newEmail.trim() !== '' ? newEmail : user.email;
         user.password = password.trim() !== '' ? password : user.password;
+        console.log(user)
         localStorage.setItem('curUser', user.email);
         localStorage.setItem('users', JSON.stringify(users));
         setName(user.firstName + ' ' + user.lastName);
@@ -279,9 +280,9 @@ function PainelConta(props) {
                                             <input type="text" placeholder=" NIF" value={newNif} onChange={e => setNewNif(e.target.value)}  style={{borderRadius: '8px'}}/>
                                           </Col>
                                           <Col className="d-flex">
-                                            <row>
+                                            <Row>
                                               <Button variant="success" onClick={handleAddBillingDetail} style={{ width: 200, marginTop: 35 }}>Adicionar</Button>
-                                            </row>
+                                            </Row>
                                           </Col>
                                         </Row>
                                       </form>
@@ -330,14 +331,12 @@ function PainelConta(props) {
                           <Form.Label>Nova Senha</Form.Label>
                           <Form.Control type="password" placeholder="Nova Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
                       </Form.Group>
-                      <div className="pt-3">
-                        <Button variant="primary" type="submit" onClick={handleSubmitAccountEdit}>
-                            Salvar Alterações
-                        </Button>
-                      </div>
                   </Form>
               </Modal.Body>
               <Modal.Footer>
+                  <Button variant="primary" type="submit" onClick={handleSubmitAccountEdit}>
+                    Salvar Alterações
+                  </Button>
                   <Button variant="secondary" onClick={closeModal}>
                       Fechar
                   </Button>

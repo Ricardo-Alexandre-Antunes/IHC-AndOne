@@ -447,7 +447,7 @@
 
       {
         "id": 14,
-        "name": "Boston Celtics City Edition Jersey 2023/24",
+        "name": "Boston Celtics City Edition Jersey Shorts 2023/24",
         "type": "Shorts",
         "team": "Boston Celtics",
         "brand": "Nike",
@@ -623,6 +623,21 @@
                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e469c539efa24b18b7f0a9f201778b8b_9366/Calcoes_Reversiveis_3G_Speed_Preto_DX6386_02_laydown_hover.jpg"],
         "short_description": "Calções reversíveis com um design reversível",
         "big_description": "Por vezes, é preciso mudar qualquer coisa no court. Estes calções de basquetebol têm tecido que elimina a transpiração para afastar a humidade da tua pele. Com um design reversível, um dos lados é feito em rede de poliéster, ao passo que o outro é feito em malha dupla resistente."
+      },
+
+      {
+        "id": 26,
+        "name": "Neemias Queta #88 - Boston Celtics 2023-24 - Black",
+        "type": "Jersey",
+        "team": "Boston Celtics",
+        "brand": "Jordan",
+        "price": 199.99,
+        "size": ["XL"],
+        "image_links": ["https://images.footballfanatics.com/boston-celtics/neemias-queta-boston-celtics-game-used-number-88-jordan-brand-black-jersey-vs-san-antonio-spurs-on-december-31-2023_ss5_p-201184445+pv-3+u-u0wgud213kzonuqpfbhq+v-qlfh3twbxhfpogylwy0m.jpg?_hv=2&w=900",
+                        "https://images.footballfanatics.com/boston-celtics/neemias-queta-boston-celtics-game-used-number-88-jordan-brand-black-jersey-vs-san-antonio-spurs-on-december-31-2023_ss5_p-201184445+pv-2+u-u0wgud213kzonuqpfbhq+v-pwgygftre6dkuf2pomee.jpg?_hv=2&w=900",
+                        "https://images.footballfanatics.com/boston-celtics/neemias-queta-boston-celtics-game-used-number-88-jordan-brand-black-jersey-vs-san-antonio-spurs-on-december-31-2023_ss5_p-201184445+pv-1+u-u0wgud213kzonuqpfbhq+v-g2nmwjjfftkbhqoadb4o.jpg?_hv=2&w=900"],
+        "short_description": "Jersey replica NBA Neemias Queta, para os maiores fãs do craque português.",
+        "big_description": "Sim! Já temos o equipamento do grande Neemias que tem representado excelentemente o nosso país do outro lado do Oceano Atlântico. O material é leve, confortável e resistente, sendo assim excelente para usar no dia-a-dia ou  para prática desportiva."
       }
 
     ], 

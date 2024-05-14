@@ -447,7 +447,7 @@
 
       {
         "id": 14,
-        "name": "Boston Celtics City Edition Jersey 2023/24",
+        "name": "Boston Celtics City Edition Jersey Shorts 2023/24",
         "type": "Shorts",
         "team": "Boston Celtics",
         "brand": "Nike",
@@ -624,8 +624,23 @@
         "short_description": "Calções reversíveis com um design reversível",
         "big_description": "Por vezes, é preciso mudar qualquer coisa no court. Estes calções de basquetebol têm tecido que elimina a transpiração para afastar a humidade da tua pele. Com um design reversível, um dos lados é feito em rede de poliéster, ao passo que o outro é feito em malha dupla resistente."
       },
+
       {
         "id": 26,
+        "name": "Neemias Queta #88 - Boston Celtics 2023-24 - Black",
+        "type": "Jersey",
+        "team": "Boston Celtics",
+        "brand": "Jordan",
+        "price": 199.99,
+        "size": ["XL"],
+        "image_links": ["https://images.footballfanatics.com/boston-celtics/neemias-queta-boston-celtics-game-used-number-88-jordan-brand-black-jersey-vs-san-antonio-spurs-on-december-31-2023_ss5_p-201184445+pv-3+u-u0wgud213kzonuqpfbhq+v-qlfh3twbxhfpogylwy0m.jpg?_hv=2&w=900",
+                        "https://images.footballfanatics.com/boston-celtics/neemias-queta-boston-celtics-game-used-number-88-jordan-brand-black-jersey-vs-san-antonio-spurs-on-december-31-2023_ss5_p-201184445+pv-2+u-u0wgud213kzonuqpfbhq+v-pwgygftre6dkuf2pomee.jpg?_hv=2&w=900",
+                        "https://images.footballfanatics.com/boston-celtics/neemias-queta-boston-celtics-game-used-number-88-jordan-brand-black-jersey-vs-san-antonio-spurs-on-december-31-2023_ss5_p-201184445+pv-1+u-u0wgud213kzonuqpfbhq+v-g2nmwjjfftkbhqoadb4o.jpg?_hv=2&w=900"],
+        "short_description": "Jersey replica NBA Neemias Queta, para os maiores fãs do craque português.",
+        "big_description": "Sim! Já temos o equipamento do grande Neemias que tem representado excelentemente o nosso país do outro lado do Oceano Atlântico. O material é leve, confortável e resistente, sendo assim excelente para usar no dia-a-dia ou  para prática desportiva."
+      },
+      {
+        "id": 27,
         "name": "Camisola Listada Basquetebol - Sporting CP",
         "type": "Jersey",
         "team": "Sporting CP",
@@ -640,7 +655,7 @@
         "big_description": "Camisola de basquetebol listada do Sporting CP, com o emblema do clube no peito e a marca Nike. Esta camisola é ideal para os adeptos do clube leonino que gostam de basquetebol."
       },
       {
-        "id": 27,
+        "id": 28,
         "name": "CAMISOLA BASQUETEBOL 2º EQUIP. 23/24 ADULTO - Porto FC",
         "type": "Jersey",
         "team": "Porto FC",

@@ -141,9 +141,9 @@ const Product = () => {
             <h2>
               {product.brand} - {product.name}
             </h2>
-            <h2>Price: {product.price}€</h2>
+            <h2>Preço: {product.price}€</h2>
             <p>
-              <span>Description:</span> {product.short_description}
+              <span>Descrição:</span> {product.short_description}
             </p>
             <span>Tamanhos</span>
             <div className="sizes">

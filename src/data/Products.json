@@ -623,6 +623,35 @@
                         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e469c539efa24b18b7f0a9f201778b8b_9366/Calcoes_Reversiveis_3G_Speed_Preto_DX6386_02_laydown_hover.jpg"],
         "short_description": "Calções reversíveis com um design reversível",
         "big_description": "Por vezes, é preciso mudar qualquer coisa no court. Estes calções de basquetebol têm tecido que elimina a transpiração para afastar a humidade da tua pele. Com um design reversível, um dos lados é feito em rede de poliéster, ao passo que o outro é feito em malha dupla resistente."
+      },
+      {
+        "id": 26,
+        "name": "Camisola Listada Basquetebol - Sporting CP",
+        "type": "Jersey",
+        "team": "Sporting CP",
+        "brand": "Nike",
+        "price": 62.99,
+        "size": ["S","M","L", "XL", "2XL"],
+        "image_links": ["https://cdn-scp.azureedge.net/lojaverdeonline/0008273_camisola-listada-basquetebol.jpeg",
+                        "https://cdn-scp.azureedge.net/lojaverdeonline/0008274_camisola-listada-basquetebol.jpeg",
+                        "https://cdn-scp.azureedge.net/lojaverdeonline/0008275_camisola-listada-basquetebol.jpeg",
+                        "https://cdn-scp.azureedge.net/lojaverdeonline/0008276_camisola-listada-basquetebol.jpeg"],
+        "short_description": "Camisola de basquetebol listada do Sporting CP",
+        "big_description": "Camisola de basquetebol listada do Sporting CP, com o emblema do clube no peito e a marca Nike. Esta camisola é ideal para os adeptos do clube leonino que gostam de basquetebol."
+      },
+      {
+        "id": 27,
+        "name": "CAMISOLA BASQUETEBOL 2º EQUIP. 23/24 ADULTO - Porto FC",
+        "type": "Jersey",
+        "team": "Porto FC",
+        "brand": "BORDISPORT",
+        "price": 44.91,
+        "size": ["XS", "S","M","L", "XL"],
+        "image_links": ["https://store.fcporto.pt/media/catalog/product/cache/969a08e6835829d4283b0ad46c60d757/0/5/05_-_a_1_5.png",
+                        "https://store.fcporto.pt/media/catalog/product/cache/969a08e6835829d4283b0ad46c60d757/0/5/05_-_c_1_2.png",
+                        "https://store.fcporto.pt/media/catalog/product/cache/969a08e6835829d4283b0ad46c60d757/0/5/05_-_b_1_2.png"],
+        "short_description": "Camisola de basquetebol alternativa do Porto FC",
+        "big_description": "Camisola de basquetebol alternativa do Porto FC, com o emblema do clube no peito e a marca BORDISPORT. Esta camisola é ideal para os adeptos do clube azul e branco que gostam de basquetebol."
       }
 
     ], 

@@ -85,7 +85,7 @@ function MyNavbar({ activeID }) {
                   ) : (
                       <Nav.Link as={ Link } to="/login" className={activeID === 8? 'active' : ''} onClick={() => {localStorage.setItem("previousPage", "/carrinho")}}><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Nav.Link>
                   )}
-                  <Form className="d-flex" onSubmit={searchProducts} style={{ paddingRight: 10, paddingLeft: 20 }} onSubmit={searchProducts} style={{ paddingRight: 10, paddingLeft: 20 }} onKeyPress={event => {
+                  <Form className="d-flex" onSubmit={searchProducts} style={{ paddingRight: 10, paddingLeft: 20 }} onKeyPress={event => {
                     if (event.key === 'Enter') {
                       event.preventDefault();
                     }

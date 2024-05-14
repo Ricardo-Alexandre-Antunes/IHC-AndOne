@@ -40,17 +40,17 @@ function ConfirmacaoPage() {
         doc.line(10, 30, 200, 30);
 
         // Get billing details from local storage
-        const billingDetail = billingDetails.split(',');
+        const billingDetail = billingDetails.split('; ');
         console.log("billingDetail", billingDetail);
 
         // Draw a box
         doc.rect(10, 70, 180, 50);
 
         // Billing details
-        doc.text(`Nome: ${billingDetail[0]}`, 20, 80);
-        doc.text(`Endereço: ${billingDetail[1]}`, 20, 90);
-        doc.text(`Código Postal: ${billingDetail[2]}`, 20, 100);
-        doc.text(`NIF: ${billingDetail[3]}`, 20, 110);
+        doc.text(`Endereço: ${billingDetail[0]}`, 20, 80);
+        doc.text(`Código Postal: ${billingDetail[1]}`, 20, 90);
+        doc.text(`País: ${billingDetail[2]}`, 20, 100);
+        doc.text(`${billingDetail[3]}`, 20, 110);
     
         // Details of the order
         doc.text(`Número da encomenda: ${id}`, 10, 40);

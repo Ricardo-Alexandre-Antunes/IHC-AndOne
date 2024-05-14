@@ -79,7 +79,7 @@ function PagamentoPage() {
         } else {
             temp['pagamento'] = selectedPaying;
             temp['telefone'] = phoneNumber;
-            temp['faturacao'] = selectedBilling;
+            temp['faturacao'] = selectedBilling.trim(); // Remove spaces from both ends of the string
             temp['artigos'] = localStorage.getItem('cart');
             temp['data'] = new Date().toLocaleDateString();
             localStorage.setItem('temp', JSON.stringify(temp));
@@ -125,7 +125,7 @@ function PagamentoPage() {
                 {temp.pagamento === 'MBWay' && <p style={{marginBottom: '5px'}}><strong>Telefone:</strong> {temp.telefone}</p>}
                 <p style={{marginBottom: '0px'}}><strong>Dados de Faturação:</strong></p>
                 <div style={{ border: '1px solid #ddd', paddingLeft: '5px', fontSize: '0.8em', lineHeight: '1' }}>
-                    {temp.faturacao.split(',').map((item, index) => (
+                    {temp.faturacao.split(';').map((item, index) => (
                         <p key={index} style={{ margin: '0.5em 0' }}>{item}</p>
                     ))}
                 </div>
@@ -146,10 +146,15 @@ function PagamentoPage() {
                     ) : null;
                 })}
 
-                <p style = {{marginTop: '0px'}}><strong>Total:</strong> {JSON.parse(temp.artigos).reduce((acc, item) => {
+                <p style = {{marginTop: '0px'}}>
+                <strong>Total: </strong> 
+                {(
+                    JSON.parse(temp.artigos).reduce((acc, item) => {
                     const product = ProductList[item.category].find(product => product.number === item.number);
                     return product ? acc + product.price * item.quantity : acc;
-                }, 0)}</p>
+                    }, 0)
+                ).toFixed(2)}
+                </p>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={() => setShowModal(false)}>

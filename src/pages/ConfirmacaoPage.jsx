@@ -47,9 +47,9 @@ function ConfirmacaoPage() {
         doc.rect(10, 70, 180, 50);
 
         // Billing details
-        doc.text(`Name: ${billingDetail[0]}`, 20, 80);
-        doc.text(`Address: ${billingDetail[1]}`, 20, 90);
-        doc.text(`Postal Code: ${billingDetail[2]}`, 20, 100);
+        doc.text(`Nome: ${billingDetail[0]}`, 20, 80);
+        doc.text(`Endereço: ${billingDetail[1]}`, 20, 90);
+        doc.text(`Código Postal: ${billingDetail[2]}`, 20, 100);
         doc.text(`NIF: ${billingDetail[3]}`, 20, 110);
     
         // Details of the order
@@ -77,7 +77,7 @@ function ConfirmacaoPage() {
 
         // Add the table to the PDF
         doc.autoTable({
-            head: [['Product', 'Size', 'Quantity', 'Price', 'Total']],
+            head: [['Produto', 'Tamanho', 'Quantidade', 'Preço', 'Total']],
             body: [
                 ...data.map(item => [item.product, item.size, item.quantity, item.price, item.total]),
                 ['Total', '', '', '', totalPrice]

@@ -143,13 +143,18 @@ function PainelConta(props) {
           return;
         }
 
+        const users = JSON.parse(localStorage.getItem('users'));
+        const allEmails = users.map(user => user.email);
+
+        if (allEmails.includes(newEmail) && newEmail !== user.email) {
+          alert('Email já em uso. Se tem a certeza que não tem conta, contacte-nos.');
+          return;
+        }
+
         if (!newEmail.match(/\S+@\S+\.\S+/) && newEmail.trim() !== '') {
           alert('Email inválido');
           return;
         }
-
-        const users = JSON.parse(localStorage.getItem('users'));
-        const user = users.find(user => user.email === curUser);
         user.firstName = newName2.trim() !== '' || newName2.trim() === undefined ? newName2 : user.firstName;
         user.lastName = newLastName.trim() !== '' || newLastName.trim() === undefined ? newLastName : user.lastName;
         user.email = newEmail.trim() !== '' ? newEmail : user.email;
@@ -286,12 +291,19 @@ function PainelConta(props) {
                             </div>
                         </Container>
                     )}
-                    {props.encomendas && (
-                        <Container fluid className="d-flex justify-content-end p-3"> 
-                            <div style={{ width: '100%', backgroundColor: '#333', color: 'white', padding: '1rem' }}>
-                                {generateEncomendaCards()}
-                            </div>
-                        </Container>
+                    {props.encomendas && orders.length > 0 ? (
+                      <Container fluid className="d-flex justify-content-end p-3"> 
+                        <div style={{ width: '100%', backgroundColor: '#333', color: 'white', padding: '1rem' }}>
+                          {generateEncomendaCards()}
+                        </div>
+                      </Container>
+                    ) : (
+                      <Container fluid className="d-flex justify-content-center align-items-center" style={{ minHeight: '50vh' }}>
+                      <div className="text-center">
+                        <h2>Sem encomendas anteriores</h2>
+                        <p>Se efetuou uma compra recentemente e não aparece aqui, pode ainda estar a ser processada.</p>
+                      </div>
+                    </Container>
                     )}
                 </Col>
             </Row>

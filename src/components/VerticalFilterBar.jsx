@@ -282,7 +282,7 @@ const SearchFilterBar = ({ selectedBrands, setSelectedBrands, selectedCategories
             {/* Render the filter bar */}
             <div className="filter-bar">
                 <div className="filter-section">
-                    <h3>Brands</h3>
+                    <h3>Marcas</h3>
                     {brands.map(brand => (
                         <div key={brand} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }}>
                             <label style={{ paddingLeft: 5, fontSize: '18px' }}>
@@ -299,7 +299,7 @@ const SearchFilterBar = ({ selectedBrands, setSelectedBrands, selectedCategories
                 </div>
 
                 <div className="filter-section">
-                    <h3 className='pt-2'>Categories</h3>
+                    <h3 className='pt-2'>Categorias</h3>
                     {categories.map(category => (
                         <div key={category} style={{ display: 'flex', alignItems: 'center', marginBottom: '2px' }}>
                             <label style={{ textTransform: 'capitalize', paddingLeft: 5, fontSize: '18px' }}>
@@ -316,7 +316,7 @@ const SearchFilterBar = ({ selectedBrands, setSelectedBrands, selectedCategories
                 </div>
 
                 <div className="filter-section pt-2">
-                    <h3>Price</h3>
+                    <h3>Preço</h3>
                     <input
                         className="small-input"
                         type="number"

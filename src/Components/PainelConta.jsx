@@ -291,7 +291,7 @@ function PainelConta(props) {
                             </div>
                         </Container>
                     )}
-                    {props.encomendas && orders.length > 0 ? (
+                    {props.encomendas && ( orders.length > 0 ? (
                       <Container fluid className="d-flex justify-content-end p-3"> 
                         <div style={{ width: '100%', backgroundColor: '#333', color: 'white', padding: '1rem' }}>
                           {generateEncomendaCards()}
@@ -304,7 +304,7 @@ function PainelConta(props) {
                         <p>Se efetuou uma compra recentemente e não aparece aqui, pode ainda estar a ser processada.</p>
                       </div>
                     </Container>
-                    )}
+                    ))}
                 </Col>
             </Row>
 

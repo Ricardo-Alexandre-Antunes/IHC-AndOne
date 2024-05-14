@@ -31,7 +31,7 @@ const ShoeFilterBar = ({ selectedBrands, setSelectedBrands, selectedPrices, setS
         setSelectedSizes(prevSizes => prevSizes.includes(size) ? prevSizes.filter(s => s !== size) : [...prevSizes, size]);
         };
     return (
-        <div className='container' style={{ color: 'white' }}>
+        <div className='container'>
             <div className={`filter-bar`}>
                 <h2 className='unselectable'>Filtros</h2>
                 <div className="accordion">
@@ -170,7 +170,7 @@ const EquipamentosFilterBar = ({ selectedBrands, setSelectedBrands, selectedTeam
     };
 
     return (
-        <div className='container' style={{ color: 'white' }}>
+        <div className='container' >
         <div className={`filter-bar`}>
             <h2 className='unselectable'>Filtros</h2>
             <div className="accordion">
@@ -280,7 +280,7 @@ const SearchFilterBar = ({ selectedBrands, setSelectedBrands, selectedCategories
     return (
         <div>
             {/* Render the filter bar */}
-            <div className="filter-bar" style={{ color: 'white' }}>
+            <div className="filter-bar">
                 <div className="filter-section">
                     <h3>Brands</h3>
                     {brands.map(brand => (
@@ -381,7 +381,7 @@ const MaterialFilterBar = ({selectedBrands, setSelectedBrands, selectedPrices, s
         };
 
         return (
-            <div className='container' style={{ color: 'white' }}>
+            <div className='container' >
                 <div className={`filter-bar`}>
                     <h2 className='unselectable'>Filtros</h2>
                     <div className="accordion">
@@ -506,7 +506,7 @@ const MaterialFilterBar = ({selectedBrands, setSelectedBrands, selectedPrices, s
             };
 
         return (
-            <div className='container' style={{ color: 'white' }}>
+            <div className='container' >
                 <div className={`filter-bar`}>
                     <h2 className='unselectable'>Filtros</h2>
                     <div className="accordion">

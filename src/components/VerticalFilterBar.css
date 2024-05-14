@@ -13,11 +13,14 @@
   top: 0px;
   height: 100%;
   width: 280px; /* adjust as needed */
-  background-color: #333; /* adjust as needed */
+  background-color: #e2e2e2; /* adjust as needed */
   overflow: auto; /* add a scrollbar when the content is too large to fit */
   padding: 20px;
   box-sizing: border-box;
   transition: left 0.5s ease; /* animate the left property */
+  border-radius: 5px;
+  border: 1px solid black;
+  color:black;
 }
 
 .small-input {

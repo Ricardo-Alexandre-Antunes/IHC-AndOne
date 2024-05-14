@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import EncomendaPerfilCard from './EncomendaPerfilCard';
 import { useNavigate } from 'react-router-dom'
 import { Modal, Form } from 'react-bootstrap';
+import '../css/login.css';
 
 function PainelConta(props) {
     const navigate = useNavigate();
@@ -187,7 +188,7 @@ function PainelConta(props) {
                                       <p style={{ fontSize: 18 }}>Email: {email}</p>
                                     </Col>
                                     <Col md={8}>
-                                      <button onClick={openModal}>Editar Perfil</button>
+                                      <Button variant="light" onClick={openModal} style={{marginLeft: '77%'}}>Editar Perfil </Button>
                                     </Col>
                                 </Row>
                                 <Row className="pt-2">
@@ -195,13 +196,13 @@ function PainelConta(props) {
                                         <h4>Dados de faturação</h4>
                                         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
                                         {billingDetails.map((detail, index) => (
-                                          <div key={index} style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', flex: '0 0 calc(50% - 20px)' }}>
+                                          <div key={index} style={{ border: '1px solid #ccc', borderRadius:'5px', padding: '20px', margin: '10px', flex: '0 0 calc(50% - 20px)' , color: 'white', backgroundColor:'#696969'  }}>
                                             <Row>
                                               <Col md={8}>
                                                 <div>
                                                   <label>Nome: </label>
                                                   {editingIndex === index ? (
-                                                    <> <input type="text" value={tempDetail.name} onChange={e => setTempDetail({ ...tempDetail, name: e.target.value })} /></>
+                                                    <> <input type="text" value={tempDetail.name} onChange={e => setTempDetail({ ...tempDetail, name: e.target.value })}/></>
                                                   ) : (
                                                     <> {detail.name}</>
                                                   )}
@@ -233,13 +234,13 @@ function PainelConta(props) {
                                               </Col>
                                               <Col md={4}>
                                                 <Row className="p-1">
-                                                  <button onClick={() => handleRemove(index)}>Remover</button>
+                                                  <Button variant='danger' onClick={() => handleRemove(index)}>Remover</Button>
                                                 </Row>
                                                 <Row className="p-1">
                                                   {editingIndex === index ? (
-                                                    <button onClick={() => handleSubmit(index)}>Submeter</button>
+                                                    <Button variant='success' onClick={() => handleSubmit(index)}>Submeter</Button>
                                                   ) : (
-                                                    <button onClick={() => handleEdit(index)}>Editar</button>
+                                                    <Button variant = 'light' onClick={() => handleEdit(index)}>Editar</Button>
                                                   )}
                                                 </Row>
                                               </Col>
@@ -253,22 +254,24 @@ function PainelConta(props) {
                                         <Row>
                                           <Col> 
                                             <p>Nome</p>
-                                            <input type="text" placeholder="Nome" value={newName} onChange={e => setNewName(e.target.value)} />
+                                            <input type="text" placeholder=" Nome" value={newName} onChange={e => setNewName(e.target.value)} style={{borderRadius: '8px'}}/>
                                           </Col>
                                           <Col>
                                             <p>Endereço</p>
-                                            <input type="text" placeholder="Endereço" value={newAddress} onChange={e => setNewAddress(e.target.value)} />
+                                            <input type="text" placeholder=" Endereço" value={newAddress} onChange={e => setNewAddress(e.target.value)} style={{borderRadius: '8px'}} />
                                           </Col>
                                           <Col>
                                             <p>Código Postal</p>
-                                            <input type="text" placeholder="Código Postal" value={newPostalCode} onChange={e => setNewPostalCode(e.target.value)} />
+                                            <input type="text" placeholder=" Código Postal" value={newPostalCode} onChange={e => setNewPostalCode(e.target.value)} style={{borderRadius: '8px'}} />
                                           </Col>
                                           <Col>
                                             <p>NIF</p>
-                                            <input type="text" placeholder="NIF" value={newNif} onChange={e => setNewNif(e.target.value)} />
+                                            <input type="text" placeholder=" NIF" value={newNif} onChange={e => setNewNif(e.target.value)}  style={{borderRadius: '8px'}}/>
                                           </Col>
                                           <Col className="d-flex">
-                                            <Button onClick={handleAddBillingDetail} style={{ width: 200 }}>Adicionar</Button>  
+                                            <row>
+                                              <Button variant="success" onClick={handleAddBillingDetail} style={{ width: 200, marginTop: 35 }}>Adicionar</Button>
+                                            </row>
                                           </Col>
                                         </Row>
                                       </form>

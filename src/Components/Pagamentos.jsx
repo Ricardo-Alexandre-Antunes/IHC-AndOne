@@ -66,8 +66,8 @@ function Pagamentos(props) {
                         type="radio"
                         name="billing"
                         id={`billing_${index}`}
-                        value={`${detail.address}, ${detail.postalCode}, PT, NIF: ${detail.nif}`}
-                        checked={props.selectedBilling === `${detail.address}, ${detail.postalCode}, PT, NIF: ${detail.nif}`}
+                        value={`${detail.address}; ${detail.postalCode}; PT; NIF: ${detail.nif}`}
+                        checked={props.selectedBilling === `${detail.address}; ${detail.postalCode}; PT; NIF: ${detail.nif}`}
                         onChange={handleBillingChange}
                         style={{ height: '1.5rem', width: '1.5rem'}}
                     />
@@ -91,8 +91,8 @@ function Pagamentos(props) {
                     type="radio"
                     name="billing"
                     id="billing_custom"
-                    value={`${customBillingDetails.address}, ${customBillingDetails.postalCode}, PT, NIF: ${customBillingDetails.nif}`}
-                    checked={props.selectedBilling === `${customBillingDetails.address}, ${customBillingDetails.postalCode}, PT, NIF: ${customBillingDetails.nif}`}
+                    value={`${customBillingDetails.address}; ${customBillingDetails.postalCode}; PT; NIF: ${customBillingDetails.nif}`}
+                    checked={props.selectedBilling === `${customBillingDetails.address}; ${customBillingDetails.postalCode}; PT; NIF: ${customBillingDetails.nif}`}
                     onChange={handleBillingChange}
                     style={{ height: '1.5rem', width: '1.5rem'}}
                     />

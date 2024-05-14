@@ -36,6 +36,16 @@ useEffect(() => {
 
   return (
     <>
+    <div className="result-count" style={{ 
+      textAlign: 'center', 
+      fontSize: '20px', 
+      color: '#333', 
+      padding: '10px',  
+      borderRadius: '5px', 
+      margin: '10px 0' 
+    }}>
+      Resultados: {filteredProducts.length}
+    </div>
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 5fr', height: '100%', alignItems: 'start' }}>
       <MaterialFilterBar
         className={`filter`}
@@ -48,6 +58,7 @@ useEffect(() => {
       />
       
       <div className={`product-list`} style={{padding: '0', margin: '0', boxSizing: 'border-box' }}>
+      
         {filteredProducts.map(product => (
           <ProductCard key={product.id} category={'material'} product={product} favorites={favorites} setFavorites={setFavorites}/>
         ))}

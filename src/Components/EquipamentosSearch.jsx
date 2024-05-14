@@ -42,6 +42,16 @@ useEffect(() => {
 
   return (
     <>
+      <div className="result-count" style={{ 
+      textAlign: 'center', 
+      fontSize: '20px', 
+      color: '#333', 
+      padding: '10px',  
+      borderRadius: '5px', 
+      margin: '10px 0' 
+      }}>
+        Resultados: {filteredProducts.length}
+      </div>
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 5fr', height: '100%', alignItems: 'start' }}>
       <EquipamentosFilterBar
         className={`filter`}

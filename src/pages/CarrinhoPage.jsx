@@ -21,7 +21,7 @@ const CarrinhoPage = () => {
         return (
             <div>
                 <MyNavbar activeID={8} />
-                <div style={{ minHeight: '55vh', textAlign: 'center' }} >
+                <div style={{ minHeight: '65vh', textAlign: 'center' }} >
                     <h1 className="page-title">Carrinho de Compras</h1>
                     <h2 className="p-3">O carrinho está vazio.</h2>
                     <Link to="/sapatilhas">
@@ -70,7 +70,7 @@ const CarrinhoPage = () => {
                     );
                 })}
             </div>
-            <div className='checkout-div'>
+            <div className='checkout-div' style={{ minHeight: '20vh' }}>
                     <h2>Total: {cartProds.reduce((total, prod) => total + ProductList[prod.category].find(p => p.id === prod.id).price * prod.quantity, 0).toFixed(2)}€</h2>
                 <Link to="/checkout">
                     <div className="checkout">

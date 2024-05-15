@@ -21,7 +21,7 @@
   .product-cart-price {
     font-size: 18px;
     margin-right: 5%; /* Espaçamento entre o preço e o nome do produto */
-    width:70px;
+    width:80px;
     text-align:right;
   }
   
@@ -33,8 +33,8 @@
   
   .product-cart-size {
     font-size: 18px;
-    width:40px;
-    text-align:right;
+    width:60px;
+    text-align:center;
     margin-right: 24%; /* Espaçamento entre o tamanho e os botões de quantidade */
   }
   

@@ -51,8 +51,13 @@ const Login = () => {
   }
 
   const createAccount = () => {
-    if (!email2 || !email2.match(/\S+@\S+\.\S+/)) {
-      setEmailError2('Por favor, insira o seu email.')
+    if (firstName !== '' && lastName !== '') {
+      alert('Por favor, insira o seu primeiro e último nome.')
+      return;
+    }
+
+    if (email2 === '' || !email2.match(/\S+@\S+\.\S+/)) {
+      setEmailError2('Por favor, insira o seu email no formato correto')
       return;
     }
     if (localStorage.getItem('users') && JSON.parse(localStorage.getItem('users')).find(user => user.email === email2)) {

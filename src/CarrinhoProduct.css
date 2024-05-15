@@ -33,15 +33,15 @@
   
   .product-cart-size {
     font-size: 18px;
-    width:60px;
+    width:90px;
     text-align:center;
-    margin-right: 24%; /* Espaçamento entre o tamanho e os botões de quantidade */
+    margin-right: 19%; /* Espaçamento entre o tamanho e os botões de quantidade */
   }
   
   .product-cart-quantity-buttons {
     display: flex;
     align-items: center;
-    margin-right: 22%;
+    margin-right: 20%;
     font-size: 18;
   }
 

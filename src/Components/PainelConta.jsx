@@ -24,6 +24,7 @@ function PainelConta(props) {
     const [newNif, setNewNif] = useState('');
     const [showModal, setShowModal] = useState(false);
     const [showModal2, setShowModal2] = useState(false);
+    const [showModal3, setShowModal3] = useState(false);
     const [password, setPassword] = useState('');
     const [newEmail, setNewEmail] = useState('');
 
@@ -126,6 +127,10 @@ function PainelConta(props) {
 
     const openModal2 = () => {
       setShowModal2(true);
+    };
+
+    const openModal3 = () => {
+      setShowModal3(true);
     };
 
     const closeModal = () => {
@@ -241,7 +246,7 @@ function PainelConta(props) {
                                               </Col>
                                               <Col md={4}>
                                                 <Row className="p-1">
-                                                  <Button variant='danger' onClick={() => handleRemove(index)}>Remover</Button>
+                                                  <Button variant='danger' onClick={openModal3}>Remover</Button>
                                                 </Row>
                                                 <Row className="p-1">
                                                   {editingIndex === index ? (
@@ -350,6 +355,21 @@ function PainelConta(props) {
                   </Button>
                   <Button variant="danger" onClick={handleLogout} >
                     Terminar sessão
+                  </Button>
+              </Modal.Footer>
+            </Modal>
+
+            <Modal show={showModal3} onHide={() => setShowModal3(false)}>
+              <Modal.Header closeButton>
+                <Modal.Title>Remover dados de faturação</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>Tem a certeza que pretende remover os dados de faturação?</Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={() => setShowModal3(false)}>
+                    Cancelar
+                  </Button>
+                  <Button variant="danger" onClick={() => handleRemove(index)} >
+                    Remover
                   </Button>
               </Modal.Footer>
             </Modal>

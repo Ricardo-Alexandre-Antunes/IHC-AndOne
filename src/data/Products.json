@@ -447,7 +447,7 @@
 
       {
         "id": 14,
-        "name": "Boston Celtics City Edition Jersey Shorts 2023/24",
+        "name": "Boston Celtics City Edition Shorts 2023/24",
         "type": "Shorts",
         "team": "Boston Celtics",
         "brand": "Nike",
@@ -1042,125 +1042,6 @@
         "short_description": "Mochila desportiva de 3 listras adidas",
         "big_description": "Mochila ideal para levares o teu equipamento para os treinos. Material resistente, à prova de água e respirável para eliminar os maus odores depois de um grande dia de treino."
       }
-    ],
-
-    "conjuntos" : [ 
-      {
-        "id": 1,
-        "name": "Vince Carter #15 - Toronto Raptors 1998-99 - Home" ,
-        "brand" :"Conjunto",
-        "price" : 129.99,
-        "size" : ["M","L"],
-        "sapatilhas" : "undefined",
-        "jersey": 5,
-        "calcoes": 9,
-        "image_links" : ["https://pbs.twimg.com/media/FTOnIEDWUAoqKd4.jpg",
-                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-ness-nba-swingman-jersey-toronto-raptors-home-1998-99-vince-carter-15-smjygs18213-trawhit98vca-01.jpg",
-                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-ness-nba-swingman-jersey-toronto-raptors-home-1998-99-vince-carter-15-smjygs18213-trawhit98vca-02.jpg",
-                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-and-ness-nba-swingman-shorts-toronto-raptors-shorts-white-smshcp18154-trawhi98-05.jpg",
-                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-and-ness-nba-swingman-shorts-toronto-raptors-shorts-white-smshcp18154-trawhi98-02.jpg"],
-        "short_description": "Equipamento completo Vince Carter #15 - Toronto Raptors 1998-99 - Home.",
-        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
-      },
-      {
-        "id": 2,
-        "name": "Dennis Rodman #91 - Chicago Bulls 1997-98 - Away" ,
-        "brand" :"Conjunto",
-        "price" : 129.99 ,
-        "size" : ["M","L"],
-        "sapatilhas" : "indefinido",
-        "jersey": 1,
-        "calcoes": 10,
-        "image_links" : ["https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MTI4MDAwMTg5NjA1MjQ4/1996-0223-dennis-rodman-scottie-pippen-michael-jordan-079087508jpg.jpg",
-                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-and-ness-nba-swingman-jersey-chicago-bulls-away-1997-98-dennis-rodman-91-smjygs18154-cbuscar97drd-01.jpg",
-                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/09/mitchell-and-ness-nba-swingman-jersey-chicago-bulls-away-1997-98-dennis-rodman-91-smjygs18154-cbuscar97drd-02.jpg",
-                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/09/SMSHGS18223_1.jpeg?resize=768%2C768&ssl=1",
-                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2021/09/SMSHGS18223_4.jpeg?resize=768%2C768&ssl=1"],
-        "short_description": "Equipamento completo Dennis Rodman #91 - Chicago Bulls 1997-98 - Away",
-        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
-      },
-
-      {
-        "id": 3,
-        "name": "Lebron James #23 - LA Lakers 2022-23 - Home" ,
-        "brand" :"Conjunto",
-        "price" : 199.99,
-        "size" : ["S","M","L","XL"],
-        "sapatilhas" : 15,
-        "jersey": 11,
-        "calcoes": 12,
-        "image_links" : ["https://ca-times.brightspotcdn.com/dims4/default/7be9a77/2147483647/strip/true/crop/3548x2516+0+0/resize/1200x851!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fcf%2F67%2F74ef656743528f2f9f7ce02d8dc1%2Fla-photos-1staff-477386-sp-0107-lakers-knicks4-wjs.jpg",
-                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9aa1b6a-4385-4233-96b6-b03f5c83d1a6/camisola-nba-swingman-dri-fit-los-angeles-lakers-icon-edition-2022-23-6dDmWf.png",
-                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b9927fdc-ed13-4f38-af1e-4cd3f19f5359/camisola-nba-swingman-dri-fit-los-angeles-lakers-icon-edition-2022-23-6dDmWf.png",
-                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bfe906f3-0ff3-461b-856c-f95536754349/calcoes-nba-swingman-los-angeles-lakers-icon-edition-BxRTsw.png",
-                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0104d662-b020-4b0a-a287-014460a63ba0/calcoes-nba-swingman-los-angeles-lakers-icon-edition-BxRTsw.png",
-                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/be010f95-0bae-4fc5-a048-8b2d2a0944de/sapatilhas-de-basquetebol-lebron-witness-8-qjcntD.png",
-                          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e52a06bb-ad8a-4a35-a04f-ff6c542a46e7/sapatilhas-de-basquetebol-lebron-witness-8-qjcntD.png"],
-        "short_description": "Equipamento completo Lebron James #23 - LA Lakers 2022-23 - Home",
-        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
-      },
-
-      {
-        "id": 4,
-        "name": "Stephen Curry #30 - GS Warriors 2022-23 - Home" ,
-        "brand" :"Conjunto",
-        "price" : 199.99,
-        "size" : ["S","M","L","XL"],
-        "sapatilhas" : 11,
-        "jersey": 17,
-        "calcoes": 18,
-        "image_links" : ["https://wesportfr.com/wp-content/uploads/2022/12/Icon_sipausa_39947060-1200x800.jpg",
-                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ac6733f-1dc1-46ce-ae77-fbd4c73099f9/camisola-nba-swingman-dri-fit-golden-state-warriors-icon-edition-2022-23-SW7Nkx.png",
-                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0e391898-5de8-4a09-b498-78d4d65e7859/camisola-nba-swingman-dri-fit-golden-state-warriors-icon-edition-2022-23-SW7Nkx.png",
-                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fatno6ey4gkepoaj25qq/calcoes-nba-swingman-golden-state-warriors-icon-edition-8tQrL3.png",
-                         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ncjbhvuxad4wxij8sgwz/calcoes-nba-swingman-golden-state-warriors-icon-edition-8tQrL3.png",
-                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/12/under-armour-curry-11-champion-mindset-3026617-300-01.jpg",
-                         "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/12/under-armour-curry-11-champion-mindset-3026617-300-02.jpg"
-                         ],
-        "short_description": "Equipamento completo Stephen Curry #30 - GS Warriors 2022-23 - Home",
-        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
-      },
-
-      {
-        "id": 5,
-        "name": "Jayson Tatum #0 - Boston Celtics 2023/24 - City Version",
-        "brand": "Conjunto",
-        "price" : 199.99,
-        "size" : ["S","M","L","XL"],
-        "sapatilhas" : 16,
-        "jersey": 13,
-        "calcoes": 14,
-        "image_links" : ["https://bostonglobe-prod.cdn.arcpublishing.com/resizer/zm_J4GvcEwpAJ6xXK9WJTNBnrfI=/960x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/CLSBRPRLMY2I64N6MEN6DIYOD4.JPG",
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b9c30fca-be82-459e-8f4d-ae5ca0653190/camisola-nba-swingman-dri-fit-jayson-tatum-boston-celtics-city-edition-2023-24-31jSr9.png",
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/741c2659-a8d1-45fe-ad13-b986f09283ee/camisola-nba-swingman-dri-fit-jayson-tatum-boston-celtics-city-edition-2023-24-31jSr9.png",
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d750f17-5ce4-4eea-99e4-8c7342acf156/calcoes-nba-swingman-dri-fit-boston-celtics-2023-24-city-edition-rZTzcG.png",
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/876fe2ea-58f6-4daa-ae36-adf2e5aff152/calcoes-nba-swingman-dri-fit-boston-celtics-2023-24-city-edition-rZTzcG.png",
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aa5ce444-738d-434c-8e0e-d5d73bc5e47a/calcoes-nba-swingman-dri-fit-boston-celtics-2023-24-city-edition-rZTzcG.png"
-                         ],
-        "short_description": "Equipamento completo Jayson Tatum #0 - Boston Celtics 2023/24 - City Version",
-        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
-      },
-
-      {
-        "id": 6,
-        "name": "Trae Young #11 - Atlanta Hawks 2022-23 - Home",
-        "brand": "Conjunto",
-        "price" : 199.99,
-        "size" : ["S","M","L","XL"],
-        "sapatilhas" : 3,
-        "jersey": 15,
-        "calcoes": 16,
-        "image_links" : ["https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_1200%2Cx_1674%2Cy_519/MTg4NTQ2MjcyNTY1NjY3Nzg3/usatsi_17950909.jpg",
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e2144547-d53e-4ed9-9f4a-9e29fd646083/camisola-nba-swingman-dri-fit-atlanta-hawks-icon-edition-2022-23-Gh2NMT.png",
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45595be2-4dea-46dd-a5da-f2890ead1936/camisola-nba-swingman-dri-fit-atlanta-hawks-icon-edition-2022-23-Gh2NMT.png",
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/423d39e9-f51a-4df1-a858-0fc62fa38aec/calcoes-nba-swingman-hawks-icon-edition-2020-vRQPzs.png",
-                        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/698b7471-89be-4ddb-8089-abb21fd8dc57/calcoes-nba-swingman-hawks-icon-edition-2020-vRQPzs.png",
-                        "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/10/adidas-trae-young-3-arctic-night-acid-orange-ie9303-01.jpg?fit=2000%2C2000&ssl=1",
-                        "https://i0.wp.com/xipastore.pt/wp-content/uploads/2023/10/adidas-trae-young-3-arctic-night-acid-orange-ie9303-02.jpg?fit=2000%2C2000&ssl=1"                
-                      ],
-        "short_description": "Equipamento completo Trae Young #11 - Atlanta Hawks 2022-23 - Home",
-        "big_description": "Este conjunto é um clássico, desde o jogador ao equipamento. Faz qualquer fã e colecionador de NBA deslumbrar. Material de elevada qualidade."
-      }
-
     ]
+
 }

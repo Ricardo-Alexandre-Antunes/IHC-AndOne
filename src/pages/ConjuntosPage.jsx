@@ -6,7 +6,10 @@ function ConjuntosPage() {
     return (
         <>
         <MyNavbar activeID={4} />
-        <h1 style={{ minHeight: '55vh' }}>Conjuntos</h1>
+            <div style={{textAlign:'center'}}>
+                <h1 style={{ minHeight: '5vh', marginTop: '40px' }}>Conjuntos</h1>
+                <p style={{ minHeight: '57vh', marginTop: '40px', fontSize: '20px' }}> Página em desenvolvimento... Fica atento! </p>
+            </div>
         <MyFooter />
         </>
     );

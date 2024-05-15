@@ -27,7 +27,7 @@ function PainelConta(props) {
     const [password, setPassword] = useState('');
     const [newEmail, setNewEmail] = useState('');
 
-    // Function to generate EncomendaPerfilCard for each element in temp array
+
     const generateEncomendaCards = () => {
             return orders.map((item, index) => (
                 <EncomendaPerfilCard key={index} item={item} />
@@ -96,26 +96,22 @@ function PainelConta(props) {
       };
 
       const validateInput = (name, address, postalCode, nif) => {
-        // Check if name is not empty
         if (!name.trim()) {
             alert('É preciso inserir nome');
             return false;
         }
 
-        // Check if address is not empty
         if (!address.trim()) {
           alert('É preciso adicionar uma morada');
           return false;
         }
       
-        // Check if postal code is correctly formatted
         const postalCodeRegex = /^[0-9]{4}-[0-9]{3}$/;
         if (!postalCodeRegex.test(postalCode)) {
           alert('O código postal deve ter o formato XXXX-XXX');
           return false;
         }
       
-        // Check if NIF has 9 digits
         if (nif.length !== 9 || isNaN(nif)) {
           alert('O NIF deve ter 9 dígitos numéricos');
           return false;

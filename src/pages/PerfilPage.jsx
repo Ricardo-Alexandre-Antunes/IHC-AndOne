@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import MyNavbar from "../components/MyNavbar";
 import MyFooter from "../components/MyFooter";
 import PainelConta from "../components/PainelConta";
-import { Row, Col } from 'react-bootstrap'; // Supondo que você esteja usando react-bootstrap
+import { Row, Col } from 'react-bootstrap'; 
 
 function PerfilPage() {
     const [dados, setDados] = useState(true);
@@ -19,17 +19,15 @@ function PerfilPage() {
           }
         };
       
-        // Listen for changes to local storage  
         window.addEventListener('storage', handleStorageChange);
-      
-        // Call the function once to handle the current state of local storage
         handleStorageChange();
-      
-        // Cleanup: remove the event listener when the component is unmounted
+  
         return () => {
           window.removeEventListener('storage', handleStorageChange);
         };
-      }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
+      }, []); 
+
+      
     return (
         <>
             <MyNavbar activeID={6} />

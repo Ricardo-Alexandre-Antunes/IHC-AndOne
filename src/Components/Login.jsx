@@ -29,6 +29,10 @@ const Login = () => {
       return;
     }
     const users = JSON.parse(localStorage.getItem('users'));
+    if (users === null) {
+      setEmailError('Email ou senha incorretos.')
+      return;
+    }
     const singleuser = users.find(user => user.email === email && user.password === password);
     console.log(singleuser);
     if (!singleuser) {

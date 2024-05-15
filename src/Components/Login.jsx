@@ -79,20 +79,22 @@ const Login = () => {
         </div>
 
         <br />
-
+        
         <div className={'inputContainer'}>
+          <label className="errorLabel">{emailError}</label>
           <input
             value={email}
             placeholder="Insira o seu email..."
             onChange={(ev) => setEmail(ev.target.value)}
             className={'inputBox'}
           />
-          <label className="errorLabel">{emailError}</label>
+          
         </div>
 
         <br />
 
         <div className={'inputContainer'}>
+          <label className="errorLabel">{passwordError}</label>
           <input
             type={'password'}
             value={password}
@@ -100,7 +102,7 @@ const Login = () => {
             onChange={(ev) => setPassword(ev.target.value)}
             className={'inputBox'}
           />
-          <label className="errorLabel">{passwordError}</label>
+          
         </div>
 
         <br />
@@ -139,18 +141,20 @@ const Login = () => {
         <br />
 
         <div className={'inputContainer'}>
+          <label className="errorLabel">{emailError2}</label>
           <input
             value={email2}
             placeholder="Insira o seu email..."
             onChange={(ev) => setEmail2(ev.target.value)}
             className={'inputBox'}
           />
-          <label className="errorLabel">{emailError2}</label>
+          
         </div>
 
         <br />
 
         <div className={'inputContainer'}>
+          <label className="errorLabel">{passwordError2}</label>
           <input
             type={'password'}
             value={password2}
@@ -158,7 +162,7 @@ const Login = () => {
             onChange={(ev) => setPassword2(ev.target.value)}
             className={'inputBox'}
           />
-          <label className="errorLabel">{passwordError2}</label>
+          
         </div>
 
         <br />

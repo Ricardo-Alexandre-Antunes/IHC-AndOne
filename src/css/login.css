@@ -4,9 +4,10 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #c66d24, #ffffff); /* Orange to deep navy blue gradient */
-    background-size: 400% 400%;
     animation: gradientAnimation 20s ease infinite;
+    background-image: url('../assets/jordan_background.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
   }
 
 .loginContainer {
@@ -37,6 +38,7 @@
     font-weight: bolder;
     align-items: center;
     justify-content: center;
+    color:white;
   }
   
   .resultContainer,
@@ -67,18 +69,19 @@
   
   .inputContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
   .inputContainer Button {
     margin-inline: 20px;
+    background-color: red;
   }
   
   .inputContainer > .errorLabel {
     color: red;
-    font-size: 12px;
+    font-size: 18px;
   }
   
   .inputBox {
@@ -90,14 +93,3 @@
     padding-left: 8px;
   }
 
-  @keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 50% 50%;
-    }
-    100% {
-        background-position: 0% 100%;
-    }
-}

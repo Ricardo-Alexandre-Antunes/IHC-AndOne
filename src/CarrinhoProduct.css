@@ -14,8 +14,8 @@
   .product-cart-info img {
     width: 60px; /* Define a largura da imagem */
     height: auto; /* Mantém a proporção da imagem */
-    margin-left: 5%;
-    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-left: 4%;
+    margin-right: 2%; /* Espaçamento entre a imagem e o texto */
   }
   
   .product-cart-price {

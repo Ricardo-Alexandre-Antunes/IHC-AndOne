@@ -45,24 +45,26 @@ const Product = () => {
     useEffect(() => {
       let users = JSON.parse(localStorage.getItem('users'));
       const curUser =(localStorage.getItem('curUser'));
+      if (curUser !== null) {
       let user = users.find(user => user.email === curUser);
-      if (user) {
-        localStorage.setItem('favorites', JSON.stringify(favorites));
-        console.log('Current User:', curUser);
-        
-        console.log('User from Users Array:', user);
-        
-        user.favorites = favorites;
-        console.log('Updated favorites: ', favorites);  
-        console.log('Updated User:', user);
-        
-        users = users.map(u => u.email === user.email ? user : u);
-        
-        console.log('Updated Users Array:', users);
-        
-        localStorage.setItem('users', JSON.stringify(users));
-        
-        localStorage.setItem('favorites', JSON.stringify(favorites));
+        if (user) {
+          localStorage.setItem('favorites', JSON.stringify(favorites));
+          console.log('Current User:', curUser);
+          
+          console.log('User from Users Array:', user);
+          
+          user.favorites = favorites;
+          console.log('Updated favorites: ', favorites);  
+          console.log('Updated User:', user);
+          
+          users = users.map(u => u.email === user.email ? user : u);
+          
+          console.log('Updated Users Array:', users);
+          
+          localStorage.setItem('users', JSON.stringify(users));
+          
+          localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
       }
     }, [favorites]);
 

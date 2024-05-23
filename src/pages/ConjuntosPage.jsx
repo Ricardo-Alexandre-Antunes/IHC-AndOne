@@ -1,6 +1,6 @@
 import React from "react";
-import MyNavbar from "../components/MyNavbar";
-import MyFooter from "../components/MyFooter";
+import MyNavbar from "/src/components/MyNavbar";
+import MyFooter from "/src/components/MyFooter";
 
 function ConjuntosPage() {
     return (

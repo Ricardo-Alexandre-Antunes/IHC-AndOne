@@ -1,7 +1,7 @@
 import React from 'react';
-import MyNavbar from '../components/MyNavbar';
-import Product from '../components/Product';
-import MyFooter from '../components/MyFooter';
+import MyNavbar from '/src/components/MyNavbar';
+import Product from '/src/components/Product';
+import MyFooter from '/src/components/MyFooter';
 
 function ProductPage() {
     return (

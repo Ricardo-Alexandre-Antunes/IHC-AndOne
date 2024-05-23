@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import MyNavbar from "../components/MyNavbar";
-import MyFooter from "../components/MyFooter";
-import CartProductCard from '../components/CartProductCard';
-import ProductList from '../data/Products.json';
+import MyNavbar from "/src/components/MyNavbar";
+import MyFooter from "/src/components/MyFooter";
+import CartProductCard from '/src/components/CartProductCard';
+import ProductList from '/src/data/Products.json';
 import { Link } from 'react-router-dom';
-import '../AppTestRicardo.css'; // Import the CSS file
-import '../CarrinhoPage.css'; // Import the CSS file
+import '/src/AppTestRicardo.css'; // Import the CSS file
+import '/src/CarrinhoPage.css'; // Import the CSS file
 import Row from 'react-bootstrap/Row';
 
 

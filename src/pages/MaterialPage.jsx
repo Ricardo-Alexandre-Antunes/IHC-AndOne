@@ -1,7 +1,7 @@
 import React from "react";
-import MyNavbar from "../components/MyNavbar";
-import MyFooter from "../components/MyFooter";
-import MaterialSearch from "../components/MaterialSearch";
+import MyNavbar from "/src/components/MyNavbar";
+import MyFooter from "/src/components/MyFooter";
+import MaterialSearch from "/src/components/MaterialSearch";
 
 function MaterialPage() {
     return (

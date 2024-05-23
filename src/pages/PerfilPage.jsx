@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import MyNavbar from "../components/MyNavbar";
-import MyFooter from "../components/MyFooter";
-import PainelConta from "../components/PainelConta";
+import MyNavbar from "/src/components/MyNavbar";
+import MyFooter from "/src/components/MyFooter";
+import PainelConta from "/src/components/PainelConta";
 import { Row, Col } from 'react-bootstrap'; 
 
 function PerfilPage() {

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import MyNavbar from "../components/MyNavbar";
-import MyFooter from "../components/MyFooter";
-import ProductCard from '../components/ProductCard';
-import ProductList from '../data/Products.json';
-import '../FavoritosPage.css';
+import MyNavbar from "/src/components/MyNavbar";
+import MyFooter from "/src/components/MyFooter";
+import ProductCard from '/src/components/ProductCard';
+import ProductList from '/src/data/Products.json';
+import '/src/FavoritosPage.css';
 
 const FavoritosPage = () => {
     const [favoriteProds, setFavoriteProducts] = useState(localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : []);

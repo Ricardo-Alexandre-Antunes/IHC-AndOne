@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import NavbarCompra from "../components/NavbarCompra";
-import MyFooter from "../components/MyFooter";
+import NavbarCompra from "/src/components/NavbarCompra";
+import MyFooter from "/src/components/MyFooter";
 import { Button, Col, Row } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import jsPDF from "jspdf";
-import logoDataURL from "../config";
+import logoDataURL from "/src/config";
 import autoTable from 'jspdf-autotable';
-import ProductList from '../data/Products.json';
-import '../SingleProduct.css';
+import ProductList from '/src/data/Products.json';
+import '/src/SingleProduct.css';
 
 function ConfirmacaoPage() {
     const [encomenda, setEncomenda] = useState(JSON.parse(localStorage.getItem('temp')));

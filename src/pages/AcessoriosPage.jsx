@@ -1,7 +1,7 @@
 import React from "react";
-import MyNavbar from "../components/MyNavbar";
-import MyFooter from "../components/MyFooter";
-import AcessoriosSearch from "../components/AcessoriosSearch";
+import MyNavbar from "/src/components/MyNavbar";
+import MyFooter from "/src/components/MyFooter";
+import AcessoriosSearch from "/src/components/AcessoriosSearch";
 
 function AcessoriosPage() {
     return (

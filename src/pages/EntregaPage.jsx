@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import NavbarCompra from "../components/NavbarCompra";
-import MyFooter from "../components/MyFooter";
-import DetalhesPedido from "../components/DetalhesPedido";
-import ResumoPedido from "../components/ResumoPedido";
-import EntregaLojas from "../components/EntregaLojas";
+import NavbarCompra from "/src/components/NavbarCompra";
+import MyFooter from "/src/components/MyFooter";
+import DetalhesPedido from "/src/components/DetalhesPedido";
+import ResumoPedido from "/src/components/ResumoPedido";
+import EntregaLojas from "/src/components/EntregaLojas";
 import { Col, Row, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';

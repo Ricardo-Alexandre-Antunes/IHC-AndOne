@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/MyNavbar";
-import MyFooter from "../components/MyFooter";
-import EquipamentosSearch from "../components/EquipamentosSearch";
+import Navbar from "/src/components/MyNavbar";
+import MyFooter from "/src/components/MyFooter";
+import EquipamentosSearch from "/src/components/EquipamentosSearch";
 
 
 function EquipamentosPage() {

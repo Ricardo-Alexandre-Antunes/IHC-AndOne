@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/MyNavbar";
-import Footer from "../components/MyFooter";
+import Navbar from "/src/components/MyNavbar";
+import Footer from "/src/components/MyFooter";
 
 function HelpPage() {
   return (

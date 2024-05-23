@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/MyNavbar";
-import MyFooter from "../components/MyFooter";
-import ShoeSearch from "../components/ShoeSearch";
+import Navbar from "/src/components/MyNavbar";
+import MyFooter from "/src/components/MyFooter";
+import ShoeSearch from "/src/components/ShoeSearch";
 
 
 function SapatilhasPage() {

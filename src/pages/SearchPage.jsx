@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/MyNavbar";
-import MyFooter from "../components/MyFooter";
-import SearchSearch from "../components/SearchSearch";
+import Navbar from "/src/components/MyNavbar";
+import MyFooter from "/src/components/MyFooter";
+import SearchSearch from "/src/components/SearchSearch";
 
 
 function SearchPage() {

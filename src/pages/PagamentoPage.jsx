@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import NavbarCompra from "../components/NavbarCompra";
-import MyFooter from "../components/MyFooter";
-import DetalhesPedido from "../components/DetalhesPedido";
-import ResumoPedido from "../components/ResumoPedido";
-import Pagamentos from "../components/Pagamentos";
+import NavbarCompra from "/src/components/NavbarCompra";
+import MyFooter from "/src/components/MyFooter";
+import DetalhesPedido from "/src/components/DetalhesPedido";
+import ResumoPedido from "/src/components/ResumoPedido";
+import Pagamentos from "/src/components/Pagamentos";
 import { Modal, Col, Row, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
-import ProductList from "../data/Products.json";
+import ProductList from "/src/data/Products.json";
 import "./PagamentoPage.css";
 
 function PagamentoPage() {

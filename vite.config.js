@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default {
   build: {
     rollupOptions: {
-      external: ['/src/components/HomeCarousel']
+      external: ['/src/components/HomeCarousel' , '/src/components/MyFooter' , '/src/components/MyNavbar' , '/src/components/Product' , '/src/components/AcessoriosSearch' , '/src/components/Login', '/src/components/EquipamentosSearch']
     }
   }
 }

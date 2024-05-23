@@ -3,7 +3,10 @@ Project for IHC class for Software Engineering @ Universidade de Aveiro (2023-20
 
 How to run:
 
-after cloning execute dependencies.sh. This will install npm and all dependencies used by our IS
-to run the website execute 'npm run dev' with the terminal located in the project folder
+after cloning / downloading run (while inside the folder)
 
+npm install
+npm install vite
+npm run dev
+click the localhost link
 

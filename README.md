@@ -3,6 +3,6 @@ Project for IHC class for Software Engineering @ Universidade de Aveiro (2023-20
 
 How to run:
 
-after cloning execute 'npm install'
+after cloning run dependencies.sh
 
-to run 'npm run dev'
+This will install npm and all dependencies used by our IS

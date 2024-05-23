@@ -3,6 +3,8 @@ Project for IHC class for Software Engineering @ Universidade de Aveiro (2023-20
 
 How to run:
 
+Download Node.js
+
 after cloning / downloading run (while inside the folder)
 
 npm install

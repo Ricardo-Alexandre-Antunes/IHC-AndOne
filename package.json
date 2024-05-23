@@ -14,13 +14,13 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/material": "^5.15.15",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "git": "^0.1.5",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.8.2",
-    "rc-slider": "^10.6.2",
     "rc-tooltip": "^6.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
@@ -36,7 +36,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "sass": "^1.77.1",
+    "sass": "^1.77.2",
     "vite": "^5.2.10"
   }
 }

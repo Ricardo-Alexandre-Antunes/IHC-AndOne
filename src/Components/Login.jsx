@@ -51,7 +51,7 @@ const Login = () => {
   }
 
   const createAccount = () => {
-    if (firstName !== '' && lastName !== '') {
+    if (firstName === '' || lastName === '') {
       alert('Por favor, insira o seu primeiro e último nome.')
       return;
     }

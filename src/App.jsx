@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from '/src/pages/HomePage'
-import HelpPage from './pages/HelpPage'
+import HelpPage from '/src/pages/HelpPage'
 import SapatilhasPage from '/src/pages/SapatilhasPage'
 import EquipamentosPage from '/src/pages/EquipamentosPage'
 import AcessoriosPage from '/src/pages/AcessoriosPage'

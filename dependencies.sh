@@ -1,4 +1,4 @@
-npm install
+npm install git
 npm i react-router-dom
 npm install react-bootstrap bootstrap
 npm install bootstrap

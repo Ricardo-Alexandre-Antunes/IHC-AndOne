@@ -8,7 +8,10 @@ Download Node.js
 after cloning / downloading run (while inside the folder)
 
 npm install
+
 npm install vite
+
 npm run dev
+
 click the localhost link
 
